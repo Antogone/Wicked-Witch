@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " i ",
+        "iei",
+        " n "
+    ],
+    "key": {
+        "e": {
+            "item": "minecraft:emerald"
+        },
+        "n": {
+            "item": "minecraft:nether_star"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

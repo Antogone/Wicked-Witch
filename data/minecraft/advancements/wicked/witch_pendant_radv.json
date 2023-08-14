@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "Wicked witch of the west": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "witch_pendant"
+            }
+        }
+    },
+    "rewards": {
+        "function": "craft/crafted_witch_pendant"
+    }
+
+}

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "The Silver Slippers": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "slip"
+            }
+        }
+    },
+    "rewards": {
+        "function": "craft/crafted_slip"
+
+    }
+
+ }

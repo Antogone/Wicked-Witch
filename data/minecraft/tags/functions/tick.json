@@ -1,0 +1,10 @@
+ {
+    "values": [
+        "minecraft:potion",
+        "minecraft:wicked",
+		"minecraft:silver",
+		"minecraft:enchant",
+        "minecraft:cauldron",
+        "minecraft:timer"
+    ]
+}

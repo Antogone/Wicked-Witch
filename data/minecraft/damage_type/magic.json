@@ -1,0 +1,7 @@
+{
+    "exhaustion": 0.3,
+    "message_id": "magic",
+    "scaling": "never",
+    "effects":"thorns",
+    "death_message_type":"intentional_game_design"
+  }

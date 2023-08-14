@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EDE",
+        "eie",
+        "EpE"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:iron_boots"
+        },
+        "D": {
+            "item": "minecraft:end_stone"
+        },
+        "p": {
+            "item": "minecraft:netherrack"
+        },
+        "e": {
+            "item": "minecraft:dirt"
+        },
+        "E": {
+            "item": "minecraft:emerald"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

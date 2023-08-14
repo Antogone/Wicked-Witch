@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:enchanted_book"
+      },
+      "title": {
+        "text": "The Grimmerie",
+        "color": "dark_green"
+    },
+    "description": {
+        "text": "You found the The Grimmerie",
+        "color": "dark_green"
+    },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "minecraft:wicked/witch_pendant_adv",
+    "criteria": {
+        "The Grimmerie": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "the_grimmerie"
+            }
+        }
+    }
+  }
+  

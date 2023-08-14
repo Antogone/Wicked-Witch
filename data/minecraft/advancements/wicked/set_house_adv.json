@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:emerald_block"
+      },
+      "title": {
+        "text": "There is no place like home",
+        "color": "dark_green"
+    },
+    "description": {
+      "text": "You finally choose where is your home",
+      "color": "dark_green"
+  },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "minecraft:wicked/witch_pendant_adv",
+    "criteria": {
+        "The Silver Slippers": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "set_house"
+            }
+        }
+    }
+  }
+  
