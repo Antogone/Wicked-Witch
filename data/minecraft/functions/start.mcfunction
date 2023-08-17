@@ -1,5 +1,5 @@
 #By Bomerie
-
+#start.mcfunction
 execute as @s run scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 execute as @s run scoreboard objectives add click3 minecraft.used:minecraft.snowball
 execute as @s run scoreboard objectives add drop minecraft.dropped:minecraft.carrot_on_a_stick
@@ -41,6 +41,11 @@ execute as @s run scoreboard objectives add dx dummy
 execute as @s run scoreboard objectives add dy dummy
 execute as @s run scoreboard objectives add dz dummy
 
+execute as @s run scoreboard objectives add x_temp dummy
+execute as @s run scoreboard objectives add y_temp dummy
+execute as @s run scoreboard objectives add z_temp dummy
+execute as @s run scoreboard objectives add net_value dummy
+scoreboard players set $net net_value 8
 
 gamerule keepInventory true
 
@@ -48,7 +53,7 @@ team modify witch nametagVisibility always
 team modify witch color green
 
 attribute @p[tag=wicked] minecraft:generic.max_health base set 40
-attribute @p[tag=wicked] generic.movement_speed base set 0.13
+attribute @p[tag=wicked] generic.movement_speed base set 0.11
 
 scoreboard objectives add P dummy
 scoreboard objectives add L dummy

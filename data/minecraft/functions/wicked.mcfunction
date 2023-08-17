@@ -1,7 +1,7 @@
 ###########################
 #WICKED WITCH 
 #by Antogone
-#Versions 2022
+#Versions 2023
 ###########################
 
 ###########################
@@ -89,7 +89,7 @@ execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 10.. if 
 execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 5.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:1b,id:"snowball",tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=5..}] hotbar.1 with snowball{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}"},Enchantments:[{}]}
 
 #FLYING SPELL
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:4b,id:"feather",tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l15,tag=wicked,limit=1,scores={select=1,magie=0..}] hotbar.4 with feather{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1,typevol=0}] magie matches 0.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:4b,id:"feather",tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l15,tag=wicked,limit=1,scores={select=1,magie=0..,typevol=0}] hotbar.4 with feather{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
 
 
 ###########################
@@ -121,6 +121,25 @@ scoreboard players set @a[tag=wicked,limit=1,scores={drop=2..,bro=1,select=1},nb
 scoreboard players set @a[scores={drop=1..,bro=2}] bro 0
 scoreboard players set @a[scores={bro=0}] drop 0
 
+
+#  execute as @a[tag=wicked,scores={select=0}] at @s unless block ~ ~-1 ~ barrier run fill ~-10 ~-10 ~10 ~10 ~10 ~-10 air replace barrier
+#  execute as @a[tag=wicked,scores={select=1}] at @s unless block ~ ~-1 ~ barrier run fill ~-10 ~-10 ~10 ~10 ~10 ~-10 air replace barrier
+#  execute as @a[tag=wicked,scores={select=0}] at @s run fill ~-10 ~-1 ~10 ~10 ~-1 ~-10 air replace barrier
+#  execute as @a[tag=wicked,scores={select=1}] at @s run fill ~-10 ~-1 ~10 ~10 ~-1 ~-10 air replace barrier
+
+#  execute as @a[tag=wicked,scores={select=0}] at @s if block ~ ~-1 ~ barrier run fill ~-5 ~-5 ~5 ~5 ~5 ~-5 air replace barrier
+#  execute as @a[tag=wicked,scores={select=0}] at @s if block ~ ~-1 ~ barrier run fill ~-5 ~-1 ~5 ~5 ~1 ~-5 air replace barrier
+#  execute as @a[tag=wicked,scores={select=1}] at @s if block ~ ~-1 ~ barrier run fill ~-5 ~-5 ~5 ~5 ~5 ~-5 air replace barrier
+#  execute as @a[tag=wicked,scores={select=1}] at @s if block ~ ~-1 ~ barrier run fill ~-5 ~-1 ~5 ~5 ~1 ~-5 air replace barrier
+
+#  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,bro=1,typevol=1}] at @s if block ~ ~-1 ~ #minecraft:airs run fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 barrier replace air
+
+#  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,sneak=1..,bro=1,typevol=1}] at @s if block ~ ~-1 ~ barrier run fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air replace barrier
+#  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,sneak=1..,bro=1,typevol=1}] run effect give @s jump_boost 1 255 true
+#  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,bro=1,typevol=1},x_rotation=-90] at @s if block ~ ~-1 ~ barrier run effect give @s levitation 1 4 true
+
+# execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,bro=1,typevol=1}] at @s if block ~ ~-1 ~ barrier anchored feet run function cauldron/alchemymod_fly
+# execute at @e[scores={spell=6}] run fill ~-10 ~-10 ~10 ~10 ~10 ~-10 air replace barrier
 
 ###########################
 # SCEPTER SHIELD
@@ -173,8 +192,8 @@ execute as @e[tag=ball] at @s run particle soul_fire_flame ^ ^ ^ 0.3 0.3 0.3 0.0
 ###########################
 # FLYING SPELL
 ###########################
-execute as @a[tag=wicked,limit=1,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run function broom
-execute as @a[tag=wicked,limit=1,nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run clear @s command_block{HideFlags:3,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+execute as @a[tag=wicked,limit=1,scores={typevol=0},nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run function broom
+execute as @a[tag=wicked,limit=1,scores={typevol=0},nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run clear @s command_block{HideFlags:3,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
 
 
 
