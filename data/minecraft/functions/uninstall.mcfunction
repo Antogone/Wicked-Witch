@@ -46,16 +46,16 @@ scoreboard objectives remove C
 scoreboard objectives remove R 
 scoreboard objectives remove timer
 
-scoreboard objectives remove ID1 
-scoreboard objectives remove ID2 
-scoreboard objectives remove ID3 
-scoreboard objectives remove ID4 
-scoreboard objectives remove ID5 
-scoreboard objectives remove ID6 
-scoreboard objectives remove ID7 
-scoreboard objectives remove ID8 
-scoreboard objectives remove ID9 
-scoreboard objectives remove ID10 
+# scoreboard objectives remove ID1 
+# scoreboard objectives remove ID2 
+# scoreboard objectives remove ID3 
+# scoreboard objectives remove ID4 
+# scoreboard objectives remove ID5 
+# scoreboard objectives remove ID6 
+# scoreboard objectives remove ID7 
+# scoreboard objectives remove ID8 
+# scoreboard objectives remove ID9 
+# scoreboard objectives remove ID10 
 
 
 scoreboard objectives remove D1 
@@ -136,3 +136,5 @@ tag @s remove ghost
 tag @s remove ast_p
 
 forceload remove all
+data remove storage wicked.potion
+data remove storage wicked.tep
