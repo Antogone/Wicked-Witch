@@ -7,8 +7,7 @@
 ###########################
 # BONUS 
 ###########################
-attribute @p[tag=wicked] minecraft:generic.max_health base set 40
-attribute @p[tag=wicked] generic.movement_speed base set 0.13
+
 effect give @a[tag=wicked,limit=1] saturation 5 0 true
 effect give @a[tag=wicked,limit=1] jump_boost 5 1 true
 effect give @a[tag=wicked,limit=1,scores={broom=1}] jump_boost 5 2 true
@@ -174,16 +173,15 @@ execute as @e[tag=fix] at @s run function fixeffect
 ###########################
 execute if score @a[tag=wicked,limit=1,scores={magie=5..},nbt={SelectedItem:{id:"minecraft:snowball",tag:{display:{Name:"{\"text\":\"§2Fireball\"}"}}}}] click3 matches 1..10 run execute as @a[tag=wicked,limit=1] at @s run function fireball
 
-
-
+#Particle Management
 execute as @e[tag=ball] at @s run execute at @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.2 -1 0.2 0.1 200 force
 execute as @e[tag=ball] at @s run execute at @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run particle soul_fire_flame ^ ^ ^ 0.2 -1 0.2 0.1 200 force
 
-
+#Give fire + magic damage
 execute as @e[tag=ball] at @s run execute at @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run data merge entity @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest,limit=1] {Fire:56s}
-
 execute as @e[tag=ball] at @s run execute as @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run damage @s 8 minecraft:magic by @p[tag=wicked]
 
+#Particle Management
 execute as @e[tag=ball] at @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.3 0.3 0.3 0.001 50 force
 execute as @e[tag=ball] at @s run particle soul_fire_flame ^ ^ ^ 0.3 0.3 0.3 0.001 50 force
 
@@ -226,6 +224,7 @@ execute at @a[scores={spell=38},tag=wicked,limit=1] run function astralp
 execute at @e[tag=PAJ] run function cauldron/alchemymod_v_t
 execute at @e[tag=PAJ] run particle happy_villager ^ ^1.5 ^ 1 1 1 0.001 200 force
 execute at @e[tag=PAJ] if entity @e[tag=!wicked,tag=!PAJ,distance=..2] run function finastra
+
 #Ghost walk
 execute at @a[scores={spell=600},tag=wicked,limit=1] run function ghost_walk
 
