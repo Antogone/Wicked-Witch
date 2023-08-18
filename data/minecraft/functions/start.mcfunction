@@ -53,7 +53,7 @@ data modify storage wicked.potion PotionId set value ["minecraft:","minecraft:",
 data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
 data modify storage wicked.tep Temp.PosHouse set value [0d,0d,0d]
 
-
+execute in minecraft:overworld run forceload add -30000000 1600
 
 gamerule keepInventory true
 
