@@ -1,3 +1,4 @@
+playsound minecraft:block.beacon.deactivate master @a
 
 clear @a[tag=wicked,limit=1] carrot_on_a_stick{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}"},Enchantments:[{}]}
 clear @a[tag=wicked,limit=1] carrot_on_a_stick{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}"},Enchantments:[{}]}

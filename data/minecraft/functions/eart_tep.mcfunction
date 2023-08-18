@@ -27,3 +27,4 @@ execute at @p[tag=wicked] run function particle
 execute at @p[tag=wicked] run schedule function particle 10t
 
 execute at @a[tag=wicked] as @a[tag=wicked] align x align z run spreadplayers ~ ~ 20 5 true @s
+playsound minecraft:entity.enderman.teleport master @a

@@ -41,4 +41,5 @@ execute at @p[tag=wicked] run function particle
 execute at @p[tag=wicked] run function particle 
 execute at @p[tag=wicked] run schedule function particle 10t
 execute at @p[tag=wicked] run schedule function phase 1s
+playsound minecraft:entity.enderman.teleport master @a
 

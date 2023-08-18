@@ -1,3 +1,5 @@
+playsound minecraft:block.beacon.power_select master @a
+
 execute in minecraft:overworld run forceload add -30000000 1600
 
 execute in minecraft:overworld positioned -30000000 300 1600 run summon armor_stand -30000000 300 1600 {PersistenceRequired:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["hold"]}

@@ -16,3 +16,4 @@ kill @s
 
 execute at @p[tag=wicked] run function particle
 execute at @p[tag=wicked] run schedule function particle 10t
+playsound minecraft:entity.enderman.teleport master @a
