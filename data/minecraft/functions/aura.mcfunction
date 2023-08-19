@@ -11,7 +11,7 @@ execute as @a[scores={spell=20,magie=15..},tag=wicked] at @s run effect give @s 
 # execute at @a[scores={spell=20,magie=15..},tag=wicked] run effect give @e[tag=!wicked,type=!witch,type=!#undead,distance=..10,sort=nearest] instant_damage 1 2 true
 
 
-execute at @a[scores={spell=20,magie=15..},tag=wicked] run execute as @e[tag=!wicked,type=!#dontharm,distance=..10] run damage @s 10 minecraft:magic by @p[tag=wicked]
+execute at @a[scores={spell=20,magie=15..},tag=wicked] run execute as @e[tag=!wicked,type=!#dontharm,distance=..10] run damage @s 20 minecraft:magic by @p[tag=wicked]
 
 execute as @a[scores={spell=20,magie=..14},tag=wicked] run tellraw @s {"text":"You don't have enough magic to cast the spell !","color":"dark_green"}
 execute as @a[scores={spell=20,magie=15..},tag=wicked] run scoreboard players remove @s magie 15

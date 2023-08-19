@@ -9,15 +9,19 @@
 execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/set_protection
 
 execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] resistance 10 255 true
-execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,distance=..14] slowness 10 1 true
-execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,distance=..14] mining_fatigue 10 255 true
-execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,distance=..14] glowing 10 255 true
+execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] fire_resistance 10 255 true
+execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] slow_falling 10 255 true
+
+execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] slowness 10 1 true
+execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] mining_fatigue 10 255 true
+execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] glowing 10 255 true
+execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] weakness 10 1 true
 
 
 ############  
-execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/set_protection
+# execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/set_protection
 
-execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] resistance 10 255 true
+# execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] resistance 10 255 true
 
 
 
@@ -34,7 +38,7 @@ execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:2b}}] if bl
 execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] wither 10 1 true
 execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] darkness 15 4 true
 execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] mining_fatigue 60 2 true
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] bad_omen 255 1 true
+execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] bad_omen infinite 1 true
 execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] hunger 15 2 true
 execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] nausea 15 1 true
 execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] slowness 60 4 true
