@@ -233,7 +233,7 @@ execute at @a[scores={spell=600},tag=wicked,limit=1] run function ghost_walk
 ###########################
 # SPELLBOOK
 ###########################
-execute as @e[tag=wicked,nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2The Grimmerie"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1}}}
+execute as @e[tag=wicked,scores={sneak=1..},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2The Grimmerie"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1}}}
 
 
 ###########################
@@ -312,7 +312,7 @@ execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:
 execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}"},Enchantments:[{}]}}}]
 execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}]
 
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:feather",Count:1b,tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Magic Broom\"}"},Enchantments:[{}]}}}]
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:feather",Count:1b,tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}]
 
 
 execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:command_block",Count:1b,tag:{HideFlags:3,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}]
