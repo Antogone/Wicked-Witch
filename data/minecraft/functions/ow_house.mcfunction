@@ -4,7 +4,17 @@
  #
  # Created by .
 ##
-effect give @e[scores={equip=1,choose=0..5}] blindness 4 255 true
 
-tp @a[tag=house_ow] @e[tag=house_ow,limit=1,type=marker]
-schedule function particle 3t
+data modify entity @s Pos set from storage wicked.tep Temp.PosHouse
+
+# Teleport player
+tp @p[tag=wicked,limit=1] @s
+effect give @p[tag=wicked] fire_resistance 10 5 true
+effect give @p[tag=wicked] slow_falling 10 5 true
+
+# Remove marker
+kill @s
+
+execute at @p[tag=wicked] run function particle
+execute at @p[tag=wicked] run schedule function particle 10t
+playsound minecraft:entity.enderman.teleport master @a

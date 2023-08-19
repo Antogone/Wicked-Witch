@@ -1,3 +1,4 @@
+playsound minecraft:block.beacon.deactivate master @a
 
 clear @a[tag=wicked,limit=1] carrot_on_a_stick{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}"},Enchantments:[{}]}
 clear @a[tag=wicked,limit=1] carrot_on_a_stick{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}"},Enchantments:[{}]}
@@ -16,6 +17,7 @@ item replace entity @a[tag=wicked,limit=1] hotbar.2 from entity @e[tag=hold,limi
 
 item replace entity @a[tag=wicked,limit=1] hotbar.3 from entity @e[tag=hold2,limit=1] armor.head
 item replace entity @a[tag=wicked,limit=1] hotbar.4 from entity @e[tag=hold2,limit=1] weapon.mainhand
+item replace entity @a[tag=wicked,limit=1] armor.head from entity @e[tag=hold2,limit=1] weapon.offhand
 
 
 give @a[tag=wicked,limit=1] totem_of_undying{HideFlags:3,CustomModelData:141200,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:10,Operation:1,UUIDLeast:346877,UUIDMost:439264},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:595497,UUIDMost:893170}],display:{Name:"{\"text\":\"§2Wicked Witch's Pendant\"}"},ench:[{id:34,lvl:211}],Enchantments:[{}]}

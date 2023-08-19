@@ -2,36 +2,43 @@
  # unistall.mcfunction
  # 
  #
- # Created by .
+ # Created by Antogone
 ##
 #By Bomerie
 
-execute as @s run scoreboard objectives remove click
-execute as @s run scoreboard objectives remove click3 
-execute as @s run scoreboard objectives remove drop 
-execute as @s run scoreboard objectives remove charge
+scoreboard objectives remove click
+scoreboard objectives remove click3 
+scoreboard objectives remove drop 
+scoreboard objectives remove charge
 team remove witch
-execute as @s run scoreboard objectives remove itm 
-execute as @s run scoreboard objectives remove bro 
-execute as @s run scoreboard objectives remove broo 
-execute as @s run scoreboard objectives remove broom 
-execute as @s run scoreboard objectives remove t 
-execute as @s run scoreboard objectives remove itm2 
-execute as @s run scoreboard objectives remove magie 
-execute as @s run scoreboard objectives remove select 
-execute as @s run scoreboard objectives remove kd  
-execute as @s run scoreboard objectives remove sneak 
-execute as @s run scoreboard objectives remove spell 
-execute as @s run scoreboard objectives remove x 
-execute as @s run scoreboard objectives remove y 
-execute as @s run scoreboard objectives remove z 
-execute as @s run scoreboard objectives remove dx 
-execute as @s run scoreboard objectives remove dy 
-execute as @s run scoreboard objectives remove dz 
+scoreboard objectives remove itm 
+scoreboard objectives remove bro 
+scoreboard objectives remove broo 
+scoreboard objectives remove broom 
+scoreboard objectives remove t 
+scoreboard objectives remove itm2 
+scoreboard objectives remove magie 
+scoreboard objectives remove select 
+scoreboard objectives remove kd  
+scoreboard objectives remove sneak 
+scoreboard objectives remove spell 
+scoreboard objectives remove x 
+scoreboard objectives remove y 
+scoreboard objectives remove z 
+scoreboard objectives remove dx 
+scoreboard objectives remove dy 
+scoreboard objectives remove dz 
 gamerule keepInventory true
 
 team modify witch nametagVisibility always
 team modify witch color green
+
+
+scoreboard objectives remove net_value
+scoreboard objectives remove x_temp
+scoreboard objectives remove y_temp
+scoreboard objectives remove z_temp
+
 
 scoreboard objectives remove P 
 scoreboard objectives remove L 
@@ -39,16 +46,16 @@ scoreboard objectives remove C
 scoreboard objectives remove R 
 scoreboard objectives remove timer
 
-scoreboard objectives remove ID1 
-scoreboard objectives remove ID2 
-scoreboard objectives remove ID3 
-scoreboard objectives remove ID4 
-scoreboard objectives remove ID5 
-scoreboard objectives remove ID6 
-scoreboard objectives remove ID7 
-scoreboard objectives remove ID8 
-scoreboard objectives remove ID9 
-scoreboard objectives remove ID10 
+# scoreboard objectives remove ID1 
+# scoreboard objectives remove ID2 
+# scoreboard objectives remove ID3 
+# scoreboard objectives remove ID4 
+# scoreboard objectives remove ID5 
+# scoreboard objectives remove ID6 
+# scoreboard objectives remove ID7 
+# scoreboard objectives remove ID8 
+# scoreboard objectives remove ID9 
+# scoreboard objectives remove ID10 
 
 
 scoreboard objectives remove D1 
@@ -129,3 +136,5 @@ tag @s remove ghost
 tag @s remove ast_p
 
 forceload remove all
+data remove storage wicked.potion
+data remove storage wicked.tep

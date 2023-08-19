@@ -7,3 +7,4 @@ execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] run particle minecraft:dus
 execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] run particle minecraft:dust 0.498 1 0.345 1 ~ ~ ~ 0.5 1 0.5 0.001 300 force
 execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] run effect give @s slow_falling 5 10 true
 execute as @e[tag=mtp] run tag @s remove mtp
+playsound minecraft:entity.enderman.teleport master @a

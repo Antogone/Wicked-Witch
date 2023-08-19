@@ -1,9 +1,11 @@
 # by Bomerie
-
+#loope.mcfunction
 
 execute as @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.15 0.15 0.15 10 1 force
 
 execute as @s[tag=telpe] run execute as @e[tag=!telpe,tag=!wicked,type=!#dontharm,distance=..2,sort=nearest] run damage @s 14 minecraft:magic by @p[tag=wicked]
+execute as @s[tag=telpe] run execute as @e[tag=!telpe,tag=!wicked,type=!#dontharm,distance=..2,sort=nearest] run effect give @s weakness 10 0 true
+
 # CHARGE
 # execute as @s if score @p[tag=wicked] charge matches 18..22 run particle minecraft:dust 0.541 0.345 1 1 ^ ^ ^ 0.15 0.15 0.15 10 1 force
 # execute as @s[tag=telpe] unless score @p[tag=wicked] charge matches 0..5 run execute as @e[tag=!telpe,tag=!wicked,type=!#dontharm,distance=..2,sort=nearest] run damage @s 14 minecraft:magic by @p[tag=wicked]

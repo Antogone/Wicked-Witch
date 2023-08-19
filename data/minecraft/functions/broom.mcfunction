@@ -4,15 +4,25 @@ scoreboard players set @s[tag=wicked,scores={sneak=0}] bro 2
 scoreboard players set @s[tag=wicked,scores={sneak=1..}] bro 1
 
 
-execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^1 #minecraft:airs run tp @s ^ ^ ^1.3
-execute as @a[tag=wicked,scores={select=1,bro=1},x_rotation=-90] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^0.1 #minecraft:airs run tp @s ^ ^ ^1.6
-execute as @a[tag=wicked,scores={select=1,bro=1},x_rotation=90] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^0.1 #minecraft:airs run tp @s ^ ^ ^1.6
-execute as @a[tag=wicked,scores={select=1,bro=1}] at @s anchored eyes if block ~ ~-1 ~ #minecraft:airs unless block ^ ^ ^ #minecraft:airs run tp @s ^ ^ ^
-execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs unless block ^ ^ ^ #minecraft:airs run tp @s ^ ^ ^
-execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs unless block ^ ^1 ^ #minecraft:airs run tp @s ^ ^ ^
-execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs unless block ^ ^-1 ^ #minecraft:airs run tp @s ^ ^ ^
-execute as @a[tag=wicked,scores={select=1,bro=1}] at @s anchored eyes if block ~ ~-1 ~ #minecraft:airs unless block ^ ^ ^0.6 #minecraft:airs run tp @s ^ ^ ^
-execute as @a[tag=wicked,scores={select=1,bro=1}] at @s anchored feet if block ~ ~-1 ~ #minecraft:airs unless block ^ ^ ^1 #minecraft:airs run tp @s ^ ^ ^
+execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^1 #minecraft:airs run teleport @s ^ ^ ^1.3
+
+
+execute as @a[tag=wicked,scores={select=1,bro=1},x_rotation=-90] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^0.1 #minecraft:airs run teleport @s ^ ^ ^1.6
+execute as @a[tag=wicked,scores={select=1,bro=1},x_rotation=90] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^0.1 #minecraft:airs run teleport @s ^ ^ ^1.6
+
+execute as @a[tag=wicked,scores={select=1,bro=1}] at @s anchored eyes if block ~ ~-1 ~ #minecraft:airs unless block ^ ^ ^ #minecraft:airs run teleport @s ^ ^ ^
+
+
+execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs unless block ^ ^ ^ #minecraft:airs run teleport @s ^ ^ ^
+execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs unless block ^ ^1 ^ #minecraft:airs run teleport @s ^ ^ ^
+execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs unless block ^ ^-1 ^ #minecraft:airs run teleport @s ^ ^ ^
+
+
+execute as @a[tag=wicked,scores={select=1,bro=1}] at @s anchored eyes if block ~ ~-1 ~ #minecraft:airs unless block ^ ^ ^0.6 #minecraft:airs run teleport @s ^ ^ ^
+execute as @a[tag=wicked,scores={select=1,bro=1}] at @s anchored feet if block ~ ~-1 ~ #minecraft:airs unless block ^ ^ ^1 #minecraft:airs run teleport @s ^ ^ ^
+
+
+
 execute as @a[tag=wicked,scores={select=1,bro=1}] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^1 #minecraft:airs run effect give @s levitation 1 0 true
 execute as @a[tag=wicked,scores={select=1,bro=1}] at @s unless block ~ ~-1 ~ #minecraft:airs run effect give @s slow_falling 8 0 true
 execute as @a[tag=wicked,scores={select=1,bro=1}] at @s unless block ~ ~-1 ~ #minecraft:airs run effect give @s jump_boost 1 1 true

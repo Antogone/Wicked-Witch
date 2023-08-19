@@ -10,3 +10,4 @@ kill @e[tag=dt]
 scoreboard players set @a[scores={equip=0,choose=0..2}] choose -1
 scoreboard players set @a[scores={s=1..}] s 0
 schedule function particle 3t
+playsound minecraft:entity.enderman.teleport master @a
