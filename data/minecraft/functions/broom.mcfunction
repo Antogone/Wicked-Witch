@@ -1,5 +1,5 @@
 
-item replace entity @a[tag=wicked,limit=1,scores={select=1}] armor.head with command_block{HideFlags:3,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+item replace entity @a[tag=wicked,limit=1,scores={select=1}] armor.head with command_block{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
 scoreboard players set @s[tag=wicked,scores={sneak=0}] bro 2
 scoreboard players set @s[tag=wicked,scores={sneak=1..}] bro 1
 
