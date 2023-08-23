@@ -1,4 +1,4 @@
-#By Bomerie
+# By Bomerie
 
 
 execute as @e[scores={select=1}] at @s if entity @e[type=witch,distance=..30] run effect give @s regeneration 10 4 true

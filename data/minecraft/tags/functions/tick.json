@@ -5,6 +5,7 @@
 		"minecraft:silver",
 		"minecraft:enchant",
         "minecraft:cauldron",
-        "minecraft:timer"
+        "minecraft:timer",
+        "minecraft:amplificator"
     ]
 }

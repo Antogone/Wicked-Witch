@@ -214,7 +214,7 @@ execute at @a[scores={spell=3},tag=wicked,limit=1] run function heal
 execute at @a[scores={spell=68},tag=wicked,limit=1] run function potionclear
 
 # coven Spell
-execute at @a[scores={spell=92},tag=wicked,limit=1] run function witcher
+# execute at @a[scores={spell=92},tag=wicked,limit=1] run function witcher
 
 # Aura-Explosion
 execute at @a[scores={spell=20},tag=wicked,limit=1] run function aura
@@ -239,7 +239,7 @@ execute as @e[tag=wicked,scores={sneak=1..},nbt={SelectedItem:{id:"minecraft:wri
 ###########################
 # COVEN OF WITCH
 ###########################
-execute as @a[tag=wicked,limit=1] at @s if entity @e[type=witch,distance=..20] run function witch
+#execute as @a[tag=wicked,limit=1] at @s if entity @e[type=witch,distance=..20] run function witch
 
 ###########################
 # ANTI LAG & BUG
@@ -295,6 +295,38 @@ execute at @e[tag=wall] if entity @e[distance=..2,tag=wicked,nbt={SelectedItem:{
 execute at @e[tag=wall] if entity @e[distance=..2,tag=wicked,nbt={SelectedItem:{id:"minecraft:totem_of_undying",tag:{HideFlags:3,display:{Name:"{\"text\":\"§2Wicked Witch's Pendant\"}"},ench:[{id:34,lvl:211}]}}}] run fill ~ ~ ~ ~ ~ ~ air replace lime_stained_glass
 
 
+##########################
+# AMPLIFICATOR
+##########################
+
+# ########## SET Amplificator
+
+execute at @e[tag=set_ampli] run execute at @e[tag=ampli] run fill ~ ~ ~ ~ ~2 ~ air
+execute at @e[tag=set_ampli] run kill @e[tag=ampli]
+execute at @e[tag=set_ampli] run kill @e[tag=em_amp]
+
+
+execute at @e[tag=set_ampli] run setblock ~ ~ ~ emerald_block
+execute at @e[tag=set_ampli] run setblock ~ ~2 ~ emerald_block
+execute at @e[tag=set_ampli] run summon marker ~ ~ ~ {Invisible:1b,PersistenceRequired:1b,Tags:["ampli"]}
+execute as @e[tag=set_ampli,type=slime] at @s run summon marker ~ ~ ~ {Invisible:1b,PersistenceRequired:1b,Tags:["remove_itm"]}
+execute as @e[tag=remove_itm] at @s run kill @e[tag=set_ampli,distance=..2]
+execute as @e[tag=remove_itm] at @s run kill @e[type=item,distance=..2]
+execute as @e[tag=remove_itm] at @s run kill @e[tag=remove_itm,distance=..2]
+
+# ########## RECUP CAULDRON 
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run summon item ~ ~ ~ {Item:{id:"minecraft:slime_spawn_egg",Count:1b,tag:{display:{Name:"{\"text\":\"§2Amplificator\"}"},EntityTag:{Size:0,wasOnGround:1,NoAI:1,Silent:1,Tags:["set_ampli"]},Enchantments:[{}]}}}
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run summon item ~ ~ ~ {Item:{id:"minecraft:slime_spawn_egg",Count:1b,tag:{display:{Name:"{\"text\":\"§2Amplificator\"}"},EntityTag:{Size:0,wasOnGround:1,NoAI:1,Silent:1,Tags:["set_ampli"]},Enchantments:[{}]}}}
+
+
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run fill ~ ~ ~ ~ ~2 ~ air
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run fill ~ ~ ~ ~ ~2 ~ air
+
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run kill @e[tag=em_amp]
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=em_amp]
+
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run kill @e[tag=ampli]
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=ampli]
 
 ###########################
 # CLEANER
@@ -341,3 +373,6 @@ item replace entity @a[tag=!l10,tag=wicked,limit=1,scores={select=1}] hotbar.1 w
 
 #BROOM
 item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+
+
+#/give @p minecraft:green_banner{BlockEntityTag:{Patterns:[{Pattern:"cs",Color:5},{Pattern:"cs",Color:13},{Pattern:"bts",Color:5},{Pattern:"bts",Color:13},{Pattern:"tts",Color:5},{Pattern:"tts",Color:13},{Pattern:"cr",Color:5},{Pattern:"cr",Color:13},{Pattern:"flo",Color:5},{Pattern:"flo",Color:13},{Pattern:"bo",Color:5},{Pattern:"bo",Color:13}]}}
