@@ -11,3 +11,4 @@ execute as @e[scores={select=0},tag=wicked] at @s if entity @e[tag=active,distan
 execute as @e[scores={select=0},tag=wicked] at @s if entity @e[tag=active,distance=..150] run effect give @s strength 10 4 true
 
 execute as @e[tag=wicked] at @e[tag=wicked] if entity @e[tag=active,distance=..150] run particle minecraft:dust 0.498 1 0.345 1 ~ ~1 ~ 0.4 -0.3 0.4 0.0001 1 force
+execute unless entity @e[tag=d_amp,limit=1] run function finampli

@@ -8,8 +8,8 @@
 # BONUS 
 ###########################
 
-effect give @a[tag=wicked,limit=1] saturation 5 0 true
-effect give @a[tag=wicked,limit=1] jump_boost 5 1 true
+effect give @a[tag=wicked,limit=1] saturation infinite 0 true
+effect give @a[tag=wicked,limit=1] jump_boost infinite 1 true
 effect give @a[tag=wicked,limit=1,scores={broom=1}] jump_boost 5 2 true
 
 ###########################
@@ -327,6 +327,14 @@ execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=em
 
 execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run kill @e[tag=ampli]
 execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=ampli]
+
+
+###########################
+# SALEM BOOST
+###########################
+execute as @e[tag=salem] at @s run effect give @p[tag=wicked,distance=..15] luck 10 5 true 
+execute as @e[tag=salem] at @s run effect give @p[tag=wicked,distance=..15] resistance 5 1 true 
+
 
 ###########################
 # CLEANER
