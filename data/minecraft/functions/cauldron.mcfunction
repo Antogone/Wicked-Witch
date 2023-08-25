@@ -83,3 +83,4 @@ execute unless entity @e[tag=salem,limit=1] run execute at @e[type=item,nbt={Ite
 
 ########### Enchanted golden apple
 execute at @e[type=item,nbt={Item:{id:"minecraft:golden_apple",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{title:"§2The Grimmerie"}}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/enchanted_golden_apple
+

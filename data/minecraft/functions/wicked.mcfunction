@@ -332,8 +332,8 @@ execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=am
 ###########################
 # SALEM BOOST
 ###########################
-execute as @e[tag=salem] at @s run effect give @p[tag=wicked,distance=..15] luck 10 5 true 
-execute as @e[tag=salem] at @s run effect give @p[tag=wicked,distance=..15] resistance 5 1 true 
+execute as @e[tag=salem] at @s run effect give @p[tag=wicked,distance=..10] luck 10 5 true 
+execute as @e[tag=salem] at @s run effect give @p[tag=wicked,distance=..10] resistance 5 1 true 
 
 
 ###########################
