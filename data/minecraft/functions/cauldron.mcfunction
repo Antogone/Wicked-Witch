@@ -8,15 +8,16 @@
 ############ PROTECTION 
 execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/set_protection
 
-execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] resistance 10 255 true
-execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] fire_resistance 10 255 true
-execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] slow_falling 10 255 true
 
-execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] slowness 10 1 true
-execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] mining_fatigue 10 255 true
-execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] glowing 10 255 true
-execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] weakness 10 1 true
+execute as @e[tag=protection] at @s run execute as @e[tag=wicked,dx=14,dz=14,dy=15] run function effectprotect
+execute as @e[tag=protection] at @s run execute as @e[tag=wicked,dx=-14,dz=14,dy=15] run function effectprotect
+execute as @e[tag=protection] at @s run execute as @e[tag=wicked,dx=-14,dz=-14,dy=15] run function effectprotect 
+execute as @e[tag=protection] at @s run execute as @e[tag=wicked,dx=14,dz=-14,dy=15] run function effectprotect
 
+execute as @e[tag=protection] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=14,dz=14,dy=15] run function effectprotect
+execute as @e[tag=protection] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=-14,dz=14,dy=15] run function effectprotect
+execute as @e[tag=protection] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=-14,dz=-14,dy=15] run function effectprotect 
+execute as @e[tag=protection] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=14,dz=-14,dy=15] run function effectprotect
 
 ############  
 # execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/set_protection
@@ -29,26 +30,30 @@ execute as @e[tag=protection] at @s run effect give @e[tag=!wicked,type=!#minecr
 ############ NO MORE MOBS
 execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:emerald",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:wither_rose",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/set_nomobs
 
-execute as @e[tag=no_mobs] at @s run kill @e[type=#minecraft:hostile,distance=..14]
+
+execute as @e[tag=no_mobs] at @s run kill @e[type=#minecraft:hostile,dx=14,dz=14,dy=15]
+execute as @e[tag=no_mobs] at @s run kill @e[type=#minecraft:hostile,dx=-14,dz=14,dy=15]
+execute as @e[tag=no_mobs] at @s run kill @e[type=#minecraft:hostile,dx=-14,dz=-14,dy=15]
+execute as @e[tag=no_mobs] at @s run kill @e[type=#minecraft:hostile,dx=14,dz=-14,dy=15]
+
+
 
 
 ############ MALEDICTION 
 execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:10b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:ghast_tear",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:enchanted_golden_apple",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:wither_rose",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/set_malefice
 
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] wither 10 1 true
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] darkness 15 4 true
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] mining_fatigue 60 2 true
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] bad_omen infinite 1 true
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] hunger 15 2 true
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] nausea 15 1 true
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] slowness 60 4 true
-execute as @e[tag=malefice] at @s run effect give @e[tag=!wicked,type=!#minecraft:dontharm,distance=..14] unluck 60 1 true
+execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=14,dz=14,dy=14] run function effectmalefice
+execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=-14,dz=14,dy=14] run function effectmalefice
+execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=-14,dz=-14,dy=14] run function effectmalefice
+execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=14,dz=-14,dy=14] run function effectmalefice
+
+
 
 
 ########## PARTICLE 
 
-execute if entity @e[tag=c_spell] as @e[tag=c_spell] at @s positioned ~ ~10 ~ run function cauldron/alchemymod_2
-execute if entity @e[tag=c_spell] as @e[tag=c_spell] at @s positioned ~ ~5 ~ run function cauldron/alchemymod_2
+execute if entity @e[tag=c_spell] as @e[tag=c_spell] at @s positioned ~ ~14 ~ run function cauldron/alchemymod_2
+execute if entity @e[tag=c_spell] as @e[tag=c_spell] at @s positioned ~ ~7 ~ run function cauldron/alchemymod_2
 execute if entity @e[tag=c_spell] as @e[tag=c_spell] at @s anchored eyes run function cauldron/alchemymod_2
 
 execute as @e[tag=c_spell] at @s run teleport @s ~ ~ ~ ~0.245 ~
