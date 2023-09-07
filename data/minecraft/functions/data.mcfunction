@@ -1,6 +1,6 @@
 #data.mcfunction
 
-execute if score @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID1 matches 1..1 run data modify storage wicked.potion PotionId[0] set value "minecraft:speed"
+# execute if score @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID1 matches 1..1 run data modify storage wicked.potion PotionId[0] set value "minecraft:speed"
 
 
 data modify entity @e[type=item,limit=1,sort=nearest,tag=popo] Item.tag.custom_potion_effects[0].id set from storage wicked.potion PotionId[0]
