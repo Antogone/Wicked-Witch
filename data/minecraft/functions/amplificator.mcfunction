@@ -1,3 +1,7 @@
+
+
+
+
 execute at @e[tag=ampli] unless entity @e[tag=active] if entity @e[type=item,nbt={Item:{id:"minecraft:emerald",Count:1b}},distance=..2] run function setampli
 execute at @e[tag=active] run function cauldron/alchemymod_shield
 

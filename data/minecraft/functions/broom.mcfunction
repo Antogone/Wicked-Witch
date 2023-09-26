@@ -1,11 +1,11 @@
 
-item replace entity @a[tag=wicked,limit=1,scores={select=1},gamemode=!spectator] armor.head with command_block{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+
+###########################
+# WITCH'S BROMM
+###########################
 
 
-scoreboard players set @s[tag=wicked,scores={sneak=0},gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 2
-scoreboard players set @s[tag=wicked,scores={sneak=1..},gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 1
-
-
+item replace entity @a[tag=wicked,limit=1,scores={select=1},gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] armor.head with command_block{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
 
 
 execute as @a[tag=wicked,scores={select=1,broo=1},x_rotation=-90,gamemode=!spectator] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^0.1 #minecraft:airs run tp @s ^ ^ ^1.6
@@ -47,4 +47,4 @@ execute as @a[tag=wicked,scores={broo=2..},gamemode=!spectator] run effect give 
 effect give @e[tag=broom,scores={select=1,broo=1},gamemode=!spectator] jump_boost 1 1 true
 effect give @e[tag=broom,scores={select=1,broo=1},gamemode=!spectator] slow_falling 1 1 true
 
-scoreboard players set @a[tag=wicked,scores={broo=2..},nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 0
+# scoreboard players set @a[tag=wicked,nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 0
