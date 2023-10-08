@@ -14,7 +14,7 @@ clear @a[tag=wicked,limit=1] carrot_on_a_stick{HideFlags:3,CustomModelData:10140
 clear @a[tag=wicked,limit=1] totem_of_undying{HideFlags:3,AttributeModifiers:[{AttributeName:"generic.luck",Name:"generic.luck",Amount:10,Operation:1,UUIDLeast:346877,UUIDMost:439264},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:595497,UUIDMost:893170}],display:{Name:"{\"text\":\"§2Wicked Witch's Pendant\"}"},ench:[{id:34,lvl:211}],Enchantments:[{}]}
 
 
-clear @a[tag=wicked,limit=1] barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2ReLoading\"}"},Enchantments:[{}]}
+clear @a[tag=wicked,limit=1] red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 
 item replace entity @a[tag=wicked,limit=1] hotbar.0 from entity @e[tag=hold,limit=1] armor.head
@@ -32,4 +32,4 @@ kill @e[tag=hold]
 kill @e[tag=hold2]
 
 tag @a[tag=wicked,limit=1] remove actif
-clear @a[tag=wicked,limit=1] barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+clear @a[tag=wicked] red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}

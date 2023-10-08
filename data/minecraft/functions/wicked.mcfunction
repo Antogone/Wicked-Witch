@@ -367,29 +367,35 @@ execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:
 execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:command_block",Count:1b,tag:{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}]
 
 
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:barrier",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}}}]
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:red_dye",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}}}]
+
+
+
+#### REALOADING 
+clear @a[tag=wicked,limit=1] red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #POOFING
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:2b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.2 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:2b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.2 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #IMMOBILIZATION
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:3b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.3 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:3b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.3 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 #FIREBALL
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..4 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:1b,id:"snowball",tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}",Lore:["{\"text\":\"§2Magic Cost : 5\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=0..4}] hotbar.1 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..4 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:1b,id:"snowball",tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}",Lore:["{\"text\":\"§2Magic Cost : 5\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=0..4}] hotbar.1 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+
 
 
 
 #POOFING
-item replace entity @a[tag=!l20,tag=wicked,limit=1,scores={select=1}] hotbar.2 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l20,tag=wicked,limit=1,scores={select=1}] hotbar.2 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #IMMOBILIZATION
-item replace entity @a[tag=!l30,tag=wicked,limit=1,scores={select=1}] hotbar.3 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l30,tag=wicked,limit=1,scores={select=1}] hotbar.3 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #FIREBALL
-item replace entity @a[tag=!l10,tag=wicked,limit=1,scores={select=1}] hotbar.1 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l10,tag=wicked,limit=1,scores={select=1}] hotbar.1 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #BROOM
-item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 
 #/give @p minecraft:green_banner{BlockEntityTag:{Patterns:[{Pattern:"cs",Color:5},{Pattern:"cs",Color:13},{Pattern:"bts",Color:5},{Pattern:"bts",Color:13},{Pattern:"tts",Color:5},{Pattern:"tts",Color:13},{Pattern:"cr",Color:5},{Pattern:"cr",Color:13},{Pattern:"flo",Color:5},{Pattern:"flo",Color:13},{Pattern:"bo",Color:5},{Pattern:"bo",Color:13}]}}

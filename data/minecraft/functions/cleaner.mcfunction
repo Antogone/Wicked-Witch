@@ -13,4 +13,4 @@ execute if score @a[tag=wicked,limit=1] select matches 0..0 run execute as @a[ta
 execute if score @a[tag=wicked,limit=1] select matches 0..0 run execute as @a[tag=wicked,limit=1,scores={select=0}] run clear @s snowball{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}"},Enchantments:[{}]}
 execute if score @a[tag=wicked,limit=1] select matches 0..0 run execute as @a[tag=wicked,limit=1,scores={select=0}] run clear @s feather{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Magic Broom\"}"},Enchantments:[{}]}
 execute if score @a[tag=wicked,limit=1] select matches 0..0 run execute as @a[tag=wicked,limit=1,scores={select=0}] run clear @s command_block{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
-
+execute if score @a[tag=wicked,limit=1] select matches 0..0 run execute as @a[tag=wicked,limit=1,scores={select=0}] run clear @s red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
