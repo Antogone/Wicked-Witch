@@ -51,11 +51,13 @@ execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft
 
 ########## PARTICLE 
 
-execute if entity @e[tag=c_spell] as @e[tag=c_spell] at @s positioned ~ ~14 ~ run function wicked:cauldron/particle/alchemymod_2
-execute if entity @e[tag=c_spell] as @e[tag=c_spell] at @s positioned ~ ~7 ~ run function wicked:cauldron/particle/alchemymod_2
-execute if entity @e[tag=c_spell] as @e[tag=c_spell] at @s anchored eyes run function wicked:cauldron/particle/alchemymod_2
+execute as @e[tag=c_spell14] at @s positioned ~ ~14 ~ run function wicked:cauldron/particle/alchemymod_2
+execute as @e[tag=c_spell7] at @s positioned ~ ~7 ~ run function wicked:cauldron/particle/alchemymod_2
+execute as @e[tag=c_spell] at @s anchored eyes run function wicked:cauldron/particle/alchemymod_2
 
 execute as @e[tag=c_spell] at @s run teleport @s ~ ~ ~ ~0.245 ~
+execute as @e[tag=c_spell7] at @s run teleport @s ~ ~ ~ ~0.245 ~
+execute as @e[tag=c_spell14] at @s run teleport @s ~ ~ ~ ~0.245 ~
 
 
 
@@ -64,7 +66,9 @@ execute at @e[type=item,nbt={Item:{id:"minecraft:gunpowder",Count:1b}}] if entit
 execute as @e[tag=remove] at @e[tag=remove] run kill @e[type=item,distance=..1]
 execute as @e[tag=remove] at @e[tag=remove] run kill @e[tag=remove]
 
-execute at @e[tag=c_spell] as @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell,distance=..1,sort=nearest]
+execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell14,sort=nearest]
+execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell7,sort=nearest]
+execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell,distance=..1,sort=nearest]
 
 
 ############ BANNER
@@ -72,7 +76,7 @@ execute at @e[type=item,nbt={Item:{id:"minecraft:emerald_block",Count:1b}}] if b
 
 
 ############ AMPLIFICATOR
-execute at @e[type=item,nbt={Item:{id:"minecraft:emerald_block",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:beacon",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:enchanted_golden_apple",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:egg",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/amplificator
+# execute at @e[type=item,nbt={Item:{id:"minecraft:emerald_block",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:beacon",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:enchanted_golden_apple",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:egg",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/amplificator
 
 
 

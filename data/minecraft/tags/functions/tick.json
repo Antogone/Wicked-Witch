@@ -6,7 +6,6 @@
 		"wicked:silver_slippers/silver",
 		"wicked:enchanting_book/enchant",
         "wicked:cauldron/cauldron",
-        "wicked:timer",
-        "wicked:amplificator/amplificator"
+        "wicked:timer"
     ]
 }
