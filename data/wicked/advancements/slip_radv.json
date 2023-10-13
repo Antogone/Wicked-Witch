@@ -3,7 +3,7 @@
         "The Silver Slippers": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "slip"
+                "recipe": "wicked:slip"
             }
         }
     },

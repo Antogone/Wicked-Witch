@@ -3,7 +3,7 @@
         "Wicked witch of the west": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "witch_pendant"
+                "recipe": "wicked:witch_pendant"
             }
         }
     },

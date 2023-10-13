@@ -4,7 +4,7 @@
  #
  # Created by .
 ##
-recipe take @s witch_pendant
+recipe take @s wicked:witch_pendant
 advancement revoke @s only wicked/witch_pendant_radv
 
 execute as @s unless entity @a[tag=wicked] run function start

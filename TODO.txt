@@ -1,5 +1,22 @@
 Refactoring (Categorie et dossier)
 MAJ Raycasting pour scepter and poofing
+Création d'un système d'update pour les sliver slippers
+    - Niveau 1 : Overworld et House
+    - Niveau 2 : Nether
+    - Niveau 3 : End
+    - Niveau 4 : Witch Dimension
+
+
+
+Witch dimension 
+    - Accéssible via la création d'un portail 
+    - Accéssible via les silver slippers
+    - Uniquement des sorcières et evoker et illusioner qui spawn
+    - 2-3 Structure (à Définir)
+    
+
+
+
 
 
 https://www.reddit.com/r/Minecraft/comments/qii0by/the_witch_hut_a_spooky_halloween_render/
@@ -7,20 +24,8 @@ https://sketchfab.com/3d-models/witch-items-a2422b8ed63a4902847fc7e35ef00e0a
 https://www.reddit.com/r/Minecraft/comments/jluyd1/a_witch_brewing_a_sinister_potion_render_by_me/
 
 
-
-
-
-
-
-data modify storage pk.common:data Temp.GUI.Page set from storage pk.common:data Temp.GUI.Pages[0]
-execute unless data storage pk.common:data Datapacks[{Name:"Waystones"}] run data modify storage pk.common:data Datapacks append value {Name:"Waystones"}
-
-#declare storage pk.common:data
-#declare storage pk.waystones:data
-
-
-data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
-
+https://sketchfab.com/3d-models/crystal-ball-6018233cc2434f8eba72f474657b65c1
+https://sketchfab.com/3d-models/stylized-wizard-hat-f59021d602334367987bcd7657cec722
 
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
@@ -30,44 +35,5 @@ data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
 execute in minecraft:overworld run forceload add -30000000 1600
 
 
-
-# Initialize PK data packs storage if needed
-execute unless data storage pk.common:data Datapacks[{}] run data modify storage pk.common:data Datapacks set value []
-
-# Add current data pack into the PK data packs storage if needed
-execute unless data storage pk.common:data Datapacks[{Name:"Waystones"}] run data modify storage pk.common:data Datapacks append value {Name:"Waystones"}
-
-# Initialize the storage used to store Waystones location
-execute unless data storage pk.waystones:data Blocks.Waystones[{}] run data modify storage pk.waystones:data Blocks.Waystones set value []
-
-
-
-execute unless score $logs.load pk.value matches ..0 run tellraw @a [{"text": "Loaded ","color": "yellow"},{"text": "KawaMood's Waystones ","color": "aqua","bold": true},{"text": "(V.","color": "aqua"},{"nbt":"Datapacks[{Name:\"Waystones\"}].Version", "storage": "pk.common:data","color": "aqua"},{"text": ")","color": "aqua"},{"text": " successfully"}]
-
-data modify storage pk.common:data Datapacks[{Name:"Waystones"}].Version set value "2.1.2"
-
-execute if data storage pk.waystones:data Blocks.Waystones[{Dimension:{id:-1}}] run data modify storage pk.waystones:data Blocks.Waystones[{Dimension:{id:-1}}].Dimension set value "minecraft:the_nether"
-
-data modify storage pk.common:data Temp.Waystone.Dimension set from entity @s Dimension
-
-
-#Pour ameliorer le contenu
-data modify block -30000000 62 1611 front_text.messages[0] set value 
-
-
-
-# Prepare command of CB 3 as a text component
-data modify block -30000000 62 1611 front_text.messages[0] set value '[{"text":"execute in "},{"nbt":"Uninstall.Chunk.Dimension","storage":"pk.common:data"},{"text":" positioned "},{"nbt":"Uninstall.Chunk.x","storage":"pk.common:data"},{"text":" 0 "},{"nbt":"Uninstall.Chunk.z","storage":"pk.common:data"},{"text":" run function pk_waystones:base/uninstall/cb_3"}]'
-
-# Summon temp armor stand
-summon armor_stand -30000000 0 1611 {Tags:["pk.custom_block.uninstaller"],Marker:1b,UUID:[I;1163404890,-122270909,-1667040180,-1462485666],CustomName:'{"text":""}'}
-data modify entity 4558265a-f8b6-4b43-9ca2-fc4ca8d43d5e CustomName set from block -30000000 62 1611 front_text.messages[0]
-
-
-data modify entity @e[type=item,limit=1,sort=nearest,tag=popo] Item.tag.custom_potion_effects[0].id set from storage wicked.potion PotionId[0]
-
-
-data modify storage wicked.potion PotionId set value ["minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:"]
-data modify storage wicked.potion PotionId[0] set value "minecraft:speed"
 
 
