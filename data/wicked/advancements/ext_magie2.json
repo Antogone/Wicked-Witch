@@ -16,7 +16,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "minecraft:wicked/ext_magie1",
+    "parent": "wicked:ext_magie1",
     "criteria": {
       "Defying gravity": {
         "trigger": "minecraft:tick",
@@ -37,7 +37,7 @@
       }
     },
     "rewards": {
-      "function": "craft/levels"
+      "function": "wicked:craft/levels"
     }
   }
   

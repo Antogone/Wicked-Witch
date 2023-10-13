@@ -8,7 +8,7 @@
         }
     },
     "rewards": {
-        "function": "craft/crafted_slip"
+        "function": "wicked:craft/crafted_slip"
 
     }
 

@@ -3,12 +3,12 @@
         "The Grimmerie": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "the_grimmerie"
+                "recipe": "wicked:the_grimmerie"
             }
         }
     },
     "rewards": {
-        "function": "craft/crafted_grimmerie"
+        "function": "wicked:craft/crafted_grimmerie"
 
     }
 

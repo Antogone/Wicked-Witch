@@ -16,12 +16,12 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "minecraft:wicked/witch_pendant_adv",
+    "parent": "wicked:witch_pendant_adv",
     "criteria": {
         "The Silver Slippers": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "set_house"
+                "recipe": "wicked:set_house"
             }
         }
     }
