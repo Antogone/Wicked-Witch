@@ -2,9 +2,9 @@
 ##########################
 # IDENTIFICATION
 #########################
-scoreboard players set @a[tag=wicked,limit=1,nbt={Inventory:[{Slot:100b,id:"minecraft:chainmail_boots",tag:{Unbreakable:1,HideFlags:3,display:{Name:"{\"text\":\"§2Silver Slippers\"}"},Enchantments:[{Id:"minecraft:unbreaking",lvl:211}]}}]}] equip 1
+scoreboard players set @a[tag=wicked,limit=1,nbt={Inventory:[{Slot:100b,id:"minecraft:chainmail_boots",tag:{Unbreakable:1,HideFlags:3,display:{Name:"{\"text\":\"§2Silver Slippers\"}"},Enchantments:[{id:"minecraft:unbreaking",lvl:211}]}}]}] equip 1
 
-scoreboard players set @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:100b,id:"minecraft:chainmail_boots",tag:{Unbreakable:1,HideFlags:3,display:{Name:"{\"text\":\"§2Silver Slippers\"}"},Enchantments:[{Id:"minecraft:unbreaking",lvl:211}]}}]}] equip 0
+scoreboard players set @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:100b,id:"minecraft:chainmail_boots",tag:{Unbreakable:1,HideFlags:3,display:{Name:"{\"text\":\"§2Silver Slippers\"}"},Enchantments:[{id:"minecraft:unbreaking",lvl:211}]}}]}] equip 0
 
 
 ##########################

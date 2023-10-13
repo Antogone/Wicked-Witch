@@ -2,6 +2,7 @@
 #loope.mcfunction
 
 execute as @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.15 0.15 0.15 10 1 force
+execute as @s run particle minecraft:dust 0.431 0.071 0.839 1 ^ ^ ^ 0.05 0.05 0.05 10 1 force
 
 execute as @s[tag=telpe] run execute as @e[tag=!telpe,tag=!wicked,type=!#dontharm,distance=..2,sort=nearest] run damage @s 14 minecraft:magic by @p[tag=wicked]
 execute as @s[tag=telpe] run execute as @e[tag=!telpe,tag=!wicked,type=!#dontharm,distance=..2,sort=nearest] run effect give @s weakness 10 0 true
@@ -19,17 +20,20 @@ execute as @s[tag=telpe] run execute as @e[tag=!telpe,tag=!wicked,type=!#donthar
 
 kill @s
 
-execute as @s at @s if block ~ ~ ~ air run tp @s ^ ^ ^0.01
-execute as @s at @s if block ~ ~ ~ cave_air run tp @s ^ ^ ^0.01
-execute as @s at @s if block ~ ~ ~ water run tp @s ^ ^ ^0.01
-execute as @s at @s if block ~ ~ ~ barrier run tp @s ^ ^ ^0.01
+execute as @s at @s if block ~ ~ ~ #minecraft:ray_permeable run tp @s ^ ^ ^0.01
+# execute as @s at @s if block ~ ~ ~ air run tp @s ^ ^ ^0.01
+# execute as @s at @s if block ~ ~ ~ cave_air run tp @s ^ ^ ^0.01
+# execute as @s at @s if block ~ ~ ~ water run tp @s ^ ^ ^0.01
+# execute as @s at @s if block ~ ~ ~ barrier run tp @s ^ ^ ^0.01
 
 kill @s
 
-execute as @s at @s if block ~ ~ ~ air run function loope
-execute as @s at @s if block ~ ~ ~ cave_air run function loope
-execute as @s at @s if block ~ ~ ~ water run function loope
-execute as @s at @s if block ~ ~ ~ barrier run function loope
+execute as @s at @s if block ~ ~ ~ #minecraft:ray_permeable run function loope
+
+# execute as @s at @s if block ~ ~ ~ air run function loope
+# execute as @s at @s if block ~ ~ ~ cave_air run function loope
+# execute as @s at @s if block ~ ~ ~ water run function loope
+# execute as @s at @s if block ~ ~ ~ barrier run function loope
 # scoreboard players set @p[tag=wicked] charge 0
 
 kill @e[tag=telpe,nbt={OnGround:1b}]

@@ -8,8 +8,8 @@
 # BONUS 
 ###########################
 
-effect give @a[tag=wicked,limit=1] saturation 5 0 true
-effect give @a[tag=wicked,limit=1] jump_boost 5 1 true
+effect give @a[tag=wicked,limit=1] saturation infinite 0 true
+effect give @a[tag=wicked,limit=1] jump_boost infinite 1 true
 effect give @a[tag=wicked,limit=1,scores={broom=1}] jump_boost 5 2 true
 
 ###########################
@@ -76,16 +76,16 @@ execute if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:-106b,id:"minecra
 
 
 #SCEPTER
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:0b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}]}] run item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=0..}] hotbar.0 with carrot_on_a_stick{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:0b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}]}] run item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=0..}] hotbar.0 with carrot_on_a_stick{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}
 
 #POOFING
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 10.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:2b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.2 with carrot_on_a_stick{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 10.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:2b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.2 with carrot_on_a_stick{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
 
 #IMMOBILIZATION
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 10.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:3b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.3 with carrot_on_a_stick{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 10.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:3b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.3 with carrot_on_a_stick{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
 
 #FIREBALL
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 5.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:1b,id:"snowball",tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=5..}] hotbar.1 with snowball{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 5.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:1b,id:"snowball",tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}",Lore:["{\"text\":\"§2Magic Cost : 5\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=5..}] hotbar.1 with snowball{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}",Lore:["{\"text\":\"§2Magic Cost : 5\"}"]},Enchantments:[{}]}
 
 #FLYING SPELL
 execute if score @a[tag=wicked,limit=1,scores={select=1,typevol=0}] magie matches 0.. if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:4b,id:"feather",tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l15,tag=wicked,limit=1,scores={select=1,magie=0..,typevol=0}] hotbar.4 with feather{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
@@ -121,19 +121,19 @@ scoreboard players set @a[scores={drop=1..,bro=2}] bro 0
 scoreboard players set @a[scores={bro=0}] drop 0
 
 
-#  execute as @a[tag=wicked,scores={select=0}] at @s unless block ~ ~-1 ~ barrier run fill ~-10 ~-10 ~10 ~10 ~10 ~-10 air replace barrier
-#  execute as @a[tag=wicked,scores={select=1}] at @s unless block ~ ~-1 ~ barrier run fill ~-10 ~-10 ~10 ~10 ~10 ~-10 air replace barrier
-#  execute as @a[tag=wicked,scores={select=0}] at @s run fill ~-10 ~-1 ~10 ~10 ~-1 ~-10 air replace barrier
-#  execute as @a[tag=wicked,scores={select=1}] at @s run fill ~-10 ~-1 ~10 ~10 ~-1 ~-10 air replace barrier
+#  execute as @a[tag=wicked,scores={select=0,typevol=1}] at @s unless block ~ ~-1 ~ barrier run fill ~ ~-1 ~ ~ ~ ~ air replace barrier
+#  execute as @a[tag=wicked,scores={select=1,typevol=1}] at @s unless block ~ ~-1 ~ barrier run fill ~ ~-1 ~ ~ ~ ~ air replace barrier
+#  execute as @a[tag=wicked,scores={select=0,typevol=1}] at @s run fill ~ ~-1 ~ ~ ~ ~ air replace barrier
+#  execute as @a[tag=wicked,scores={select=1,typevol=1}] at @s run fill ~ ~-1 ~ ~ ~ ~ air replace barrier
 
-#  execute as @a[tag=wicked,scores={select=0}] at @s if block ~ ~-1 ~ barrier run fill ~-5 ~-5 ~5 ~5 ~5 ~-5 air replace barrier
-#  execute as @a[tag=wicked,scores={select=0}] at @s if block ~ ~-1 ~ barrier run fill ~-5 ~-1 ~5 ~5 ~1 ~-5 air replace barrier
-#  execute as @a[tag=wicked,scores={select=1}] at @s if block ~ ~-1 ~ barrier run fill ~-5 ~-5 ~5 ~5 ~5 ~-5 air replace barrier
-#  execute as @a[tag=wicked,scores={select=1}] at @s if block ~ ~-1 ~ barrier run fill ~-5 ~-1 ~5 ~5 ~1 ~-5 air replace barrier
+#  execute as @a[tag=wicked,scores={select=0,typevol=1}] at @s if block ~ ~-1 ~ barrier run fill ~ ~-1 ~ ~ ~ ~ air replace barrier
+#  execute as @a[tag=wicked,scores={select=0,typevol=1}] at @s if block ~ ~-1 ~ barrier run fill ~ ~-1 ~ ~ ~ ~ air replace barrier
+#  execute as @a[tag=wicked,scores={select=1,typevol=1}] at @s if block ~ ~-1 ~ barrier run fill ~ ~-1 ~ ~ ~ ~ air replace barrier
+#  execute as @a[tag=wicked,scores={select=1,typevol=1}] at @s if block ~ ~-1 ~ barrier run fill ~ ~-1 ~ ~ ~ ~ air replace barrier
 
-#  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,bro=1,typevol=1}] at @s if block ~ ~-1 ~ #minecraft:airs run fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 barrier replace air
+# execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,bro=1,typevol=1}] at @s if block ~ ~-1 ~ #minecraft:airs run fill ~ ~-1 ~ ~ ~-1 ~ barrier replace air
 
-#  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,sneak=1..,bro=1,typevol=1}] at @s if block ~ ~-1 ~ barrier run fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air replace barrier
+#  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,sneak=1..,bro=1,typevol=1}] at @s if block ~ ~-1 ~ barrier run fill ~-1 ~-1 ~1 ~1 ~ ~-1 air replace barrier
 #  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,sneak=1..,bro=1,typevol=1}] run effect give @s jump_boost 1 255 true
 #  execute as @a[gamemode=!spectator,tag=l15,tag=wicked,scores={select=1,bro=1,typevol=1},x_rotation=-90] at @s if block ~ ~-1 ~ barrier run effect give @s levitation 1 4 true
 
@@ -190,8 +190,17 @@ execute as @e[tag=ball] at @s run particle soul_fire_flame ^ ^ ^ 0.3 0.3 0.3 0.0
 ###########################
 # FLYING SPELL
 ###########################
-execute as @a[tag=wicked,limit=1,scores={typevol=0},nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run function broom
-execute as @a[tag=wicked,limit=1,scores={typevol=0},nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run clear @s command_block{HideFlags:3,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+scoreboard players set @p[tag=wicked,scores={sneak=0},gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 2
+
+scoreboard players set @p[tag=wicked,scores={sneak=1..},gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 1
+
+scoreboard players set @p[tag=wicked,scores={broo=1..},nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 0
+
+
+
+# execute as @a[tag=wicked,limit=1,scores={typevol=0,broo=1},nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run function broom
+
+execute as @a[tag=wicked,limit=1,scores={typevol=0,broo=0},nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run clear @s command_block{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
 
 
 
@@ -214,7 +223,7 @@ execute at @a[scores={spell=3},tag=wicked,limit=1] run function heal
 execute at @a[scores={spell=68},tag=wicked,limit=1] run function potionclear
 
 # coven Spell
-execute at @a[scores={spell=92},tag=wicked,limit=1] run function witcher
+# execute at @a[scores={spell=92},tag=wicked,limit=1] run function witcher
 
 # Aura-Explosion
 execute at @a[scores={spell=20},tag=wicked,limit=1] run function aura
@@ -233,13 +242,13 @@ execute at @a[scores={spell=600},tag=wicked,limit=1] run function ghost_walk
 ###########################
 # SPELLBOOK
 ###########################
-execute as @e[tag=wicked,nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2The Grimmerie"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1}}}
+execute as @e[tag=wicked,scores={sneak=1..},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2The Grimmerie"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1}}}
 
 
 ###########################
 # COVEN OF WITCH
 ###########################
-execute as @a[tag=wicked,limit=1] at @s if entity @e[type=witch,distance=..20] run function witch
+#execute as @a[tag=wicked,limit=1] at @s if entity @e[type=witch,distance=..20] run function witch
 
 ###########################
 # ANTI LAG & BUG
@@ -295,6 +304,46 @@ execute at @e[tag=wall] if entity @e[distance=..2,tag=wicked,nbt={SelectedItem:{
 execute at @e[tag=wall] if entity @e[distance=..2,tag=wicked,nbt={SelectedItem:{id:"minecraft:totem_of_undying",tag:{HideFlags:3,display:{Name:"{\"text\":\"§2Wicked Witch's Pendant\"}"},ench:[{id:34,lvl:211}]}}}] run fill ~ ~ ~ ~ ~ ~ air replace lime_stained_glass
 
 
+##########################
+# AMPLIFICATOR
+##########################
+
+# ########## SET Amplificator
+
+execute at @e[tag=set_ampli] run execute at @e[tag=ampli] run fill ~ ~ ~ ~ ~2 ~ air
+execute at @e[tag=set_ampli] run kill @e[tag=ampli]
+execute at @e[tag=set_ampli] run kill @e[tag=em_amp]
+
+
+execute at @e[tag=set_ampli] run setblock ~ ~ ~ emerald_block
+execute at @e[tag=set_ampli] run setblock ~ ~2 ~ emerald_block
+execute at @e[tag=set_ampli] run summon marker ~ ~ ~ {Invisible:1b,PersistenceRequired:1b,Tags:["ampli"]}
+execute as @e[tag=set_ampli,type=slime] at @s run summon marker ~ ~ ~ {Invisible:1b,PersistenceRequired:1b,Tags:["remove_itm"]}
+execute as @e[tag=remove_itm] at @s run kill @e[tag=set_ampli,distance=..2]
+execute as @e[tag=remove_itm] at @s run kill @e[type=item,distance=..2]
+execute as @e[tag=remove_itm] at @s run kill @e[tag=remove_itm,distance=..2]
+
+# ########## RECUP CAULDRON 
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run summon item ~ ~ ~ {Item:{id:"minecraft:slime_spawn_egg",Count:1b,tag:{display:{Name:"{\"text\":\"§2Amplificator\"}"},EntityTag:{Size:0,wasOnGround:1,NoAI:1,Silent:1,Tags:["set_ampli"]},Enchantments:[{}]}}}
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run summon item ~ ~ ~ {Item:{id:"minecraft:slime_spawn_egg",Count:1b,tag:{display:{Name:"{\"text\":\"§2Amplificator\"}"},EntityTag:{Size:0,wasOnGround:1,NoAI:1,Silent:1,Tags:["set_ampli"]},Enchantments:[{}]}}}
+
+
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run fill ~ ~ ~ ~ ~2 ~ air
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run fill ~ ~ ~ ~ ~2 ~ air
+
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run kill @e[tag=em_amp]
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=em_amp]
+
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run kill @e[tag=ampli]
+execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=ampli]
+
+
+###########################
+# SALEM BOOST
+###########################
+execute as @e[tag=salem] at @s run effect give @p[tag=wicked,distance=..10] luck 10 5 true 
+execute as @e[tag=salem] at @s run effect give @p[tag=wicked,distance=..10] resistance 5 1 true 
+
 
 ###########################
 # CLEANER
@@ -306,38 +355,47 @@ execute as @a[tag=actif] run function cleaner
 ###########################
 # CLEAR FLOOR
 ###########################
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:feather",Count:1b,tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Magic Broom\"}"},ench:[{lvl:211,id:34}]}}}]
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}"},Enchantments:[{}]}}}]
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:snowball",Count:1b,tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}"},Enchantments:[{}]}},OnGround:1b}]
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}"},Enchantments:[{}]}}}]
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}]
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:feather",Count:1b,tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},ench:[{lvl:211,id:34}]}}}]
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}}]
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:snowball",Count:1b,tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}",Lore:["{\"text\":\"§2Magic Cost : 5\"}"]},Enchantments:[{}]}},OnGround:1b}]
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}}]
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}]
 
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:feather",Count:1b,tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Magic Broom\"}"},Enchantments:[{}]}}}]
-
-
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:command_block",Count:1b,tag:{HideFlags:3,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}]
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:repeating_command_block",Count:1b,tag:{HideFlags:3,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}]
-
-execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:barrier",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}}}]
-
-#POOFING
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:2b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.2 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
-
-#IMMOBILIZATION
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:3b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.3 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
-#FIREBALL
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..4 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:1b,id:"snowball",tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}"},Enchantments:[{}]}}]}] run item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=0..4}] hotbar.1 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:feather",Count:1b,tag:{HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}]
 
 
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:command_block",Count:1b,tag:{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}]
+
+
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{id:"minecraft:red_dye",Count:1b,tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}}}]
+
+
+
+#### REALOADING 
+clear @a[tag=wicked,limit=1] red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #POOFING
-item replace entity @a[tag=!l20,tag=wicked,limit=1,scores={select=1}] hotbar.2 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:2b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.2 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #IMMOBILIZATION
-item replace entity @a[tag=!l30,tag=wicked,limit=1,scores={select=1}] hotbar.3 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:3b,id:"carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.3 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+#FIREBALL
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..4 if entity @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:1b,id:"snowball",tag:{HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}",Lore:["{\"text\":\"§2Magic Cost : 5\"}"]},Enchantments:[{}]}}]}] run item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=0..4}] hotbar.1 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+
+
+
+
+#POOFING
+item replace entity @a[tag=!l20,tag=wicked,limit=1,scores={select=1}] hotbar.2 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+
+#IMMOBILIZATION
+item replace entity @a[tag=!l30,tag=wicked,limit=1,scores={select=1}] hotbar.3 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #FIREBALL
-item replace entity @a[tag=!l10,tag=wicked,limit=1,scores={select=1}] hotbar.1 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l10,tag=wicked,limit=1,scores={select=1}] hotbar.1 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #BROOM
-item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 with barrier{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 with red_dye{HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+
+
+#/give @p minecraft:green_banner{BlockEntityTag:{Patterns:[{Pattern:"cs",Color:5},{Pattern:"cs",Color:13},{Pattern:"bts",Color:5},{Pattern:"bts",Color:13},{Pattern:"tts",Color:5},{Pattern:"tts",Color:13},{Pattern:"cr",Color:5},{Pattern:"cr",Color:13},{Pattern:"flo",Color:5},{Pattern:"flo",Color:13},{Pattern:"bo",Color:5},{Pattern:"bo",Color:13}]}}
