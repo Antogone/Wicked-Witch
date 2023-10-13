@@ -1,5 +1,6 @@
-Refactoring (Categorie et dossier)
-MAJ Raycasting pour scepter and poofing
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Idée - 3.0.0
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 Création d'un système d'update pour les sliver slippers
     - Niveau 1 : Overworld et House
     - Niveau 2 : Nether
@@ -15,7 +16,21 @@ Witch dimension
     - 2-3 Structure (à Définir)
     
 
+Possibilité de loupé un spell 
 
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Optimization
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+https://www.youtube.com/watch?v=lvMCaPOF-mU
+https://minecraft.fandom.com/wiki/Predicate
+https://misode.github.io/predicate/
+https://astrune.weebly.com/optimizing-data-packs.html
+
+
+Predicate Sneaking
+Execute if preidcate wicked:is_sneaking run
+execute as @a[predicate=wicked:is_sneaking]
+https://www.youtube.com/watch?v=lvMCaPOF-mU
 
 
 

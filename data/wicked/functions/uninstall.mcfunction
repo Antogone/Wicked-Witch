@@ -19,8 +19,7 @@ scoreboard objectives remove t
 scoreboard objectives remove itm2 
 scoreboard objectives remove magie 
 scoreboard objectives remove select 
-scoreboard objectives remove kd  
-scoreboard objectives remove sneak 
+scoreboard objectives remove kd
 scoreboard objectives remove spell 
 scoreboard objectives remove x 
 scoreboard objectives remove y 

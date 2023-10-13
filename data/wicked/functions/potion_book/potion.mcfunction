@@ -3,12 +3,12 @@
 # L = next book
 # R = Finish
 
-execute as @a[tag=wicked,scores={P=0,sneak=1..},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2Book of Potions"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{id:"minecraft:potion",tag:{ench:[{id:34,lvl:211}],Enchantments:[{}]}}}
+execute as @a[tag=wicked,predicate=wicked:is_sneaking,scores={P=0},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2Book of Potions"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{id:"minecraft:potion",tag:{ench:[{id:34,lvl:211}],Enchantments:[{}]}}}
 
-execute as @a[tag=wicked,scores={P=1,sneak=1..},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2Book of Potions"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{id:"minecraft:lingering_potion",tag:{ench:[{id:34,lvl:211}],Enchantments:[{}]}}}
+execute as @a[tag=wicked,predicate=wicked:is_sneaking,scores={P=1},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2Book of Potions"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{id:"minecraft:lingering_potion",tag:{ench:[{id:34,lvl:211}],Enchantments:[{}]}}}
 
 
-execute as @a[tag=wicked,scores={P=2,sneak=1..},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2Book of Potions"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{id:"minecraft:splash_potion",tag:{ench:[{id:34,lvl:211}],Enchantments:[{}]}}}
+execute as @a[tag=wicked,predicate=wicked:is_sneaking,scores={P=2},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2Book of Potions"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{id:"minecraft:splash_potion",tag:{ench:[{id:34,lvl:211}],Enchantments:[{}]}}}
 
 
 execute as @a[tag=wicked,scores={C=1,P=0,magie=20..}] at @s run summon item ~ ~1 ~ {Tags:["popo"],Item:{id:"minecraft:potion",Count:1b,tag:{display:{Name:"{\"text\":\"§2Wicked Witch's Potion\"}"},CustomPotionColor:2327824,custom_potion_effects:[{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200},{id:0,amplifier:0,duration:200}],ench:[{id:34,lvl:211}],Enchantments:[{}]}},PickupDelay:5}

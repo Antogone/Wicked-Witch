@@ -94,8 +94,8 @@ execute if score @a[tag=wicked,limit=1,scores={select=1,typevol=0}] magie matche
 ###########################
 # POOFING
 ###########################
-execute if score @a[tag=wicked,limit=1,scores={magie=10..,sneak=0},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"{\"text\":\"§2Poofing\"}"}}}}] click matches 1..100 run execute as @a[tag=wicked,limit=1] at @s run function wicked:poofing/cast
-execute if score @a[tag=wicked,limit=1,scores={magie=10..,sneak=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"{\"text\":\"§2Poofing\"}"}}}}] click matches 1..100 run execute as @a[tag=wicked,limit=1] at @s run function wicked:poofing/cast2
+execute if score @a[tag=wicked,limit=1,scores={magie=10..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"{\"text\":\"§2Poofing\"}"}}}}] click matches 1..100 run execute as @a[tag=wicked,limit=1] at @s run function wicked:poofing/cast
+execute if score @a[tag=wicked,limit=1,predicate=wicked:is_sneaking,scores={magie=10..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"{\"text\":\"§2Poofing\"}"}}}}] click matches 1..100 run execute as @a[tag=wicked,limit=1] at @s run function wicked:poofing/cast2
 
 
 
@@ -146,17 +146,17 @@ scoreboard players set @a[scores={bro=0}] drop 0
 
 ##### DEVIATION
 
-execute as @a[tag=l40,tag=wicked,limit=1,scores={bro=0,sneak=1..,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] at @s unless block ~ ~-1 ~ #minecraft:airs run execute as @e[type=#impact_projectiles,sort=nearest,distance=..3] run data merge entity @s {Motion:[0.0,-1.0,0.0],NoAI:1}
+execute as @a[tag=l40,tag=wicked,limit=1,predicate=wicked:is_sneaking,scores={bro=0,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] at @s unless block ~ ~-1 ~ #minecraft:airs run execute as @e[type=#impact_projectiles,sort=nearest,distance=..3] run data merge entity @s {Motion:[0.0,-1.0,0.0],NoAI:1}
 
-execute as @a[tag=l40,tag=wicked,limit=1,scores={bro=0,sneak=1..,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] at @s unless block ~ ~-1 ~ #minecraft:airs run execute as @e[type=#projectiles,sort=nearest,distance=..3] run data merge entity @s {Motion:[0.0,-1.0,0.0],NoAI:1}
+execute as @a[tag=l40,tag=wicked,limit=1,predicate=wicked:is_sneaking,scores={bro=0,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] at @s unless block ~ ~-1 ~ #minecraft:airs run execute as @e[type=#projectiles,sort=nearest,distance=..3] run data merge entity @s {Motion:[0.0,-1.0,0.0],NoAI:1}
 
-execute as @a[tag=l40,tag=wicked,limit=1,scores={bro=0,sneak=1..,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] at @s unless block ~ ~-1 ~ #minecraft:airs run effect give @s resistance 2 255 true
+execute as @a[tag=l40,tag=wicked,limit=1,predicate=wicked:is_sneaking,scores={bro=0,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] at @s unless block ~ ~-1 ~ #minecraft:airs run effect give @s resistance 2 255 true
 
 
 ###### PARTICLE 
-execute at @a[tag=l40,tag=wicked,limit=1,scores={bro=0,sneak=1..,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] unless block ~ ~-1 ~ #minecraft:airs run function wicked:cauldron/particle/alchemymod_shield
+execute at @a[tag=l40,tag=wicked,limit=1,predicate=wicked:is_sneaking,scores={bro=0,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] unless block ~ ~-1 ~ #minecraft:airs run function wicked:cauldron/particle/alchemymod_shield
 
-execute at @a[tag=l40,tag=wicked,limit=1,scores={bro=0,sneak=1..,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] unless block ~ ~-1 ~ #minecraft:airs run function wicked:cauldron/particle/alchemymod_shield
+execute at @a[tag=l40,tag=wicked,limit=1,predicate=wicked:is_sneaking,scores={bro=0,select=1},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}"},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}}}] unless block ~ ~-1 ~ #minecraft:airs run function wicked:cauldron/particle/alchemymod_shield
 
 
 
@@ -190,9 +190,9 @@ execute as @e[tag=ball] at @s run particle soul_fire_flame ^ ^ ^ 0.3 0.3 0.3 0.0
 ###########################
 # FLYING SPELL
 ###########################
-scoreboard players set @p[tag=wicked,scores={sneak=0},gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 2
+scoreboard players set @p[tag=wicked,gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 2
 
-scoreboard players set @p[tag=wicked,scores={sneak=1..},gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 1
+scoreboard players set @p[tag=wicked,predicate=wicked:is_sneaking,gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 1
 
 scoreboard players set @p[tag=wicked,scores={broo=1..},nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 0
 
@@ -236,7 +236,7 @@ execute at @a[scores={spell=600},tag=wicked,limit=1] run function wicked:grimmer
 ###########################
 # SPELLBOOK
 ###########################
-execute as @e[tag=wicked,scores={sneak=1..},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2The Grimmerie"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1}}}
+execute as @e[tag=wicked,predicate=wicked:is_sneaking,nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2The Grimmerie"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1}}}
 
 
 ###########################
@@ -248,7 +248,7 @@ execute as @e[tag=ball] at @s if block ~ ~ ~ water run kill @e[tag=ball]
 
 
 scoreboard players set @a[scores={select=0}] broom 0
-scoreboard players set @a[tag=wicked] sneak 0
+# scoreboard players set @a[tag=wicked] sneak 0
 scoreboard players set @a[tag=wicked,limit=1] click 0
 scoreboard players set @a[tag=wicked,limit=1] click3 0
 

@@ -27,7 +27,6 @@ scoreboard players set @s magie 100
 
 execute as @s run scoreboard objectives add select dummy
 execute as @s run scoreboard objectives add kd dummy 
-execute as @s run scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
 execute as @s run scoreboard objectives add s minecraft.custom:minecraft.sneak_time
 
 execute as @s run scoreboard objectives add spell dummy
