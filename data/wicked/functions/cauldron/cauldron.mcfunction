@@ -51,8 +51,8 @@ execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft
 
 ########## PARTICLE 
 
-execute as @e[tag=c_spell14] at @s positioned ~ ~14 ~ run function wicked:cauldron/particle/alchemymod_2
-execute as @e[tag=c_spell7] at @s positioned ~ ~7 ~ run function wicked:cauldron/particle/alchemymod_2
+execute as @e[tag=c_spell14] at @s positioned ~ ~ ~ run function wicked:cauldron/particle/alchemymod_2
+execute as @e[tag=c_spell7] at @s positioned ~ ~ ~ run function wicked:cauldron/particle/alchemymod_2
 execute as @e[tag=c_spell] at @s anchored eyes run function wicked:cauldron/particle/alchemymod_2
 
 execute as @e[tag=c_spell] at @s run teleport @s ~ ~ ~ ~0.245 ~
