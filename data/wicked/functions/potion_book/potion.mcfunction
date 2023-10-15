@@ -1,7 +1,7 @@
 #potion.mcfunction
-#C =1  Craft
-# L = next book
-# R = Finish
+# C =1  Craft
+# L = next book (1-8)
+# R = 1 Finish 
 
 execute as @a[tag=wicked,predicate=wicked:is_sneaking,scores={P=0},nbt={SelectedItem:{id:"minecraft:written_book",tag:{title:"§2Book of Potions"}}}] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{id:"minecraft:potion",tag:{ench:[{id:34,lvl:211}],Enchantments:[{}]}}}
 
