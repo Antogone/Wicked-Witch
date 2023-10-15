@@ -7,8 +7,6 @@ Création d'un système d'update pour les sliver slippers
     - Niveau 3 : End
     - Niveau 4 : Witch Dimension
 
-
-
 Witch dimension 
     - Accéssible via la création d'un portail 
     - Accéssible via les silver slippers
@@ -18,6 +16,11 @@ Witch dimension
 
 Possibilité de loupé un spell 
 
+
+
+
+
+
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Optimization
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
@@ -25,49 +28,8 @@ https://www.youtube.com/watch?v=lvMCaPOF-mU
 https://minecraft.fandom.com/wiki/Predicate
 https://misode.github.io/predicate/
 https://astrune.weebly.com/optimizing-data-packs.html
-
-
-Predicate Sneaking
-Execute if preidcate wicked:is_sneaking run
-execute as @a[predicate=wicked:is_sneaking]
 https://www.youtube.com/watch?v=lvMCaPOF-mU
-
-
-chainmail_boots{wicked:"silver"
-tag:{wicked:"silver"}
-
-
-
-
-silver:1b
-grimmerie:1b
-pendant:1b
-scepter:1b
-poofing:1b
-immo:1b
-fireball:1b
-broom:1b
-
-
-
-
-normal,cleaner
-
-
-
-    type
-    tag
-    scores
-    level
-    gamemode
-    name
-    advancements
-    predicate
-    nbt
-
-
-
-
+https://github.com/Neylz/opti-mcfunction/blob/main/docs/lang/fr-fr/basics.md
 
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 

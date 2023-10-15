@@ -1,45 +1,45 @@
 
 #############ENCH1
 
-execute as @e[scores={ENCH1=1}] at @s if score @s ENCH1 matches 1 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:protection",lvl:1s}
-execute as @e[scores={ENCH1=2}] at @s if score @s ENCH1 matches 2 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:fire_protection",lvl:1s}
-execute as @e[scores={ENCH1=3}] at @s if score @s ENCH1 matches 3 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:feather_falling",lvl:1s}
-execute as @e[scores={ENCH1=4}] at @s if score @s ENCH1 matches 4 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:blast_protection",lvl:1s}
-execute as @e[scores={ENCH1=5}] at @s if score @s ENCH1 matches 5 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:projectile_protection",lvl:1s}
-execute as @e[scores={ENCH1=6}] at @s if score @s ENCH1 matches 6 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:respiration",lvl:1s}
-execute as @e[scores={ENCH1=7}] at @s if score @s ENCH1 matches 7 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:aqua_affinity",lvl:1s}
-execute as @e[scores={ENCH1=8}] at @s if score @s ENCH1 matches 8 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:depth_strider",lvl:1s}
-execute as @e[scores={ENCH1=9}] at @s if score @s ENCH1 matches 9 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:thorns",lvl:1s}
-execute as @e[scores={ENCH1=10}] at @s if score @s ENCH1 matches 10 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:frost_walker",lvl:1s}
-execute as @e[scores={ENCH1=11}] at @s if score @s ENCH1 matches 11 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:sharpness",lvl:1s}
-execute as @e[scores={ENCH1=12}] at @s if score @s ENCH1 matches 12 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:smite",lvl:1s}
-execute as @e[scores={ENCH1=13}] at @s if score @s ENCH1 matches 13 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:bane_of_arthropods",lvl:1s}
-execute as @e[scores={ENCH1=14}] at @s if score @s ENCH1 matches 14 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:knockback",lvl:1s}
-execute as @e[scores={ENCH1=15}] at @s if score @s ENCH1 matches 15 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:fire_aspect",lvl:1s}
-execute as @e[scores={ENCH1=16}] at @s if score @s ENCH1 matches 16 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:looting",lvl:1s}
-execute as @e[scores={ENCH1=17}] at @s if score @s ENCH1 matches 17 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:sweeping",lvl:1s}
-execute as @e[scores={ENCH1=18}] at @s if score @s ENCH1 matches 18 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:power",lvl:1s}
-execute as @e[scores={ENCH1=19}] at @s if score @s ENCH1 matches 19 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:punch",lvl:1s}
-execute as @e[scores={ENCH1=20}] at @s if score @s ENCH1 matches 20 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:flame",lvl:1s}
-execute as @e[scores={ENCH1=21}] at @s if score @s ENCH1 matches 21 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:infinity",lvl:1s}
-execute as @e[scores={ENCH1=22}] at @s if score @s ENCH1 matches 22 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:multishot",lvl:1s}
-execute as @e[scores={ENCH1=23}] at @s if score @s ENCH1 matches 23 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:quick_charge",lvl:1s}
-execute as @e[scores={ENCH1=24}] at @s if score @s ENCH1 matches 24 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:piercing",lvl:1s}
-execute as @e[scores={ENCH1=25}] at @s if score @s ENCH1 matches 25 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:loyalty",lvl:1s}
-execute as @e[scores={ENCH1=26}] at @s if score @s ENCH1 matches 26 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:impaling",lvl:1s}
-execute as @e[scores={ENCH1=27}] at @s if score @s ENCH1 matches 27 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:riptide",lvl:1s}
-execute as @e[scores={ENCH1=28}] at @s if score @s ENCH1 matches 28 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:channeling",lvl:1s}
-execute as @e[scores={ENCH1=29}] at @s if score @s ENCH1 matches 29 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:efficiency",lvl:1s}
-execute as @e[scores={ENCH1=30}] at @s if score @s ENCH1 matches 30 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:silk_touch",lvl:1s}
-execute as @e[scores={ENCH1=31}] at @s if score @s ENCH1 matches 31 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:fortune",lvl:1s}
-execute as @e[scores={ENCH1=32}] at @s if score @s ENCH1 matches 32 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:unbreaking",lvl:1s}
-execute as @e[scores={ENCH1=33}] at @s if score @s ENCH1 matches 33 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:lure",lvl:1s}
-execute as @e[scores={ENCH1=34}] at @s if score @s ENCH1 matches 34 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:luck_of_the_sea",lvl:1s}
-execute as @e[scores={ENCH1=35}] at @s if score @s ENCH1 matches 35 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:mending",lvl:1s}
-execute as @e[scores={ENCH1=36}] at @s if score @s ENCH1 matches 36 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:vanishing_curse",lvl:1s}
-execute as @e[scores={ENCH1=37}] at @s if score @s ENCH1 matches 37 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:binding_curse",lvl:1s}
-execute as @e[scores={ENCH1=38}] at @s if score @s ENCH1 matches 38 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:soul_speed",lvl:1s}
-execute as @e[scores={ENCH1=39}] at @s if score @s ENCH1 matches 39 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:swift_sneak",lvl:1s}
+execute at @s if score @s ENCH1 matches 1 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:protection",lvl:1s}
+execute at @s if score @s ENCH1 matches 2 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:fire_protection",lvl:1s}
+execute at @s if score @s ENCH1 matches 3 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:feather_falling",lvl:1s}
+execute at @s if score @s ENCH1 matches 4 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:blast_protection",lvl:1s}
+execute at @s if score @s ENCH1 matches 5 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:projectile_protection",lvl:1s}
+execute at @s if score @s ENCH1 matches 6 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:respiration",lvl:1s}
+execute at @s if score @s ENCH1 matches 7 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:aqua_affinity",lvl:1s}
+execute at @s if score @s ENCH1 matches 8 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:depth_strider",lvl:1s}
+execute at @s if score @s ENCH1 matches 9 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:thorns",lvl:1s}
+execute at @s if score @s ENCH1 matches 10 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:frost_walker",lvl:1s}
+execute at @s if score @s ENCH1 matches 11 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:sharpness",lvl:1s}
+execute at @s if score @s ENCH1 matches 12 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:smite",lvl:1s}
+execute at @s if score @s ENCH1 matches 13 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:bane_of_arthropods",lvl:1s}
+execute at @s if score @s ENCH1 matches 14 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:knockback",lvl:1s}
+execute at @s if score @s ENCH1 matches 15 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:fire_aspect",lvl:1s}
+execute at @s if score @s ENCH1 matches 16 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:looting",lvl:1s}
+execute at @s if score @s ENCH1 matches 17 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:sweeping",lvl:1s}
+execute at @s if score @s ENCH1 matches 18 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:power",lvl:1s}
+execute at @s if score @s ENCH1 matches 19 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:punch",lvl:1s}
+execute at @s if score @s ENCH1 matches 20 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:flame",lvl:1s}
+execute at @s if score @s ENCH1 matches 21 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:infinity",lvl:1s}
+execute at @s if score @s ENCH1 matches 22 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:multishot",lvl:1s}
+execute at @s if score @s ENCH1 matches 23 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:quick_charge",lvl:1s}
+execute at @s if score @s ENCH1 matches 24 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:piercing",lvl:1s}
+execute at @s if score @s ENCH1 matches 25 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:loyalty",lvl:1s}
+execute at @s if score @s ENCH1 matches 26 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:impaling",lvl:1s}
+execute at @s if score @s ENCH1 matches 27 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:riptide",lvl:1s}
+execute at @s if score @s ENCH1 matches 28 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:channeling",lvl:1s}
+execute at @s if score @s ENCH1 matches 29 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:efficiency",lvl:1s}
+execute at @s if score @s ENCH1 matches 30 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:silk_touch",lvl:1s}
+execute at @s if score @s ENCH1 matches 31 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:fortune",lvl:1s}
+execute at @s if score @s ENCH1 matches 32 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:unbreaking",lvl:1s}
+execute at @s if score @s ENCH1 matches 33 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:lure",lvl:1s}
+execute at @s if score @s ENCH1 matches 34 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:luck_of_the_sea",lvl:1s}
+execute at @s if score @s ENCH1 matches 35 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:mending",lvl:1s}
+execute at @s if score @s ENCH1 matches 36 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:vanishing_curse",lvl:1s}
+execute at @s if score @s ENCH1 matches 37 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:binding_curse",lvl:1s}
+execute at @s if score @s ENCH1 matches 38 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:soul_speed",lvl:1s}
+execute at @s if score @s ENCH1 matches 39 run data modify entity @e[type=item,limit=1,sort=nearest] Item.tag.Enchantments insert 0 value {id:"minecraft:swift_sneak",lvl:1s}
 
 
 

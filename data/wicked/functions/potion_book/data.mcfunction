@@ -1,7 +1,5 @@
 #data.mcfunction
 
-# execute if score @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID1 matches 1..1 run data modify storage wicked.potion PotionId[0] set value "minecraft:speed"
-
 
 data modify entity @e[type=item,limit=1,sort=nearest,tag=popo] Item.tag.custom_potion_effects[0].id set from storage wicked.potion PotionId[0]
 data modify entity @e[type=item,limit=1,sort=nearest,tag=popo] Item.tag.custom_potion_effects[1].id set from storage wicked.potion PotionId[1]
@@ -11,17 +9,6 @@ data modify entity @e[type=item,limit=1,sort=nearest,tag=popo] Item.tag.custom_p
 data modify entity @e[type=item,limit=1,sort=nearest,tag=popo] Item.tag.custom_potion_effects[5].id set from storage wicked.potion PotionId[5]
 data modify entity @e[type=item,limit=1,sort=nearest,tag=popo] Item.tag.custom_potion_effects[6].id set from storage wicked.potion PotionId[6]
 data modify entity @e[type=item,limit=1,sort=nearest,tag=popo] Item.tag.custom_potion_effects[7].id set from storage wicked.potion PotionId[7]
-
-
-# execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[0].Id int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID1
-# execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[1].Id int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID2
-# execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[2].Id int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID3
-# execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[3].Id int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID4
-# execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[4].Id int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID5
-# execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[5].Id int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID6
-# execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[6].Id int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID7
-# execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[7].Id int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] ID8
-
 
 
 execute as @e[type=item,limit=1,sort=nearest] store result entity @s Item.tag.custom_potion_effects[0].duration int 1 run scoreboard players get @a[tag=wicked,scores={C=1,magie=10..},limit=1] D1
