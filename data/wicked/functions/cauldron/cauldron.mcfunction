@@ -2,7 +2,7 @@
  # cauldron.mcfunction
  # 
  #
- # Created by Bomerie
+ # Created by Antogone
 ##
 
 ############ PROTECTION 

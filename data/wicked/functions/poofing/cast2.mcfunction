@@ -1,4 +1,4 @@
-#By Bomerie
+#By Antogone
 #cast2.mcfunction
 
 kill @e[type=marker,tag=telp]

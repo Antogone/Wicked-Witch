@@ -2,7 +2,7 @@
  # set_nomobs.mcfunction
  # 
  #
- # Created by Bomerie
+ # Created by Antogone
 ##
 execute as @a[scores={magie=..99},tag=wicked] run return 4
 scoreboard players remove @e[tag=wicked,scores={magie=100..}] magie 100

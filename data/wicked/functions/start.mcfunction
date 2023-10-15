@@ -1,4 +1,4 @@
-#By Bomerie
+#By Antogone
 #start.mcfunction
 execute as @s run scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 execute as @s run scoreboard objectives add click3 minecraft.used:minecraft.snowball

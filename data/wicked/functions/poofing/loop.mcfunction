@@ -1,4 +1,4 @@
-#by Bomerie
+#by Antogone
 execute as @s at @s if block ~ ~ ~ #minecraft:ray_permeable run tp @s ^ ^ ^0.7
 
 execute as @s at @s if entity @e[tag=wall,distance=..1] run tp @s ^ ^ ^1

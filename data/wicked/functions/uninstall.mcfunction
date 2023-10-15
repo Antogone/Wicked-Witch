@@ -4,7 +4,7 @@
  #
  # Created by Antogone
 ##
-#By Bomerie
+#By Antogone
 
 scoreboard objectives remove click
 scoreboard objectives remove click3 

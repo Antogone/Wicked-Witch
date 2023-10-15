@@ -1,4 +1,4 @@
-#By Bomerie
+#By Antogone
 tag @s add tp
 kill @e[type=marker,tag=telp]
 

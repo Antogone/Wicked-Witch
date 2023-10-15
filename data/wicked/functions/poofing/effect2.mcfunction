@@ -1,4 +1,4 @@
-#By Bomerie
+#By Antogone
 
 execute as @e[tag=mtp] run scoreboard players remove @e[tag=wicked,limit=1,scores={magie=10..}] magie 10
 execute as @e[tag=telp,limit=1,sort=nearest] at @s run teleport ^ ^ ^-1

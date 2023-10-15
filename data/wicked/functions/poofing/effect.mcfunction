@@ -1,4 +1,4 @@
-#By Bomerie
+#By Antogone
 
 scoreboard players remove @a[limit=1,tag=wicked,tag=tp,scores={magie=10..}] magie 10
 execute at @s run particle minecraft:dust 0.498 1 0.345 1 ~ ~ ~ 0.3 1 0.3 0.1 200 force
