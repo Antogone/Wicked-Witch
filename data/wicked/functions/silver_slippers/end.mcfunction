@@ -1,4 +1,6 @@
 
+execute if dimension the_end run return 0
+
 summon area_effect_cloud ~ ~ ~ {Tags:["dt"],duration:1}
 execute at @e[tag=dt] run execute as @e[scores={equip=1,choose=2}] in the_end run tp 0.5 66 0.5
 execute if entity @e[tag=dt] run execute as @e[scores={equip=1,choose=2}] at @s run spreadplayers ~ ~ 2 5 false @s

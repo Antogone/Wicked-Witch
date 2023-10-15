@@ -12,4 +12,4 @@ playsound minecraft:entity.witch.ambient master @a
 particle happy_villager ~ ~0.15 ~ 0 0 0 0.1 8
 clear @s knowledge_book
 
-give @s chainmail_boots{Unbreakable:1,HideFlags:3,display:{Name:"{\"text\":\"§2Silver Slippers\"}"},Enchantments:[{id:"minecraft:unbreaking",lvl:211}]}
+give @s chainmail_boots{silver:1b,Unbreakable:1,HideFlags:3,display:{Name:"{\"text\":\"§2Silver Slippers\"}"},Enchantments:[{id:"minecraft:unbreaking",lvl:211}]}

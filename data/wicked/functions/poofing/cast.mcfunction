@@ -2,7 +2,7 @@
 tag @s add tp
 kill @e[type=marker,tag=telp]
 
-execute as @e[tag=wicked,tag=tp,scores={magie=10..}] at @s run summon marker ~ ~ ~ {duration:1,Tags:[telp]}
+execute at @s run summon marker ~ ~ ~ {duration:1,Tags:[telp]}
 
 tp @e[tag=telp,limit=1,sort=nearest] @s
 tp @e[tag=telp,limit=1,sort=nearest] ~ ~1.5 ~

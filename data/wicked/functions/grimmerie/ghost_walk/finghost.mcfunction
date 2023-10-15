@@ -5,9 +5,9 @@
  # Created by .
 ##
 
-execute as @e[tag=wicked] at @s run gamemode survival @a[tag=surv,limit=1]
-execute as @e[tag=wicked] at @s run gamemode creative @a[tag=crea,limit=1]
-execute as @e[tag=wicked] at @s run gamemode adventure @a[tag=adv,limit=1]
+gamemode survival @a[tag=surv,limit=1]
+gamemode creative @a[tag=crea,limit=1]
+gamemode adventure @a[tag=adv,limit=1]
 
 
 tag @a[tag=wicked] remove crea

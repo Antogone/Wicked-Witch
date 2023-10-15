@@ -33,7 +33,46 @@ execute as @a[predicate=wicked:is_sneaking]
 https://www.youtube.com/watch?v=lvMCaPOF-mU
 
 
+chainmail_boots{wicked:"silver"
+tag:{wicked:"silver"}
 
+
+
+
+silver:1b
+grimmerie:1b
+pendant:1b
+scepter:1b
+poofing:1b
+immo:1b
+fireball:1b
+broom:1b
+
+
+
+
+normal,cleaner
+
+
+
+    type
+    tag
+    scores
+    level
+    gamemode
+    name
+    advancements
+    predicate
+    nbt
+
+
+
+
+
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# 3D
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 https://www.reddit.com/r/Minecraft/comments/qii0by/the_witch_hut_a_spooky_halloween_render/
 https://sketchfab.com/3d-models/witch-items-a2422b8ed63a4902847fc7e35ef00e0a
 https://www.reddit.com/r/Minecraft/comments/jluyd1/a_witch_brewing_a_sinister_potion_render_by_me/

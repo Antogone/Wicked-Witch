@@ -5,7 +5,7 @@
 ###########################
 
 
-item replace entity @a[tag=wicked,limit=1,scores={select=1},gamemode=!spectator,nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] armor.head with command_block{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+item replace entity @a[tag=wicked,limit=1,scores={select=1},gamemode=!spectator,predicate=wicked:select_broom] armor.head with command_block{HideFlags:3,CustomModelData:14120001,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
 
 
 execute as @a[tag=wicked,scores={select=1,broo=1},x_rotation=-90,gamemode=!spectator] at @s if block ~ ~-1 ~ #minecraft:airs if block ^ ^ ^0.1 #minecraft:airs run tp @s ^ ^ ^1.6
@@ -43,3 +43,5 @@ effect give @e[tag=broom,scores={select=1,broo=1},gamemode=!spectator] jump_boos
 effect give @e[tag=broom,scores={select=1,broo=1},gamemode=!spectator] slow_falling 1 1 true
 
 # scoreboard players set @a[tag=wicked,nbt=!{SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] broo 0
+
+

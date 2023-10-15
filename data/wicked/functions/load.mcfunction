@@ -6,3 +6,5 @@ attribute @p[tag=wicked] generic.attack_damage base set 6.0
 attribute @p[tag=wicked] generic.armor base set 4.0
 
 execute in minecraft:overworld run forceload add -30000000 1600
+
+schedule function wicked:cauldron/cauldron 4t
