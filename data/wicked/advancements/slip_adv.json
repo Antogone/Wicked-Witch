@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:iron_boots"
+      },
+      "title": {
+        "text": "The Silver Slippers",
+        "color": "dark_green"
+    },
+    "description": {
+        "text": "The wicked witch of the east is dead, the slippers is yours",
+        "color": "dark_green"
+    },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "wicked:witch_pendant_adv",
+    "criteria": {
+        "The Silver Slippers": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "wicked:slip"
+            }
+        }
+    }
+  }
+  

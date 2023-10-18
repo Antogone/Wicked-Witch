@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "The Grimmerie": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "wicked:the_grimmerie"
+            }
+        }
+    },
+    "rewards": {
+        "function": "wicked:craft/crafted_grimmerie"
+
+    }
+
+}

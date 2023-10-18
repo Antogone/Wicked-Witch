@@ -1,0 +1,43 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:blaze_powder"
+      },
+      "title": {
+        "text": "No more move !",
+        "color": "dark_green"
+    },
+    "description": {
+        "text": "You have learn the immobilization spell",
+        "color": "dark_green"
+    },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "wicked:poof_spell",
+    "criteria": {
+      "Defying gravity": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "level": 30
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "wicked:craft/levels"
+    }
+  }
+  

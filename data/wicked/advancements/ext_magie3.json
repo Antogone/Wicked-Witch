@@ -1,0 +1,43 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:black_candle"
+      },
+      "title": {
+        "text": "Channeling from the origin magic !",
+        "color": "dark_green"
+    },
+    "description": {
+        "text": "You have increase your magic energy",
+        "color": "dark_green"
+    },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "wicked:ext_magie2",
+    "criteria": {
+      "Defying gravity": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "level": 70
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "wicked:craft/levels"
+    }
+  }
+  

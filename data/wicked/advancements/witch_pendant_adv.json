@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Wicked Witch",
+            "color": "dark_green"
+        },
+        "description": {
+            "text": "Becoming the Wicked Witch of the West",
+            "color": "dark_green"
+        },
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "Wicked witch of the west": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "wicked:witch_pendant"
+            }
+        }
+    }
+}

@@ -1,12 +1,12 @@
  {
     "values": [
-        "minecraft:broom",
-        "minecraft:potion",
-        "minecraft:wicked",
-		"minecraft:silver",
-		"minecraft:enchant",
-        "minecraft:cauldron",
-        "minecraft:timer",
-        "minecraft:amplificator"
+        "wicked:broom",
+        "wicked:magic_wall",
+        "wicked:potion_book/potion",
+        "wicked:enchanting_book/enchant",
+        "wicked:wicked",
+		"wicked:silver_slippers/silver",
+        "wicked:timer",
+        "wicked:recharge"
     ]
 }
