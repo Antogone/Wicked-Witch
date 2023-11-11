@@ -28,7 +28,10 @@
               "predicate": {
                 "type_specific": {
                   "type": "player",
-                  "level": 10
+                  "level": {
+                    "min": 10,
+                    "max": 1000
+                  }
                 }
               }
             }

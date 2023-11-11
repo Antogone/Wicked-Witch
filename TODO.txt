@@ -11,11 +11,37 @@ Witch dimension
     - Accéssible via la création d'un portail 
     - Accéssible via les silver slippers
     - Uniquement des sorcières et evoker et illusioner qui spawn
-    - 2-3 Structure (à Définir)
     
 
 Possibilité de loupé un spell 
 
+
+Block ? via Interaction ?
+Chaudron Magique : Crée au maximum 5 potion, couleur du chaudron dependant dy type de potion 
+Night vision => Vert claire
+Invisibility => Gris
+Jump boost => jaune
+Fire resistance => orange
+Speed => Cyan 
+Slowness => Bleu gris 
+Water breathing => aqua 
+healing => rouge
+damage => bordeaux 
+poison => kaki
+regeneration => rose
+strength => jaune or 
+weakness => noir 
+luck => vert 
+slow dfalling => creme
+
+
+
+
+
+Portail adaptatif
+
+Rune ?
+    
 
 
 
@@ -53,3 +79,15 @@ execute in minecraft:overworld run forceload add -30000000 1600
 
 
 
+
+
+
+
+    tick query : Affiche le taux de tick actuel avec des informations sur les performances des ticks.
+    tick rate <rate> : Définit un taux de tick cible personnalisé. Le taux doit être supérieur à 1.0 et inférieur à 10000.0. Un taux de tick trop bas peut rendre le jeu peu réactif, tandis qu’un taux trop élevé peut provoquer des plantages. Il est recommandé de mesurer les performances du jeu avec tick query ou la fonction de débogage <F3> + 2 (serveur intégré uniquement) pour ajuster le taux de tick.
+    tick freeze : Gèle tous les éléments de gameplay, sauf les joueurs et les entités qu’un joueur monte. Utile pour le débogage.
+    tick step <time> : Fonctionne uniquement lorsque le jeu est gelé. Exécute le jeu pendant un nombre spécifié de ticks, puis le gèle à nouveau. Permet de passer par le jeu en tranches de ticks.
+    tick step stop : Arrête le processus d’avancement actuel et gèle à nouveau le jeu.
+    tick unfreeze : Dégèle le jeu et reprend tous les éléments de gameplay.
+    tick sprint <time> : Fait fonctionner le jeu en ignorant le taux de tick cible défini, permettant au jeu de fonctionner aussi rapidement que possible pendant un nombre de ticks spécifié. Utile pour tester des éléments de gameplay dépendants du temps.
+    tick sprint stop : Arrête la séquence de sprint de tick actuelle et reprend le taux de tick précédent.

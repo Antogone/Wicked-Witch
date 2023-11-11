@@ -196,7 +196,7 @@ execute as @a[tag=wicked,limit=1,scores={spell=600,magie=30..}] at @s run functi
 ###########################
 # SPELLBOOK
 ###########################
-execute as @e[tag=wicked,predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1}}}
+execute as @e[tag=wicked,predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1b}}}
 
 
 ###########################
@@ -299,3 +299,10 @@ item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 w
 
 
 #/give @p minecraft:green_banner{BlockEntityTag:{Patterns:[{Pattern:"cs",Color:5},{Pattern:"cs",Color:13},{Pattern:"bts",Color:5},{Pattern:"bts",Color:13},{Pattern:"tts",Color:5},{Pattern:"tts",Color:13},{Pattern:"cr",Color:5},{Pattern:"cr",Color:13},{Pattern:"flo",Color:5},{Pattern:"flo",Color:13},{Pattern:"bo",Color:5},{Pattern:"bo",Color:13}]}}
+
+
+
+
+
+execute as @e[type=minecraft:interaction,tag=chunklock] at @s run function wicked:tick_chunk_interactions
+# summon interaction ~ ~ ~ {width:1f, height: 1.5f, response: 1b, Tags: [chunklock]}
