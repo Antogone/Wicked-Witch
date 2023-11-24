@@ -1,7 +1,7 @@
 {
    "pack":{
-      "pack_format": 24,
-      "supported_formats":{"min_inclusive":16,"max_inclusive":24},
+      "pack_format": 26,
+      "supported_formats":{"min_inclusive":16,"max_inclusive":26},
       "description":"Datapack for becoming the Wicked Witch of the West by Antogone"
    }
 }

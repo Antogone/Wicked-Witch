@@ -6,7 +6,7 @@
 ##
 execute as @s run function wicked:start
 tag @s add l20
-tag @s l15
+tag @s add l15
 tag @s add l10
 tag @s add l30
 tag @s add l40
