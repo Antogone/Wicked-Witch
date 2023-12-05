@@ -61,16 +61,6 @@ scoreboard objectives add L dummy
 scoreboard objectives add C dummy
 scoreboard objectives add R dummy
 
-# scoreboard objectives add ID1 dummy
-# scoreboard objectives add ID2 dummy
-# scoreboard objectives add ID3 dummy
-# scoreboard objectives add ID4 dummy
-# scoreboard objectives add ID5 dummy
-# scoreboard objectives add ID6 dummy
-# scoreboard objectives add ID7 dummy
-# scoreboard objectives add ID8 dummy
-# scoreboard objectives add ID9 dummy
-# scoreboard objectives add ID10 dummy
 
 
 scoreboard objectives add D1 dummy
