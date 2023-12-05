@@ -11,6 +11,12 @@ tag @s add ghost
 
 
 scoreboard players set @s timer 0
+bossbar set minecraft:timer players @a[tag=ghost]
+bossbar set minecraft:timer max 100
+bossbar set minecraft:timer value 0
+
+
+
 execute at @s run particle falling_dust green_concrete ^ ^ ^ 1 -1 1 10 1000 force
 execute at @s run particle glow ^ ^ ^ 1 -1 1 0.001 100 force
 execute at @s run particle falling_dust lime_concrete ^ ^ ^ 1 -1 1 10 1000 force

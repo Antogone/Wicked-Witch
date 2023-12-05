@@ -15,3 +15,4 @@ tag @a[tag=wicked] remove surv
 tag @a[tag=wicked] remove adv
 tag @a[tag=wicked] remove ghost
 
+bossbar set minecraft:timer players
