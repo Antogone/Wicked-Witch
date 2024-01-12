@@ -1,14 +1,14 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:emerald_block"
+        "item": "minecraft:player_head"
       },
       "title": {
-        "text": "There is no place like home",
+        "text": "Let's go together",
         "color": "dark_green"
     },
     "description": {
-      "text": "You finally choose where is your home",
+      "text": "created a Companion Amulet to travel with you",
       "color": "dark_green"
   },
       "frame": "challenge",
@@ -21,7 +21,7 @@
         "The Silver Slippers": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "wicked:set_house"
+                "recipe": "wicked:companion_amulet"
             }
         }
     }

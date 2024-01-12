@@ -11,7 +11,7 @@
         "text": "You found the The Grimmerie",
         "color": "dark_green"
     },
-      "frame": "challenge",
+      "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

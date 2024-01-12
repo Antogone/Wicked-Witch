@@ -19,12 +19,6 @@ execute as @e[tag=protection] at @s run execute as @e[tag=!wicked,type=!#minecra
 execute as @e[tag=protection] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=-14,dz=-14,dy=15] run function wicked:cauldron/effect_protect 
 execute as @e[tag=protection] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=14,dz=-14,dy=15] run function wicked:cauldron/effect_protect
 
-############  
-# execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run function cauldron/set_protection
-
-# execute as @e[tag=protection] at @s run effect give @e[tag=wicked,distance=..14] resistance 10 255 true
-
-
 
 
 ############ NO MORE MOBS
@@ -52,12 +46,9 @@ execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft
 ########## PARTICLE 
 
 execute as @e[tag=c_spell14] at @s positioned ~ ~ ~ run function wicked:cauldron/particle/alchemymod_2
-# # execute as @e[tag=c_spell7] at @s positioned ~ ~ ~ run function wicked:cauldron/particle/alchemymod_2
 execute as @e[tag=c_spell] at @s anchored eyes run function wicked:cauldron/particle/alchemymod_2
 
-# execute as @e[tag=c_spell] at @s run teleport @s ~ ~ ~ ~0.245 ~
-# # execute as @e[tag=c_spell7] at @s run teleport @s ~ ~ ~ ~0.245 ~
-# execute as @e[tag=c_spell14] at @s run teleport @s ~ ~ ~ ~0.245 ~
+
 
 
 
@@ -67,7 +58,6 @@ execute as @e[tag=remove] at @e[tag=remove] run kill @e[type=item,distance=..1]
 execute as @e[tag=remove] at @e[tag=remove] run kill @e[tag=remove]
 
 execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell14,sort=nearest]
-execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell7,sort=nearest]
 execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell,distance=..1,sort=nearest]
 
 
@@ -86,5 +76,7 @@ execute unless entity @e[tag=salem,limit=1] run execute at @e[type=item,nbt={Ite
 
 ########### Enchanted golden apple
 execute at @e[type=item,nbt={Item:{id:"minecraft:golden_apple",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{title:"§2The Grimmerie"}}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/enchanted_golden_apple
+
+
 
 schedule function wicked:cauldron/cauldron 10t

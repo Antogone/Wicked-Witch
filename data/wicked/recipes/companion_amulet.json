@@ -1,22 +1,25 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "EeE",
-        "eie",
-        "EeE"
+        " 0 ",
+        "iei",
+        " E "
     ],
     "key": {
-        "i": {
-            "item": "minecraft:iron_boots"
+        "0": {
+            "item": "minecraft:amethyst_shard"
         },
         "e": {
             "item": "minecraft:enchanted_book"
         },
         "E": {
             "item": "minecraft:emerald"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
         }
     },
-    "result": {
-        "item": "minecraft:knowledge_book"
+    "result":{
+        "item":"minecraft:knowledge_book"
     }
 }

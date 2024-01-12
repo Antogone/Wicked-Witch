@@ -1,0 +1,13 @@
+{
+    "criteria":{
+        "There is no place like home":{
+            "trigger":"minecraft:recipe_unlocked",
+            "conditions":{
+                "recipe":"wicked:companion_amulet"
+            }
+        }
+    },
+    "rewards":{
+        "function":"wicked:craft/crafted_companion"
+    }
+}

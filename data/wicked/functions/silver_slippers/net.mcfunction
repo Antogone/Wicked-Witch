@@ -8,4 +8,6 @@ scoreboard players set @a[scores={equip=1}] choose -1
 scoreboard players set @a[scores={s=1..}] s 0
 execute at @p[tag=wicked] run function wicked:particle
 execute at @p[tag=wicked] run function wicked:particle
+execute at @p[tag=wicked] run function wicked:particle
+execute at @p[tag=wicked] run function wicked:particle
 execute in minecraft:the_nether summon marker run function wicked:silver_slippers/net_tep
