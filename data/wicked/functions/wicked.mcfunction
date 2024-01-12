@@ -306,3 +306,5 @@ item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 w
 
 execute as @e[type=minecraft:interaction,tag=chunklock] at @s run function wicked:tick_chunk_interactions
 # summon interaction ~ ~ ~ {width:1f, height: 1.5f, response: 1b, Tags: [chunklock]}
+
+

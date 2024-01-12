@@ -44,15 +44,17 @@ execute as @s run scoreboard objectives add y_temp dummy
 execute as @s run scoreboard objectives add z_temp dummy
 execute as @s run scoreboard objectives add net_value dummy
 scoreboard players set $net net_value 8
+
 #declare storage wicked.tep
 #declare storage wicked.potion 
+#declare storage wicked.tellraw
 
 
+data modify storage wicked.tellraw silver.overworld set value {"text":"[Overworld]","color":"blue","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 0"}}
 
 
 data modify storage wicked.potion PotionId set value ["minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:"]
 data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
-data modify storage wicked.tep Temp.PosHouse set value [0d,0d,0d]
 
 execute in minecraft:overworld run forceload add -30000000 1600
 

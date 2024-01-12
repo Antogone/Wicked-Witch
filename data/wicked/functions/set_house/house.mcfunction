@@ -16,8 +16,3 @@ execute at @p[tag=wicked] run function wicked:particle
 function wicked:set_house/teleport with storage wicked.tep house
 
 
-
-
-# execute if entity @p[tag=house_ow] run execute in minecraft:overworld summon marker run function wicked:set_house/ow_house
-# execute if entity @p[tag=house_end] run execute in minecraft:the_end summon marker run function wicked:set_house/end_house
-# execute if entity @p[tag=house_net] run execute in minecraft:the_nether summon marker run function wicked:set_house/net_house

@@ -41,10 +41,11 @@ scoreboard players set $net net_value 8
 
 #declare storage wicked.tep
 #declare storage wicked.potion 
+ #declare storage wicked.tellraw
 
+ 
 data modify storage wicked.potion PotionId set value ["minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:"]
 data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
-data modify storage wicked.tep Temp.PosHouse set value [0d,0d,0d]
 
 execute in minecraft:overworld run forceload add -30000000 1600
 

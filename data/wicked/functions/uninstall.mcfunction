@@ -112,11 +112,7 @@ attribute @s generic.attack_damage base set 1.0
 attribute @s generic.armor base set 0.0
 
 tag @s remove wicked
-tag @s remove house
-tag @s remove house_ow
-kill @e[type=marker,tag=house_net]
-kill @e[type=marker,tag=house_end]
-kill @e[type=marker,tag=house_ow]
+
 kill @e[tag=wall]
 tag @s remove l10
 tag @s remove l15
@@ -137,5 +133,6 @@ tag @s remove ast_p
 forceload remove all
 data remove storage wicked.potion
 data remove storage wicked.tep
+data remove storage wicked.tellraw
 
 scoreboard objectives remove steps

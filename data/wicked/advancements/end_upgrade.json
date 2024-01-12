@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:end_stone"
+        },
+    "title": {
+      "text": "until the end",
+      "color": "dark_purple"
+    },
+    "description": {
+      "text": "Upgraded your silver slipper to go into the end",
+      "color": "dark_green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "wicked:nether_upgrade",
+  "criteria": {
+    "The Silver Slippers": {
+      "trigger": "minecraft:impossible"
+  }
+  }
+}
