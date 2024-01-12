@@ -304,7 +304,13 @@ item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 w
 
 
 
-execute as @e[type=minecraft:interaction,tag=chunklock] at @s run function wicked:tick_chunk_interactions
-# summon interaction ~ ~ ~ {width:1f, height: 1.5f, response: 1b, Tags: [chunklock]}
+execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wicked:magic_mirror/tick_chunk_interactions_2
+# summon interaction ~ ~ ~ {width:1f, height: 1.5f, response: 1b, Tags: [magic_mirror],Passengers:[{id:"minecraft:marker"}]}
 
 
+
+# Write
+# execute as @e[type=interaction,tag=magic_mirror] at @s on passengers run data modify entity @s data.magic_id set from storage magic_mirror magic_id
+
+# Read
+# execute as @e[type=interaction,tag=magic_mirror] at @s on passengers run data get entity @s data.magic_id
