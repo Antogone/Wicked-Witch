@@ -14,3 +14,4 @@ data remove storage magic_mirror temp
 
 kill @e[tag=magic_mirror]
 kill @e[tag=store_dat]
+kill @e[tag=itm_disp]

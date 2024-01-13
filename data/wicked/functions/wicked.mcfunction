@@ -199,15 +199,6 @@ execute as @a[tag=wicked,limit=1,scores={spell=600,magie=30..}] at @s run functi
 execute as @e[tag=wicked,predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1b}}}
 
 
-###########################
-# ANTI LAG & BUG
-###########################
-execute as @a[tag=wicked,limit=1] at @s run kill @e[tag=ball,distance=50..]
-execute as @e[tag=ball] at @s if block ~ ~ ~ water run kill @e[tag=ball]
-
-scoreboard players set @a[tag=wicked,scores={select=0},limit=1] broom 0
-scoreboard players set @a[tag=wicked,limit=1] click 0
-scoreboard players set @a[tag=wicked,limit=1] click3 0
 
 # ##########################
 # # AMPLIFICATOR
@@ -301,15 +292,22 @@ item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 w
 #/give @p minecraft:green_banner{BlockEntityTag:{Patterns:[{Pattern:"cs",Color:5},{Pattern:"cs",Color:13},{Pattern:"bts",Color:5},{Pattern:"bts",Color:13},{Pattern:"tts",Color:5},{Pattern:"tts",Color:13},{Pattern:"cr",Color:5},{Pattern:"cr",Color:13},{Pattern:"flo",Color:5},{Pattern:"flo",Color:13},{Pattern:"bo",Color:5},{Pattern:"bo",Color:13}]}}
 
 
+#### MAGIC MIRROR 
+# scoreboard objectives add place_mirror miencraft used gray banner
+execute as @a[scores={click=1..},predicate=wicked:select_mirror_1] at @s run function wicked:magic_mirror/set_mirror_first
+execute as @a[scores={click=1..},predicate=wicked:select_mirror_2] at @s run function wicked:magic_mirror/set_mirror_second
 
-
+execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wicked:magic_mirror/kill_mirror
 execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wicked:magic_mirror/click_magic_mirror
-# summon interaction ~ ~ ~ {width:1f, height: 1.5f, response: 1b, Tags: [magic_mirror],Passengers:[{id:"minecraft:marker"}]}
 
 
 
-# Write
-# execute as @e[type=interaction,tag=magic_mirror] at @s on passengers run data modify entity @s data.magic_id set from storage magic_mirror magic_id
+###########################
+# ANTI LAG & BUG
+###########################
+execute as @a[tag=wicked,limit=1] at @s run kill @e[tag=ball,distance=50..]
+execute as @e[tag=ball] at @s if block ~ ~ ~ water run kill @e[tag=ball]
 
-# Read
-# execute as @e[type=interaction,tag=magic_mirror] at @s on passengers run data get entity @s data.magic_id
+scoreboard players set @a[tag=wicked,scores={select=0},limit=1] broom 0
+scoreboard players set @a click 0
+scoreboard players set @a click3 0

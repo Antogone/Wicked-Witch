@@ -1,7 +1,8 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:blaze_powder"
+        "item": "minecraft:carrot_on_a_stick",
+        "nbt": "{ CustomModelData:10140001}"
       },
       "title": {
         "text": "No more move !",

@@ -1,7 +1,9 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:feather"
+        "item": "minecraft:feather",
+        "nbt": "{CustomModelData:10140015}"
+        
       },
       "title": {
         "text": "Defying Gravity",

@@ -1,7 +1,9 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:soul_campfire"
+        "item": "minecraft:snowball",
+        "nbt": "{CustomModelData:10140002}"
+
       },
       "title": {
         "text": "How about a little fire, Scarecrow ?",

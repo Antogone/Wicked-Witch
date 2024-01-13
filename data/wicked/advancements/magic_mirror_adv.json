@@ -1,16 +1,16 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:written_book",
+        "item": "minecraft:carrot_on_a_stick",
         "nbt": "{CustomModelData:10140005}"
 
       },
       "title": {
-        "text": "The Grimmerie",
+        "text": "Magic Mirror",
         "color": "dark_green"
     },
     "description": {
-        "text": "You found the The Grimmerie",
+        "text": "You created you magic mirror",
         "color": "dark_green"
     },
       "frame": "task",
@@ -18,12 +18,12 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "wicked:witch_pendant_adv",
+    "parent": "wicked:grimmerie_adv",
     "criteria": {
-        "The Grimmerie": {
+        "The Silver Slippers": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "wicked:the_grimmerie"
+                "recipe": "wicked:mirror"
             }
         }
     }
