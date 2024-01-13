@@ -131,8 +131,22 @@ tag @s remove ghost
 tag @s remove ast_p
 
 forceload remove all
-data remove storage wicked.potion
-data remove storage wicked.tep
-data remove storage wicked.tellraw
+data remove storage wicked.potion PotionId
+data remove storage wicked.tep DimHouse
+data remove storage wicked.tep Temp
+data remove storage wicked.tep PosHouse
+data remove storage wicked.tep house
+data remove storage wicked.tellraw silver
+
+data remove storage magic_mirror magic_id
+data remove storage magic_mirror info
+data remove storage magic_mirror temp
 
 scoreboard objectives remove steps
+
+scoreboard objectives remove index_actu 
+scoreboard objectives remove index_futur
+
+scoreboard objectives remove incre_one
+scoreboard objectives remove incre_deux
+
