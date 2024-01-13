@@ -4,9 +4,9 @@
  #
  # Created by Antogone.
 ##
-
-scoreboard players set $magic_mirror index_actu 0
-scoreboard players set $magic_mirror index_futur 0
+scoreboard players set $mirror_entry index 0
+scoreboard players set $mirror_exit index 1
+scoreboard players set $index_click index 0
 
 data remove storage magic_mirror magic_id
 data remove storage magic_mirror info

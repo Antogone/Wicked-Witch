@@ -49,8 +49,7 @@ scoreboard players set $net net_value 8
 #declare storage wicked.potion 
 #declare storage wicked.tellraw
 
-execute as @s run scoreboard objectives add index_actu dummy
-execute as @s run scoreboard objectives add index_futur dummy
+execute as @s run scoreboard objectives add index dummy
 
 execute as @s run scoreboard objectives add incre_one dummy
 execute as @s run scoreboard objectives add incre_deux dummy
@@ -58,8 +57,8 @@ execute as @s run scoreboard objectives add incre_deux dummy
 scoreboard players set $magic_mirror incre_one 1
 scoreboard players set $magic_mirror incre_deux 2
 
-scoreboard players set $magic_mirror index_actu 1
-scoreboard players set $magic_mirror index_futur 1
+scoreboard players set $mirror_entry index 0
+scoreboard players set $mirror_exit index 1
 
 
 

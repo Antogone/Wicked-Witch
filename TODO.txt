@@ -1,47 +1,127 @@
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
-# Idée - 3.0.0
+# Version - 3.0.0 - TODO
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-Création d'un système d'update pour les sliver slippers
+
+=> Nouveau craft slippers                                                                   *************************
+
+
+=> Création d'un système d'upgrade pour les sliver slippers                                 *************************
     - Niveau 1 : Overworld et House
     - Niveau 2 : Nether
     - Niveau 3 : End
-    - Niveau 4 : Witch Dimension
+        -> Generation de nouveaux avancements ( Pour Nether et End )                        *************************
+        Augmentation de niveau via chaudron magique  
+            -> Drop des slippers avec l'élement souhaité ²                                  *************************
+        Tellraw nouveauté ?                                                                 *************************
 
-Witch dimension 
-    - Accéssible via la création d'un portail 
-    - Accéssible via les silver slippers
-    - Uniquement des sorcières et evoker et illusioner qui spawn
+
+
+
+
+=> Possibilité d'avoir un accompagnant avec soit                                            *************************
+    -> Creation d'un nouvel item a tenir pour qu'on soit teleporté en même temps            *************************   
+        -> La personne doit être dans un rayon de 3bloc                                     *************************
+
+
+
+=> House possible dans une autre dimension                                                  *************************
+
+=> MAJ Advancements                                                                         *************************
+
+
+
+Magic Mirror                                                                                *************************
+
+    - Mirrors connecté entre eux (paire de 2)
+    -> Stockage de la localisation et de la dimension avec les store et data                *************************
+    -> Clique avec l'interaction pour activé la teleportation                               *************************   
+
+
     
 
-Possibilité de loupé un spell 
 
 
-Block ? via Interaction ?
-Chaudron Magique : Crée au maximum 5 potion, couleur du chaudron dependant dy type de potion 
-Night vision => Vert claire
-Invisibility => Gris
-Jump boost => jaune
-Fire resistance => orange
-Speed => Cyan 
-Slowness => Bleu gris 
-Water breathing => aqua 
-healing => rouge
-damage => bordeaux 
-poison => kaki
-regeneration => rose
-strength => jaune or 
-weakness => noir 
-luck => vert 
-slow dfalling => creme
+
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+#  Améliorations
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+Récupérations d'objets via loot table  -> CF Dimensionnal Tesseract ?? 
+
+AstralP et GhostWalk gamemode gestion via data storage et non tag
+
+
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+# Fixation Bug 
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
 
 
 
 
-Portail adaptatif
 
-Rune ?
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Idée - 4.0.0
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+Reworking du sort d'immobilization
+    - Timing individuel ?
+
+Chaudron Magique via Interaction 
+    Crée au maximum 5 potion, couleur du chaudron dependant dy type de potion 
+
+    Night vision => Vert claire
+    Invisibility => Gris
+    Jump boost => jaune
+    Fire resistance => orange
+    Speed => Cyan 
+    Slowness => Bleu gris 
+    Water breathing => aqua 
+    healing => rouge
+    damage => bordeaux 
+    poison => kaki
+    regeneration => rose
+    strength => jaune or 
+    weakness => noir 
+    luck => vert 
+    slow dfalling => creme
+
+
+Magic Beans 
+    - Portal to Nether
+    - Portal to End 
+    - Portal to Overworld
+    - Portal to Other Dimension ??
+
+    Portail a crée dans la dimension ou l'on souhaite se teleporter a nouveau ?
+    plateforme de teleportation 
+    animations au sol ? 
+
+BOOK de cauldron SPELL
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Locations:
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+# Location -30000000 0 1611 in Overworld | Standardized chunk used by many data packs, used here to run command blocks processes
+execute in minecraft:overworld run forceload add -30000000 1600
+
+
+
+
+
 
 
 
@@ -70,24 +150,3 @@ https://sketchfab.com/3d-models/crystal-ball-6018233cc2434f8eba72f474657b65c1
 https://sketchfab.com/3d-models/stylized-wizard-hat-f59021d602334367987bcd7657cec722
 
 
-# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
-# Locations:
-# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-# Location -30000000 0 1611 in Overworld | Standardized chunk used by many data packs, used here to run command blocks processes
-execute in minecraft:overworld run forceload add -30000000 1600
-
-
-
-
-
-
-
-
-    tick query : Affiche le taux de tick actuel avec des informations sur les performances des ticks.
-    tick rate <rate> : Définit un taux de tick cible personnalisé. Le taux doit être supérieur à 1.0 et inférieur à 10000.0. Un taux de tick trop bas peut rendre le jeu peu réactif, tandis qu’un taux trop élevé peut provoquer des plantages. Il est recommandé de mesurer les performances du jeu avec tick query ou la fonction de débogage <F3> + 2 (serveur intégré uniquement) pour ajuster le taux de tick.
-    tick freeze : Gèle tous les éléments de gameplay, sauf les joueurs et les entités qu’un joueur monte. Utile pour le débogage.
-    tick step <time> : Fonctionne uniquement lorsque le jeu est gelé. Exécute le jeu pendant un nombre spécifié de ticks, puis le gèle à nouveau. Permet de passer par le jeu en tranches de ticks.
-    tick step stop : Arrête le processus d’avancement actuel et gèle à nouveau le jeu.
-    tick unfreeze : Dégèle le jeu et reprend tous les éléments de gameplay.
-    tick sprint <time> : Fait fonctionner le jeu en ignorant le taux de tick cible défini, permettant au jeu de fonctionner aussi rapidement que possible pendant un nombre de ticks spécifié. Utile pour tester des éléments de gameplay dépendants du temps.
-    tick sprint stop : Arrête la séquence de sprint de tick actuelle et reprend le taux de tick précédent.
