@@ -36,10 +36,15 @@ execute as @e[tag=no_mobs] at @s run kill @e[type=#minecraft:hostile,dx=14,dz=-1
 ############ MALEDICTION 
 execute at @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:10b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:ghast_tear",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:enchanted_golden_apple",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:wither_rose",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/set_malefice
 
-execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=14,dz=14,dy=14] run function wicked:cauldron/effect_malefice
-execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=-14,dz=14,dy=14] run function wicked:cauldron/effect_malefice
-execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=-14,dz=-14,dy=14] run function wicked:cauldron/effect_malefice
-execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,type=!#minecraft:dontharm,dx=14,dz=-14,dy=14] run function wicked:cauldron/effect_malefice
+execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,tag=!salem,type=!#minecraft:dontharm,dx=14,dz=14,dy=14] run function wicked:cauldron/effect_malefice
+execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,tag=!salem,type=!#minecraft:dontharm,dx=-14,dz=14,dy=14] run function wicked:cauldron/effect_malefice
+execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,tag=!salem,type=!#minecraft:dontharm,dx=-14,dz=-14,dy=14] run function wicked:cauldron/effect_malefice
+execute as @e[tag=malefice] at @s run execute as @e[tag=!wicked,tag=!salem,type=!#minecraft:dontharm,dx=14,dz=-14,dy=14] run function wicked:cauldron/effect_malefice
+
+
+
+
+
 
 
 
@@ -61,6 +66,9 @@ execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell14,sort=nea
 execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell,distance=..1,sort=nearest]
 
 
+
+
+
 ############ BANNER
 execute at @e[type=item,nbt={Item:{id:"minecraft:emerald_block",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:lime_banner",Count:10b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/banner
 
@@ -76,7 +84,6 @@ execute unless entity @e[tag=salem,limit=1] run execute at @e[type=item,nbt={Ite
 
 ########### ENCHANTED GOLDEN APPLE
 execute at @e[type=item,nbt={Item:{id:"minecraft:golden_apple",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{grimmerie:1b}}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/enchanted_golden_apple
-
 
 
 ######## NETHER UPGRADE SILVER SLIPPERS

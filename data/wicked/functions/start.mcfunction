@@ -5,8 +5,8 @@ execute as @s run scoreboard objectives add click3 minecraft.used:minecraft.snow
 execute as @s run scoreboard objectives add drop minecraft.dropped:minecraft.carrot_on_a_stick
 
 tag @s add wicked
-team add witch
-team join witch
+team add Witch
+team join Witch
 
 execute as @s run scoreboard objectives add itm dummy
 execute as @s run scoreboard objectives add charge dummy

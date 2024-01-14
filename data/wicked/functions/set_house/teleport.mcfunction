@@ -18,4 +18,4 @@ execute at @e[tag=accp] run function wicked:particle
 
 playsound minecraft:entity.enderman.teleport master @a
 
-tag @e[tag=accp] remove accp
+tag @e[tag=accp,type=!cat] remove accp

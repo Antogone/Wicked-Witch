@@ -4,15 +4,19 @@
  #
  # Created by Antogone.
 ##
-# execute at @s run setblock ~ ~ ~ gray_banner{Patterns: [{Pattern: "gru", Color: 3}, {Pattern: "bo", Color: 4}, {Pattern: "tts", Color: 4}, {Pattern: "bts", Color: 4}, {Pattern: "cbo", Color: 4}]}
 
-data modify storage magic_mirror info.dim append from entity @p[tag=wicked] Dimension
-data modify storage magic_mirror info.x append from entity @p[tag=wicked] Pos[0]
-data modify storage magic_mirror info.y append from entity @p[tag=wicked] Pos[1]
-data modify storage magic_mirror info.z append from entity @p[tag=wicked] Pos[2]
+data modify storage magic_mirror info.dim append from entity @s Dimension
+data modify storage magic_mirror info.x append from entity @s Pos[0]
+data modify storage magic_mirror info.y append from entity @s Pos[1]
+data modify storage magic_mirror info.z append from entity @s Pos[2]
 
-summon interaction ~ ~1 ~ {width:1f, height: 1f, response: 1b, Tags: [magic_mirror],Passengers:[{id:"minecraft:marker",Tags:["store_dat","exit"]}]}
-summon item_display ~ ~1.5 ~ {Tags:["itm_disp"],billboard:"vertical",transformation:{scale:[2f,2f,2f],translation:[0f,4f,0f]},item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:10140005}}}
+
+
+
+
+execute at @s run summon interaction ~ ~0.5 ~ {width:1f, height: 1f, response: 1b, Tags: [magic_mirror],Passengers:[{id:"minecraft:marker",Tags:["store_dat","exit"]}]}
+
+execute at @s run execute at @e[tag=magic_mirror,sort=nearest,limit=1] run summon item_display ~ ~0.5 ~ {Tags:["itm_disp"],billboard:"vertical",item_display:"fixed",item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:10140005}}}
 
 
 

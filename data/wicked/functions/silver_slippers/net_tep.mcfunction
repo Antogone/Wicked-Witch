@@ -69,4 +69,4 @@ execute at @p[tag=wicked] run schedule function wicked:particle 10t
 
 playsound minecraft:entity.enderman.teleport master @a
 
-tag @e[tag=accp] remove accp
+tag @e[tag=accp,type=!cat] remove accp
