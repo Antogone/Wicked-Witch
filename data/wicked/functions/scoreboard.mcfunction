@@ -2,11 +2,10 @@ scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add click3 minecraft.used:minecraft.snowball
 scoreboard objectives add drop minecraft.dropped:minecraft.carrot_on_a_stick
 
-team add witch
+team add Witch
 
 
 scoreboard objectives add itm dummy
-scoreboard objectives add charge dummy
 
 
 scoreboard objectives add bro dummy
@@ -21,18 +20,12 @@ scoreboard objectives add magie dummy
 
 
 scoreboard objectives add select dummy
-scoreboard objectives add kd dummy 
 scoreboard objectives add s minecraft.custom:minecraft.sneak_time
 
 scoreboard objectives add spell dummy
 
-scoreboard objectives add x dummy
-scoreboard objectives add y dummy
-scoreboard objectives add z dummy
-scoreboard objectives add dx dummy
-scoreboard objectives add dy dummy
-scoreboard objectives add dz dummy
 
+# Teleportation 
 scoreboard objectives add x_temp dummy
 scoreboard objectives add y_temp dummy
 scoreboard objectives add z_temp dummy
@@ -60,8 +53,8 @@ data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
 
 execute in minecraft:overworld run forceload add -30000000 1600
 
-team modify witch nametagVisibility always
-team modify witch color green
+team modify Witch nametagVisibility always
+team modify Witch color green
 
 scoreboard objectives add P dummy
 scoreboard objectives add L dummy

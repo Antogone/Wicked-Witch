@@ -9,7 +9,7 @@
 scoreboard objectives remove click
 scoreboard objectives remove click3 
 scoreboard objectives remove drop 
-scoreboard objectives remove charge
+
 team remove witch
 scoreboard objectives remove itm 
 scoreboard objectives remove bro 

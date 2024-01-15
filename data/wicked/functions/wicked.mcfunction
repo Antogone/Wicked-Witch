@@ -137,7 +137,7 @@ execute at @e[tag=ball] at @s run execute at @e[tag=!wicked,type=!#dontharm,dist
 
 #Give fire + magic damage
 execute as @e[tag=ball] at @s run execute at @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run data merge entity @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest,limit=1] {Fire:56s}
-execute as @e[tag=ball] at @s run execute as @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run damage @s 8 minecraft:magic by @p[tag=wicked]
+execute as @e[tag=ball] at @s run execute as @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run damage @s 8 minecraft:generic_kill by @p[tag=wicked]
 
 #Particle Management
 execute as @e[tag=ball] at @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.3 0.3 0.3 0.001 50 force
