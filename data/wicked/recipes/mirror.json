@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "EeE",
+        "aia",
+        "EeE"
+    ],
+    "key": {
+        "i": {
+            "item": "minecraft:ender_pearl"
+        },
+        "e": {
+            "item": "minecraft:enchanted_book"
+        },
+        "a": {
+            "item": "minecraft:soul_lantern"
+        },
+        "E": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

@@ -112,11 +112,7 @@ attribute @s generic.attack_damage base set 1.0
 attribute @s generic.armor base set 0.0
 
 tag @s remove wicked
-tag @s remove house
-tag @s remove house_ow
-kill @e[type=marker,tag=house_net]
-kill @e[type=marker,tag=house_end]
-kill @e[type=marker,tag=house_ow]
+
 kill @e[tag=wall]
 tag @s remove l10
 tag @s remove l15
@@ -135,7 +131,22 @@ tag @s remove ghost
 tag @s remove ast_p
 
 forceload remove all
-data remove storage wicked.potion
-data remove storage wicked.tep
+data remove storage wicked.potion PotionId
+data remove storage wicked.tep DimHouse
+data remove storage wicked.tep Temp
+data remove storage wicked.tep PosHouse
+data remove storage wicked.tep house
+data remove storage wicked.tellraw silver
+
+data remove storage magic_mirror magic_id
+data remove storage magic_mirror info
+data remove storage magic_mirror temp
 
 scoreboard objectives remove steps
+
+scoreboard objectives remove index_actu 
+scoreboard objectives remove index_futur
+
+scoreboard objectives remove incre_one
+scoreboard objectives remove incre_deux
+

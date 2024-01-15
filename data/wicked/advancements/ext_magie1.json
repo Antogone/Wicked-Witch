@@ -11,12 +11,12 @@
         "text": "You have increase your magic energy",
         "color": "dark_green"
     },
-      "frame": "challenge",
+      "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "wicked:shield_spell",
+    "parent": "wicked:witch_pendant_adv",
     "criteria": {
       "Defying gravity": {
         "trigger": "minecraft:tick",
@@ -28,7 +28,10 @@
               "predicate": {
                 "type_specific": {
                   "type": "player",
-                  "level": 50
+                  "level":{
+                    "min": 50,
+                    "max": 1000
+                  }
                 }
               }
             }

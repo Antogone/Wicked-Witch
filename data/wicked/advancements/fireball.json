@@ -1,7 +1,9 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:soul_campfire"
+        "item": "minecraft:snowball",
+        "nbt": "{CustomModelData:10140002}"
+
       },
       "title": {
         "text": "How about a little fire, Scarecrow ?",
@@ -11,7 +13,7 @@
         "text": "You learn how to throw fireball",
         "color": "dark_green"
     },
-      "frame": "challenge",
+      "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
@@ -28,7 +30,10 @@
               "predicate": {
                 "type_specific": {
                   "type": "player",
-                  "level": 10
+                  "level": {
+                    "min": 10,
+                    "max": 1000
+                  }
                 }
               }
             }

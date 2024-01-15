@@ -1,7 +1,8 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:blaze_powder"
+        "item": "minecraft:carrot_on_a_stick",
+        "nbt": "{ CustomModelData:10140001}"
       },
       "title": {
         "text": "No more move !",
@@ -11,7 +12,7 @@
         "text": "You have learn the immobilization spell",
         "color": "dark_green"
     },
-      "frame": "challenge",
+      "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
@@ -28,7 +29,10 @@
               "predicate": {
                 "type_specific": {
                   "type": "player",
-                  "level": 30
+                  "level": {
+                    "min": 30,
+                    "max": 1000
+                  }
                 }
               }
             }

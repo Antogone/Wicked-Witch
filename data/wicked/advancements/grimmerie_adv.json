@@ -1,7 +1,9 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:enchanted_book"
+        "item": "minecraft:written_book",
+        "nbt": "{CustomModelData:10140005}"
+
       },
       "title": {
         "text": "The Grimmerie",
@@ -11,7 +13,7 @@
         "text": "You found the The Grimmerie",
         "color": "dark_green"
     },
-      "frame": "challenge",
+      "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false

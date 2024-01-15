@@ -2,7 +2,7 @@ playsound minecraft:block.beacon.deactivate master @a
 
 clear @s carrot_on_a_stick{poofing:1b}
 clear @s carrot_on_a_stick{scepter:1b}
-clear @s carrot_on_a_stick{poofing:1b}
+clear @s carrot_on_a_stick{immo:1b}
 clear @s snowball{fireball:1b}
 clear @s feather{broom:1b}
 clear @s command_block{CustomModelData:14120001}

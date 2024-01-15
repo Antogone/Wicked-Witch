@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:netherrack"
+    },
+    "title": {
+      "text": "6 feet under",
+      "color": "dark_red"
+    },
+    "description": {
+      "text": "Upgraded your silver slipper to go into the nether",
+      "color": "dark_green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "wicked:slip_adv",
+  "criteria": {
+    "The Silver Slippers": {
+      "trigger": "minecraft:impossible"
+  }
+  }
+}

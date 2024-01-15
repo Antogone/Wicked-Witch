@@ -1,22 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "EDE",
+        "EeE",
         "eie",
-        "EpE"
+        "EeE"
     ],
     "key": {
         "i": {
             "item": "minecraft:iron_boots"
         },
-        "D": {
-            "item": "minecraft:end_stone"
-        },
-        "p": {
-            "item": "minecraft:netherrack"
-        },
         "e": {
-            "item": "minecraft:dirt"
+            "item": "minecraft:enchanted_book"
         },
         "E": {
             "item": "minecraft:emerald"

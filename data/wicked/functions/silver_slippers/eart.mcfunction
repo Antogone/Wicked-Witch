@@ -9,5 +9,9 @@ scoreboard players set @a[scores={equip=1}] choose -1
 scoreboard players set @a[scores={s=1..}] s 0
 execute at @p[tag=wicked] run function wicked:particle
 execute at @p[tag=wicked] run function wicked:particle
+execute at @p[tag=wicked] run function wicked:particle 
+
+
 execute if dimension the_nether run execute in minecraft:overworld summon marker run function wicked:silver_slippers/eart_tepn
-execute if dimension the_end run execute in minecraft:overworld summon marker run function wicked:silver_slippers/eart_tep
+
+execute in minecraft:overworld summon marker run function wicked:silver_slippers/eart_tep

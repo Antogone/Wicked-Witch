@@ -5,8 +5,8 @@ execute as @s run scoreboard objectives add click3 minecraft.used:minecraft.snow
 execute as @s run scoreboard objectives add drop minecraft.dropped:minecraft.carrot_on_a_stick
 
 tag @s add wicked
-team add witch
-team join witch
+team add Witch
+team join Witch
 
 execute as @s run scoreboard objectives add itm dummy
 execute as @s run scoreboard objectives add charge dummy
@@ -44,12 +44,29 @@ execute as @s run scoreboard objectives add y_temp dummy
 execute as @s run scoreboard objectives add z_temp dummy
 execute as @s run scoreboard objectives add net_value dummy
 scoreboard players set $net net_value 8
+
 #declare storage wicked.tep
 #declare storage wicked.potion 
+#declare storage wicked.tellraw
+
+execute as @s run scoreboard objectives add index dummy
+
+execute as @s run scoreboard objectives add incre_one dummy
+execute as @s run scoreboard objectives add incre_deux dummy
+
+scoreboard players set $magic_mirror incre_one 1
+scoreboard players set $magic_mirror incre_deux 2
+
+scoreboard players set $mirror_entry index 0
+scoreboard players set $mirror_exit index 1
+
+
+
+data modify storage wicked.tellraw silver.overworld set value {"text":"[Overworld]","color":"blue","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 0"}}
+
 
 data modify storage wicked.potion PotionId set value ["minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:"]
 data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
-data modify storage wicked.tep Temp.PosHouse set value [0d,0d,0d]
 
 execute in minecraft:overworld run forceload add -30000000 1600
 
@@ -61,16 +78,6 @@ scoreboard objectives add L dummy
 scoreboard objectives add C dummy
 scoreboard objectives add R dummy
 
-# scoreboard objectives add ID1 dummy
-# scoreboard objectives add ID2 dummy
-# scoreboard objectives add ID3 dummy
-# scoreboard objectives add ID4 dummy
-# scoreboard objectives add ID5 dummy
-# scoreboard objectives add ID6 dummy
-# scoreboard objectives add ID7 dummy
-# scoreboard objectives add ID8 dummy
-# scoreboard objectives add ID9 dummy
-# scoreboard objectives add ID10 dummy
 
 
 scoreboard objectives add D1 dummy

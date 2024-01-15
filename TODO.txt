@@ -1,20 +1,126 @@
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
-# Idée - 3.0.0
+# Version - 3.0.0 - TODO
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-Création d'un système d'update pour les sliver slippers
+
+=> Nouveau craft slippers                                                                   *************************
+
+
+=> Création d'un système d'upgrade pour les sliver slippers                                 *************************
     - Niveau 1 : Overworld et House
     - Niveau 2 : Nether
     - Niveau 3 : End
-    - Niveau 4 : Witch Dimension
+        -> Generation de nouveaux avancements ( Pour Nether et End )                        *************************
+        Augmentation de niveau via chaudron magique  
+            -> Drop des slippers avec l'élement souhaité ²                                  *************************
+        Tellraw nouveauté ?                                                                 *************************
 
-Witch dimension 
-    - Accéssible via la création d'un portail 
-    - Accéssible via les silver slippers
-    - Uniquement des sorcières et evoker et illusioner qui spawn
-    - 2-3 Structure (à Définir)
+
+
+
+
+=> Possibilité d'avoir un accompagnant avec soit                                            *************************
+    -> Creation d'un nouvel item a tenir pour qu'on soit teleporté en même temps            *************************   
+        -> La personne doit être dans un rayon de 3bloc                                     *************************
+
+
+
+=> House possible dans une autre dimension                                                  *************************
+
+=> MAJ Advancements                                                                         *************************
+
+
+
+Magic Mirror                                                                                *************************
+
+    - Mirrors connecté entre eux (paire de 2)
+    -> Stockage de la localisation et de la dimension avec les store et data                *************************
+    -> Clique avec l'interaction pour activé la teleportation                               *************************   
+
+
     
 
-Possibilité de loupé un spell 
+
+
+
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+#  Améliorations
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+Récupérations d'objets via loot table  -> CF Dimensionnal Tesseract ?? 
+
+AstralP et GhostWalk gamemode gestion via data storage et non tag
+
+
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+# Fixation Bug 
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Idée - 4.0.0
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+Reworking du sort d'immobilization
+    - Timing individuel ?
+
+Chaudron Magique via Interaction 
+    Crée au maximum 5 potion, couleur du chaudron dependant dy type de potion 
+
+    Night vision => Vert claire
+    Invisibility => Gris
+    Jump boost => jaune
+    Fire resistance => orange
+    Speed => Cyan 
+    Slowness => Bleu gris 
+    Water breathing => aqua 
+    healing => rouge
+    damage => bordeaux 
+    poison => kaki
+    regeneration => rose
+    strength => jaune or 
+    weakness => noir 
+    luck => vert 
+    slow dfalling => creme
+
+
+Magic Beans 
+    - Portal to Nether
+    - Portal to End 
+    - Portal to Overworld
+    - Portal to Other Dimension ??
+
+    Portail a crée dans la dimension ou l'on souhaite se teleporter a nouveau ?
+    plateforme de teleportation 
+    animations au sol ? 
+
+BOOK de cauldron SPELL
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Locations:
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+# Location -30000000 0 1611 in Overworld | Standardized chunk used by many data packs, used here to run command blocks processes
+execute in minecraft:overworld run forceload add -30000000 1600
+
+
+
+
 
 
 
@@ -42,14 +148,5 @@ https://www.reddit.com/r/Minecraft/comments/jluyd1/a_witch_brewing_a_sinister_po
 
 https://sketchfab.com/3d-models/crystal-ball-6018233cc2434f8eba72f474657b65c1
 https://sketchfab.com/3d-models/stylized-wizard-hat-f59021d602334367987bcd7657cec722
-
-
-# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
-# Locations:
-# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-# Location -30000000 0 1611 in Overworld | Standardized chunk used by many data packs, used here to run command blocks processes
-execute in minecraft:overworld run forceload add -30000000 1600
-
-
 
 

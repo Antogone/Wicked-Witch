@@ -11,7 +11,7 @@
         "text": "You have increase your magic energy to maximum",
         "color": "dark_green"
     },
-      "frame": "challenge",
+      "frame": "goal",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
@@ -28,7 +28,10 @@
               "predicate": {
                 "type_specific": {
                   "type": "player",
-                  "level": 80
+                  "level": {
+                    "min": 80,
+                    "max": 1000
+                  }
                 }
               }
             }

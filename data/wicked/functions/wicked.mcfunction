@@ -12,6 +12,7 @@ effect give @a[tag=wicked,limit=1] saturation infinite 0 true
 effect give @a[tag=wicked,limit=1] jump_boost infinite 1 true
 effect give @a[tag=wicked,limit=1,scores={broo=1..}] jump_boost 5 2 true
 
+effect give @e[tag=salem,limit=1] slow_falling infinite 0 true
 
 
 ###########################
@@ -196,51 +197,8 @@ execute as @a[tag=wicked,limit=1,scores={spell=600,magie=30..}] at @s run functi
 ###########################
 # SPELLBOOK
 ###########################
-execute as @e[tag=wicked,predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1}}}
+execute as @e[tag=wicked,predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1b}}}
 
-
-###########################
-# ANTI LAG & BUG
-###########################
-execute as @a[tag=wicked,limit=1] at @s run kill @e[tag=ball,distance=50..]
-execute as @e[tag=ball] at @s if block ~ ~ ~ water run kill @e[tag=ball]
-
-scoreboard players set @a[tag=wicked,scores={select=0},limit=1] broom 0
-scoreboard players set @a[tag=wicked,limit=1] click 0
-scoreboard players set @a[tag=wicked,limit=1] click3 0
-
-# ##########################
-# # AMPLIFICATOR
-# ##########################
-
-# # ########## SET Amplificator
-
-# execute at @e[tag=set_ampli] run execute at @e[tag=ampli] run fill ~ ~ ~ ~ ~2 ~ air
-# execute at @e[tag=set_ampli] run kill @e[tag=ampli]
-# execute at @e[tag=set_ampli] run kill @e[tag=em_amp]
-
-
-# execute at @e[tag=set_ampli] run setblock ~ ~ ~ emerald_block
-# execute at @e[tag=set_ampli] run setblock ~ ~2 ~ emerald_block
-# execute at @e[tag=set_ampli] run summon marker ~ ~ ~ {Invisible:1b,PersistenceRequired:1b,Tags:["ampli"]}
-# execute as @e[tag=set_ampli,type=slime] at @s run summon marker ~ ~ ~ {Invisible:1b,PersistenceRequired:1b,Tags:["remove_itm"]}
-# execute as @e[tag=remove_itm] at @s run kill @e[tag=set_ampli,distance=..2]
-# execute as @e[tag=remove_itm] at @s run kill @e[type=item,distance=..2]
-# execute as @e[tag=remove_itm] at @s run kill @e[tag=remove_itm,distance=..2]
-
-# # ########## RECUP CAULDRON 
-# execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run summon item ~ ~ ~ {Item:{id:"minecraft:slime_spawn_egg",Count:1b,tag:{display:{Name:"{\"text\":\"§2Amplificator\"}"},EntityTag:{Size:0,wasOnGround:1,NoAI:1,Silent:1,Tags:["set_ampli"]},Enchantments:[{}]}}}
-# execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run summon item ~ ~ ~ {Item:{id:"minecraft:slime_spawn_egg",Count:1b,tag:{display:{Name:"{\"text\":\"§2Amplificator\"}"},EntityTag:{Size:0,wasOnGround:1,NoAI:1,Silent:1,Tags:["set_ampli"]},Enchantments:[{}]}}}
-
-
-# execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run fill ~ ~ ~ ~ ~2 ~ air
-# execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run fill ~ ~ ~ ~ ~2 ~ air
-
-# execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run kill @e[tag=em_amp]
-# execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=em_amp]
-
-# execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~ ~ air run kill @e[tag=ampli]
-# execute at @e[tag=ampli] as @e[tag=ampli] if block ~ ~2 ~ air run kill @e[tag=ampli]
 
 
 ###########################
@@ -299,3 +257,24 @@ item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 w
 
 
 #/give @p minecraft:green_banner{BlockEntityTag:{Patterns:[{Pattern:"cs",Color:5},{Pattern:"cs",Color:13},{Pattern:"bts",Color:5},{Pattern:"bts",Color:13},{Pattern:"tts",Color:5},{Pattern:"tts",Color:13},{Pattern:"cr",Color:5},{Pattern:"cr",Color:13},{Pattern:"flo",Color:5},{Pattern:"flo",Color:13},{Pattern:"bo",Color:5},{Pattern:"bo",Color:13}]}}
+
+
+#### MAGIC MIRROR 
+# scoreboard objectives add place_mirror miencraft used gray banner
+execute as @a[scores={click=1..},predicate=wicked:select_mirror_1] at @s run function wicked:magic_mirror/set_mirror_first
+execute as @a[scores={click=1..},predicate=wicked:select_mirror_2] at @s run function wicked:magic_mirror/set_mirror_second
+
+execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wicked:magic_mirror/kill_mirror
+execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wicked:magic_mirror/click_magic_mirror
+
+
+
+###########################
+# ANTI LAG & BUG
+###########################
+execute as @a[tag=wicked,limit=1] at @s run kill @e[tag=ball,distance=50..]
+execute as @e[tag=ball] at @s if block ~ ~ ~ water run kill @e[tag=ball]
+
+scoreboard players set @a[tag=wicked,scores={select=0},limit=1] broom 0
+scoreboard players set @a click 0
+scoreboard players set @a click3 0

@@ -20,3 +20,4 @@ tag @a[tag=wicked] remove ast_p
 
 
 kill @e[tag=PAJ]
+bossbar set minecraft:timer players

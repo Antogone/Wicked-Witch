@@ -11,7 +11,7 @@
         "text": "You have learn the teleportation spell",
         "color": "dark_green"
     },
-      "frame": "challenge",
+      "frame": "task",
       "show_toast": true,
       "announce_to_chat": true,
       "hidden": false
@@ -28,7 +28,10 @@
               "predicate": {
                 "type_specific": {
                   "type": "player",
-                  "level": 20
+                  "level": {
+                    "min": 20,
+                    "max": 1000
+                  }
                 }
               }
             }

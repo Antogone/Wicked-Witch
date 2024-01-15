@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:player_head"
+      },
+      "title": {
+        "text": "Let's go together",
+        "color": "dark_green"
+    },
+    "description": {
+      "text": "created a Companion Amulet to travel with you",
+      "color": "dark_green"
+  },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "wicked:slip_adv",
+    "criteria": {
+        "The Silver Slippers": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "wicked:companion_amulet"
+            }
+        }
+    }
+  }
+  
