@@ -73,8 +73,6 @@ execute at @e[tag=c_spell] if block ~ ~ ~ air run kill @e[tag=c_spell,distance=.
 execute at @e[type=item,nbt={Item:{id:"minecraft:emerald_block",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:lime_banner",Count:10b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/banner
 
 
-############ AMPLIFICATOR
-# execute at @e[type=item,nbt={Item:{id:"minecraft:emerald_block",Count:2b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:beacon",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:enchanted_golden_apple",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:egg",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/amplificator
 
 
 
