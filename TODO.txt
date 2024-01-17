@@ -2,18 +2,25 @@
 # Version - 3.1.0 - TODO
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
-Verrouillage de mirror 
+Verrouillage de mirror                                    FAIT
+Deverrouillage de mirror 
+  -> Amulet main hand
+  -> glowstone seconde 
+
 
 Reworking du sort d'immobilization
     - Timing individuel ?
 
 Remove fireball ?
 
-Storage pour Potion Book et Enchantments
+Storage pour Potion Book                                   FAIT
+Storage pour Enchantments                                  FAIT
+
+
+
 
 Récupérations d'objets via loot table
-loot give @s loot bracken:item/ability_books/returning_tides
-
+loot give @s loot wicked:item/witch_pendant
 {
   "pools": [
     {
@@ -52,7 +59,6 @@ loot give @s loot bracken:item/ability_books/returning_tides
   ]
 }
 
-AstralP et GhostWalk gamemode gestion via data storage et non tag
 
 
 Pocket Magic mirror

@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "Wicked Witch's Pendant",
+                "color": "dark_green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Magic pendant containing the magic of the wicked witch of the west",
+                  "color": "green",
+                  "italic": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pendant:1b,HideFlags:3,CustomModelData:141200,Enchantments:[{}]}"
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

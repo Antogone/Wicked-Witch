@@ -1,0 +1,42 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "House Spell",
+                "color": "dark_green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "There is no place like home",
+                  "color": "green",
+                  "italic": true
+                },
+                {
+                  "translate": "Cast a spell to define where your home is",
+                  "color": "green",
+                  "italic": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData: 10140004,house:1b,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
