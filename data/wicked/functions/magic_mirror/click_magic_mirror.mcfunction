@@ -1,12 +1,20 @@
 # Check for right-clicking of chunk interactions
 execute unless data entity @s interaction run return 0
 
+
 # Tag the player who interacted with the chunk
 execute on target run tag @s add Interactor
 
 
+
+
+
+execute as @s[tag=locked] unless entity @p[tag=Interactor,predicate=wicked:select_pendant,sort=nearest] run function wicked:magic_mirror/locked
+
+
+
+
 # Play a click sound to the player
-execute as @p[tag=Interactor] at @s run playsound ui.button.click block @s ~ ~ ~
 execute as @p[tag=Interactor] at @s run execute at @e[type=minecraft:interaction,tag=magic_mirror,sort=nearest,limit=1] run particle happy_villager ^ ^ ^ 0.5 1 0.5 0.001 100 force
 
 

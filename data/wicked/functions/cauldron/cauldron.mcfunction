@@ -94,3 +94,6 @@ execute at @e[type=item,nbt={Item:{id:"minecraft:chainmail_boots",Count:1b,tag:{
 
 
 schedule function wicked:cauldron/cauldron 10t
+
+
+execute at @e[type=item,nbt={Item:{tag:{pendant:1b}}}] if entity @e[type=minecraft:interaction,tag=magic_mirror,distance=..2,sort=nearest] run tag @e[type=minecraft:interaction,tag=magic_mirror,distance=..2,sort=nearest] add locked

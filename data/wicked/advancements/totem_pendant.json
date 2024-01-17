@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:used_totem",
+        "conditions": {
+          "item": {
+            "nbt": "{pendant:1b}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "wicked:totem_pendant"
+    }
+  }
+  

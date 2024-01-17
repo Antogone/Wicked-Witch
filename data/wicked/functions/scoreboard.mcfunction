@@ -4,6 +4,7 @@ scoreboard objectives add drop minecraft.dropped:minecraft.carrot_on_a_stick
 
 team add Witch
 
+gamerule keepInventory true
 
 scoreboard objectives add itm dummy
 

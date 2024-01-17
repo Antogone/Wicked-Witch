@@ -52,6 +52,7 @@ execute at @p[tag=wicked] run schedule function wicked:silver_slippers/phase 1s
 execute at @e[tag=accp] run schedule function wicked:particle 10t
 
 
-playsound minecraft:entity.enderman.teleport master @a
+execute as @p[tag=wicked] at @s run playsound entity.witch.celebrate master @s ~ ~ ~
+execute as @p[tag=wicked] at @s run playsound entity.enderman.teleport master @s ~ ~ ~
 
 tag @e[tag=accp,type=!cat] remove accp

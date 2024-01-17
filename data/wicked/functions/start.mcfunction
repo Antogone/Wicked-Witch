@@ -1,6 +1,7 @@
 #By Antogone
 #start.mcfunction
 
+gamerule keepInventory true
 
 
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
@@ -70,21 +71,15 @@ execute in minecraft:overworld run forceload add -30000000 1600
 team modify Witch nametagVisibility always
 team modify Witch color green
 
+
+scoreboard objectives add potion_trigger trigger
+scoreboard players enable @p[tag=wicked] potion_trigger
+
+
 scoreboard objectives add P dummy
-scoreboard objectives add L dummy
-scoreboard objectives add C dummy
-scoreboard objectives add R dummy
 
 
 
-scoreboard objectives add D1 dummy
-scoreboard objectives add D2 dummy
-scoreboard objectives add D3 dummy
-scoreboard objectives add D4 dummy
-scoreboard objectives add D5 dummy
-scoreboard objectives add D6 dummy
-scoreboard objectives add D7 dummy
-scoreboard objectives add D8 dummy
 
 
 scoreboard objectives add NUMBER dummy

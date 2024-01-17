@@ -38,6 +38,6 @@ execute at @e[tag=accp] run function wicked:particle
 execute at @e[tag=accp] run function wicked:particle 
 execute at @e[tag=accp] run function wicked:particle 
 
-playsound minecraft:entity.enderman.teleport master @a
+execute as @p[tag=wicked] at @s run playsound entity.witch.celebrate master @s ~ ~ ~
 
 tag @e[tag=accp,type=!cat] remove accp
