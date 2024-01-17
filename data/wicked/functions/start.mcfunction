@@ -79,37 +79,8 @@ scoreboard players enable @p[tag=wicked] potion_trigger
 scoreboard objectives add P dummy
 
 
-
-
-
-scoreboard objectives add NUMBER dummy
-scoreboard objectives add CRAFT dummy
-scoreboard objectives add UNDO dummy
-
-
-scoreboard objectives add ENCH1 dummy
-scoreboard objectives add ENCH2 dummy
-scoreboard objectives add ENCH3 dummy
-scoreboard objectives add ENCH4 dummy
-scoreboard objectives add ENCH5 dummy
-
-
-scoreboard objectives add LVL1 dummy
-scoreboard objectives add LVL2 dummy
-scoreboard objectives add LVL3 dummy
-scoreboard objectives add LVL4 dummy
-scoreboard objectives add LVL5 dummy
-
-
-scoreboard objectives add A1 dummy
-scoreboard objectives add A2 dummy
-scoreboard objectives add A3 dummy
-scoreboard objectives add A4 dummy
-scoreboard objectives add A5 dummy
-scoreboard objectives add A6 dummy
-scoreboard objectives add A7 dummy
-scoreboard objectives add A8 dummy
-
+scoreboard objectives add ench_trigger trigger
+scoreboard players enable @p[tag=wicked] ench_trigger
 
 scoreboard objectives add steps dummy
 

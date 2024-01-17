@@ -1,0 +1,189 @@
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Version - 3.1.0 - TODO
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+Verrouillage de mirror 
+
+Reworking du sort d'immobilization
+    - Timing individuel ?
+
+Remove fireball ?
+
+Storage pour Potion Book et Enchantments
+
+Récupérations d'objets via loot table
+loot give @s loot bracken:item/ability_books/returning_tides
+
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "Returning Tides",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "consumes 1 level",
+                  "color": "gray",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{bp:{id:\"returning_tides\"},CustomModelData:888518,Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+AstralP et GhostWalk gamemode gestion via data storage et non tag
+
+
+Pocket Magic mirror
+    -> teleporte au dernier mirroire utilisé/ placé 
+
+
+Custom Potion
+    -> detection via avancements 
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{bp.potion:102b, bp:[{id:\"custom_potion\"},{astral:1b}]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "bracken:player/potion/astral_projection/1_astral"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+#  Améliorations
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+# Fixation Bug 
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Idée - 4.0.0
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+
+
+Chaudron Magique via Interaction 
+    Crée au maximum 5 potion (5 fois la même potion), couleur du chaudron dependant du type de potion 
+    Affichage des ingredients au dessus du chaudron 
+    possibilité de mix pour obtenir plein d'effet ?
+
+    Night vision => Vert claire
+    Invisibility => Gris
+    Jump boost => jaune
+    Fire resistance => orange
+    Speed => Cyan 
+    Slowness => Bleu gris 
+    Water breathing => aqua 
+    healing => rouge
+    damage => bordeaux 
+    poison => kaki
+    regeneration => rose
+    strength => jaune or 
+    weakness => noir 
+    luck => vert 
+    slow dfalling => creme
+
+
+Magic Beans 
+    - Portal to Nether
+    - Portal to End 
+    - Portal to Overworld
+    - Portal to Other Dimension ??
+
+    Portail a crée dans la dimension ou l'on souhaite se teleporter a nouveau ?
+    plateforme de teleportation 
+    animations au sol ? 
+
+
+
+Cauldron spell book 
+    -> Livre contenant les sors pouvant être lancé depuis un chaudron
+
+
+
+
+
+
+
+
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Locations:
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+# Location -30000000 0 1611 in Overworld | Standardized chunk used by many data packs, used here to run command blocks processes
+execute in minecraft:overworld run forceload add -30000000 1600
+
+
+
+
+
+
+
+
+
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Optimization
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+https://www.youtube.com/watch?v=lvMCaPOF-mU
+https://minecraft.fandom.com/wiki/Predicate
+https://misode.github.io/predicate/
+https://astrune.weebly.com/optimizing-data-packs.html
+https://www.youtube.com/watch?v=lvMCaPOF-mU
+https://github.com/Neylz/opti-mcfunction/blob/main/docs/lang/fr-fr/basics.md
+
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# 3D
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+https://www.reddit.com/r/Minecraft/comments/qii0by/the_witch_hut_a_spooky_halloween_render/
+https://sketchfab.com/3d-models/witch-items-a2422b8ed63a4902847fc7e35ef00e0a
+https://www.reddit.com/r/Minecraft/comments/jluyd1/a_witch_brewing_a_sinister_potion_render_by_me/
+
+
+https://sketchfab.com/3d-models/crystal-ball-6018233cc2434f8eba72f474657b65c1
+https://sketchfab.com/3d-models/stylized-wizard-hat-f59021d602334367987bcd7657cec722
+
+
