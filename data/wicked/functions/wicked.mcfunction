@@ -49,13 +49,13 @@ execute as @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:-106b,tag:{pendant:1b}}]
 
 
 #SCEPTER
-item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.0 with carrot_on_a_stick{scepter:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Wicked Beam\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
+item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.0 with carrot_on_a_stick{scepter:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Magic Blast\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
 
 #POOFING
 item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.1 with carrot_on_a_stick{poofing:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
 
 #IMMOBILIZATION
-item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=15..}] hotbar.2 with carrot_on_a_stick{immo:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilisation\"}",Lore:["{\"text\":\"§2Magic Cost : 15\"}"]},Enchantments:[{}]}
+item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=15..}] hotbar.2 with carrot_on_a_stick{immo:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}",Lore:["{\"text\":\"§2Magic Cost : 15\"}"]},Enchantments:[{}]}
 
 
 #FLYING SPELL

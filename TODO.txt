@@ -26,6 +26,8 @@ Silver Slippers Utilisable par tout le monde               FAIT
 Récupérations d'objets via loot table                      FAIT
 
 
+Death teleportation to House                               FAIT
+
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 #  Améliorations
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
