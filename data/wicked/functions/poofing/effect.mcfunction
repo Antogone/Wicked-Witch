@@ -9,6 +9,7 @@ execute as @e[tag=wicked,limit=1] at @s anchored feet run teleport @a[tag=wicked
 execute as @e[tag=wicked,limit=1] at @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.3 1 0.3 0.001 200 force
 execute as @e[tag=wicked,limit=1] at @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.3 1 0.3 0.001 200 force
 execute as @e[tag=wicked,limit=1] at @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.3 1 0.3 50 100 force
+
 execute as @e[tag=wicked,limit=1] at @s run effect give @s slow_falling 5 10 true
 playsound minecraft:entity.enderman.teleport master @a
 tag @a[tag=tp,limit=1] remove tp

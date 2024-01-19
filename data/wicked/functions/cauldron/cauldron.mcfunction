@@ -57,6 +57,9 @@ execute as @e[tag=c_spell] at @s anchored eyes run function wicked:cauldron/part
 
 
 
+
+
+
 ########## REMOVE THE SPELL
 execute at @e[type=item,nbt={Item:{id:"minecraft:gunpowder",Count:1b}}] if entity @e[tag=c_spell,distance=..1] run tag @e[tag=c_spell,distance=..1] add remove
 execute as @e[tag=remove] at @e[tag=remove] run kill @e[type=item,distance=..1]

@@ -20,25 +20,10 @@ Storage pour Potion Book                                   FAIT
 Storage pour Enchantments                                  FAIT
 
 
+Silver Slippers Utilisable par tout le monde
 
 
 Récupérations d'objets via loot table                      FAIT
-
-
-
-
-
-Pocket Magic mirror
-    -> teleporte au dernier mirroire utilisé/ placé 
-
-
-
-
-
-
-
-
-
 
 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――

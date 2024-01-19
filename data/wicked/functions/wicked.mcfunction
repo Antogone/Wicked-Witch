@@ -107,12 +107,12 @@ scoreboard players set @a[tag=wicked,limit=1,scores={drop=1..}] drop 0
 
 ##### DEVIATION
 
-execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run execute as @e[type=#projectiles,sort=nearest,distance=..2] run kill @s
+execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run kill @e[type=#projectiles,sort=nearest,distance=..3]
 
 execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run effect give @s resistance 2 255 true
 
 ###### PARTICLE 
-execute at @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] run function wicked:cauldron/particle/alchemymod_shield
+execute at @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] positioned ~ ~0.1 ~ run function wicked:cauldron/particle/alchemymod_shield
 
 
 
@@ -245,7 +245,7 @@ execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wi
 
 
 
-
+# execute at @e[tag=magic_mirror,tag=locked] positioned ~ ~-0.5 ~ run function wicked:cauldron/particle/alchemymod_shield
 
 
 ###########################
@@ -254,3 +254,5 @@ execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wi
 scoreboard players set @a[tag=wicked,scores={select=0},limit=1] broom 0
 scoreboard players set @a click 0
 scoreboard players set @a click3 0
+
+
