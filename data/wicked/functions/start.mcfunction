@@ -6,7 +6,7 @@ gamerule keepInventory true
 
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add click3 minecraft.used:minecraft.snowball
-scoreboard objectives add drop minecraft.dropped:minecraft.carrot_on_a_stick
+scoreboard objectives add drop minecraft.dropped:minecraft.feather
 
 tag @s add wicked
 team add Witch
@@ -45,6 +45,7 @@ scoreboard players set $net net_value 8
 #declare storage wicked.tep
 #declare storage wicked.potion 
 #declare storage wicked.tellraw
+#declare storage wicked.ench
 
 
 
@@ -71,26 +72,27 @@ execute in minecraft:overworld run forceload add -30000000 1600
 team modify Witch nametagVisibility always
 team modify Witch color green
 
-
+#Potion Book 
 scoreboard objectives add potion_trigger trigger
 scoreboard players enable @p[tag=wicked] potion_trigger
 
-
+#Modify the potion format
 scoreboard objectives add P dummy
 
-
+#Enchanting book
 scoreboard objectives add ench_trigger trigger
 scoreboard players enable @p[tag=wicked] ench_trigger
 
+#Wicked Rays
 scoreboard objectives add steps dummy
 
 scoreboard objectives add typevol dummy
 scoreboard players set @s typevol 0
 
 tag @s add broom
-
 scoreboard objectives add choose dummy
 scoreboard objectives add equip dummy
+
 tag @s add no_house
 
 

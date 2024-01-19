@@ -18,6 +18,8 @@ tag @s add l80
 
 scoreboard players set @s magie 500
 
+advancement grant @s from wicked:witch_pendant_adv
+
 execute as @s run function wicked:craft/crafted_witch_pendant
 execute as @s run function wicked:craft/crafted_slip
 execute as @s run function wicked:craft/crafted_grimmerie

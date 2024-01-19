@@ -40,60 +40,8 @@ scoreboard objectives remove z_temp
 
 
 scoreboard objectives remove P 
-scoreboard objectives remove L 
-scoreboard objectives remove C 
-scoreboard objectives remove R 
+
 scoreboard objectives remove timer
-
-# scoreboard objectives remove ID1 
-# scoreboard objectives remove ID2 
-# scoreboard objectives remove ID3 
-# scoreboard objectives remove ID4 
-# scoreboard objectives remove ID5 
-# scoreboard objectives remove ID6 
-# scoreboard objectives remove ID7 
-# scoreboard objectives remove ID8 
-# scoreboard objectives remove ID9 
-# scoreboard objectives remove ID10 
-
-
-scoreboard objectives remove D1 
-scoreboard objectives remove D2 
-scoreboard objectives remove D3 
-scoreboard objectives remove D4 
-scoreboard objectives remove D5 
-scoreboard objectives remove D6 
-scoreboard objectives remove D7 
-scoreboard objectives remove D8 
-
-
-scoreboard objectives remove NUMBER 
-scoreboard objectives remove CRAFT 
-scoreboard objectives remove UNDO 
-
-
-scoreboard objectives remove ENCH1 
-scoreboard objectives remove ENCH2 
-scoreboard objectives remove ENCH3 
-scoreboard objectives remove ENCH4 
-scoreboard objectives remove ENCH5 
-
-
-scoreboard objectives remove LVL1 
-scoreboard objectives remove LVL2 
-scoreboard objectives remove LVL3 
-scoreboard objectives remove LVL4 
-scoreboard objectives remove LVL5 
-
-
-scoreboard objectives remove A1 
-scoreboard objectives remove A2 
-scoreboard objectives remove A3 
-scoreboard objectives remove A4 
-scoreboard objectives remove A5 
-scoreboard objectives remove A6 
-scoreboard objectives remove A7 
-scoreboard objectives remove A8 
 
 
 scoreboard objectives remove typevol 
@@ -150,3 +98,28 @@ scoreboard objectives remove index_futur
 scoreboard objectives remove incre_one
 scoreboard objectives remove incre_deux
 
+advancement revoke @s through wicked:witch_pendant_adv
+tag @s remove actif 
+tag @s remove broom_shield
+tag @s remove wicked 
+tag @s remove bromm_fly 
+tag @s remove l10 
+tag @s remove l15 
+tag @s remove l20
+tag @s remove l30
+tag @s remove house
+tag @s remove no_house
+tag @s remove l40
+tag @s remove broom
+
+
+
+clear @s carrot_on_a_stick{poofing:1b}
+clear @s carrot_on_a_stick{scepter:1b}
+clear @s carrot_on_a_stick{poofing:1b}
+clear @s snowball{fireball:1b}
+clear @s feather{broom:1b}
+clear @s feather{broom:2b}
+
+clear @s command_block{CustomModelData:14120001}
+clear @s red_dye{reloading:1b}

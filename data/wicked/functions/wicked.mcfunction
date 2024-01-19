@@ -49,20 +49,19 @@ execute as @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:-106b,tag:{pendant:1b}}]
 
 
 #SCEPTER
-item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=0..}] hotbar.0 with carrot_on_a_stick{scepter:1b,HideFlags:3,CustomModelData:10140003,Unbreakable:1b,display:{Name:"{\"text\":\"§2Scepter\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{id:"minecraft:sharpness",lvl:8s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:8s}],AttributeModifiers:[{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:1,Operation:2,UUIDLeast:80949,UUIDMost:496823},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:12,Operation:1,UUIDLeast:690100,UUIDMost:811832}]}
+item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.0 with carrot_on_a_stick{scepter:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Wicked Beam\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
 
 #POOFING
-item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.2 with carrot_on_a_stick{poofing:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
+item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.1 with carrot_on_a_stick{poofing:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
 
 #IMMOBILIZATION
-item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.3 with carrot_on_a_stick{immo:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilization\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
-
-#FIREBALL
-item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=5..}] hotbar.1 with snowball{fireball:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Fireball\"}",Lore:["{\"text\":\"§2Magic Cost : 5\"}"]},Enchantments:[{}]}
+item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=15..}] hotbar.2 with carrot_on_a_stick{immo:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Immobilisation\"}",Lore:["{\"text\":\"§2Magic Cost : 15\"}"]},Enchantments:[{}]}
 
 
 #FLYING SPELL
-item replace entity @a[tag=l15,tag=wicked,limit=1,scores={select=1,magie=0..,typevol=0}] hotbar.4 with feather{broom:1b,HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+item replace entity @a[tag=l15,tag=wicked,tag=broom_shield,limit=1,scores={select=1,magie=0..}] hotbar.3 with feather{broom:1b,HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+
+item replace entity @a[tag=l15,tag=wicked,tag=broom_fly,limit=1,scores={select=1,magie=0..}] hotbar.3 with feather{broom:2b,HideFlags:3,CustomModelData:10140016,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
 
 
 
@@ -93,10 +92,13 @@ execute as @a[tag=wicked,limit=1,scores={select=0}] run clear @s carrot_on_a_sti
 ###########################
 # BRO SCORE
 ########################### 
-scoreboard players set @a[tag=wicked,limit=1,scores={drop=1,select=1},predicate=wicked:select_scepter] bro 1
-scoreboard players set @a[tag=wicked,limit=1,scores={drop=2..,bro=1,select=1},predicate=wicked:select_scepter] bro 2
-scoreboard players set @a[tag=wicked,limit=1,scores={drop=1..,bro=2}] bro 0
-scoreboard players set @a[tag=wicked,limit=1,scores={bro=0}] drop 0
+execute as @a[tag=l40,tag=wicked,limit=1,scores={drop=1,select=1},predicate=wicked:select_broom_2] run function wicked:broom/broom_change_shield
+execute as @a[tag=l40,tag=wicked,limit=1,scores={drop=1,select=1},predicate=wicked:select_broom] run function wicked:broom/broom_change_fly
+
+scoreboard players set @a[tag=wicked,limit=1,scores={drop=1..}] drop 0
+
+
+
 
 
 ###########################
@@ -105,19 +107,19 @@ scoreboard players set @a[tag=wicked,limit=1,scores={bro=0}] drop 0
 
 ##### DEVIATION
 
-execute as @a[tag=l40,tag=wicked,limit=1,scores={bro=0,select=1},predicate=wicked:is_sneaking,predicate=wicked:select_scepter] at @s run execute as @e[type=#impact_projectiles,sort=nearest,distance=..3,limit=1] run data merge entity @s {Motion:[0.0,-1.0,0.0],NoAI:1}
-execute as @a[tag=l40,tag=wicked,limit=1,scores={bro=0,select=1},predicate=wicked:is_sneaking,predicate=wicked:select_scepter] at @s run execute as @e[type=#projectiles,sort=nearest,distance=..3,limit=6] run data merge entity @s {Motion:[0.0,-1.0,0.0],NoAI:1}
-execute as @a[tag=l40,tag=wicked,limit=1,scores={bro=0,select=1},predicate=wicked:is_sneaking,predicate=wicked:select_scepter] at @s run effect give @s resistance 2 255 true
+execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run execute as @e[type=#projectiles,sort=nearest,distance=..2] run kill @s
+
+execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run effect give @s resistance 2 255 true
 
 ###### PARTICLE 
-execute at @a[tag=l40,tag=wicked,limit=1,scores={bro=0,select=1},predicate=wicked:is_sneaking,predicate=wicked:select_scepter] run function wicked:cauldron/particle/alchemymod_shield
+execute at @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] run function wicked:cauldron/particle/alchemymod_shield
 
 
 
 ###########################
 # IMMOBILIZATION
 ###########################
-execute as @a[tag=wicked,tag=!fixa,limit=1,scores={magie=10..,click=1..},predicate=wicked:select_immo] at @s positioned ^ ^ ^6 run function wicked:immobilization/castfix
+execute as @a[tag=wicked,tag=!fixa,limit=1,scores={magie=15..,click=1..},predicate=wicked:select_immo] at @s positioned ^ ^ ^6 run function wicked:immobilization/castfix
 
 execute as @a[tag=fixa] run function wicked:immobilization/fixa
 execute as @e[tag=fix] at @s run function wicked:immobilization/fixeffect
@@ -125,40 +127,13 @@ execute as @e[tag=fix] at @s run function wicked:immobilization/fixeffect
 
 
 
-
-###########################
-# FIREBALL
-###########################
-execute as @a[tag=wicked,limit=1,scores={magie=5..,click3=1..},predicate=wicked:select_fireball] at @s run function wicked:fireball
-
-#Particle Management au contact
-execute at @e[tag=ball] at @s run execute at @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.2 -1 0.2 0.1 200 force
-execute at @e[tag=ball] at @s run execute at @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run particle soul_fire_flame ^ ^ ^ 0.2 -1 0.2 0.1 200 force
-
-#Give fire + magic damage
-execute as @e[tag=ball] at @s run execute at @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run data merge entity @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest,limit=1] {Fire:56s}
-execute as @e[tag=ball] at @s run execute as @e[tag=!wicked,type=!#dontharm,distance=..3,sort=nearest] run damage @s 8 minecraft:generic_kill by @p[tag=wicked]
-
-#Particle Management
-execute as @e[tag=ball] at @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.3 0.3 0.3 0.001 50 force
-execute as @e[tag=ball] at @s run particle soul_fire_flame ^ ^ ^ 0.3 0.3 0.3 0.001 50 force
-
-
-
-
-
 ###########################
 # FLYING SPELL
 ###########################
-scoreboard players set @a[tag=wicked,gamemode=!spectator,predicate=wicked:select_broom] broo 2
-
-scoreboard players set @a[tag=wicked,gamemode=!spectator,predicate=wicked:select_broom,predicate=wicked:is_sneaking] broo 1
-
-scoreboard players set @a[tag=wicked,scores={broo=1..},predicate=!wicked:select_broom] broo 0
-
-# execute as @a[tag=wicked,limit=1,scores={typevol=0,broo=1},nbt={SelectedItem:{id:"minecraft:feather",tag:{display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}}}] at @s run function broom
-
-execute as @a[tag=wicked,limit=1,scores={typevol=0,broo=0},predicate=!wicked:select_broom] at @s run clear @s command_block{HideFlags:3,CustomModelData:14120001}
+scoreboard players set @a[tag=wicked,gamemode=!spectator,predicate=wicked:select_broom_2] broo 2
+scoreboard players set @a[tag=wicked,gamemode=!spectator,predicate=wicked:select_broom_2,predicate=wicked:is_sneaking] broo 1
+scoreboard players set @a[tag=wicked,scores={broo=1..},predicate=!wicked:select_broom_2] broo 0
+execute as @a[tag=wicked,limit=1,scores={broo=0},predicate=!wicked:select_broom_2] at @s run clear @s command_block{HideFlags:3,CustomModelData:14120001}
 
 
 
@@ -219,6 +194,8 @@ execute as @a[tag=actif,limit=1] run function wicked:cleaner
 # CLEAR FLOOR
 ###########################
 execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{tag:{broom:1b}}}]
+execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{tag:{broom:2b}}}]
+
 execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{tag:{poofing:1b}}}]
 execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{tag:{fireball:1b,OnGround:1b}}}]
 execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{tag:{immo:1b}}}]
@@ -232,31 +209,30 @@ execute as @a[tag=wicked,limit=1] at @s run kill @e[distance=..10,nbt={Item:{tag
 clear @a[tag=wicked,limit=1] red_dye{CustomModelData:10140002}
 
 #POOFING
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 run item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.2 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 run item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.1 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #IMMOBILIZATION
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.3 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..14 run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=0..14}] hotbar.2 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
-#FIREBALL
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..4 run item replace entity @a[tag=l10,tag=wicked,limit=1,scores={select=1,magie=0..4}] hotbar.1 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+#wicked ray
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 run item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.0 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 
 
+#### Verrouillage des slots
 
 #POOFING
-item replace entity @a[tag=!l20,tag=wicked,limit=1,scores={select=1}] hotbar.2 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l20,tag=wicked,limit=1,scores={select=1}] hotbar.1 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #IMMOBILIZATION
-item replace entity @a[tag=!l30,tag=wicked,limit=1,scores={select=1}] hotbar.3 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
-
-#FIREBALL
-item replace entity @a[tag=!l10,tag=wicked,limit=1,scores={select=1}] hotbar.1 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l30,tag=wicked,limit=1,scores={select=1}] hotbar.2 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #BROOM
-item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.4 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+item replace entity @a[tag=!l15,tag=wicked,limit=1,scores={select=1}] hotbar.3 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 
-#/give @p minecraft:green_banner{BlockEntityTag:{Patterns:[{Pattern:"cs",Color:5},{Pattern:"cs",Color:13},{Pattern:"bts",Color:5},{Pattern:"bts",Color:13},{Pattern:"tts",Color:5},{Pattern:"tts",Color:13},{Pattern:"cr",Color:5},{Pattern:"cr",Color:13},{Pattern:"flo",Color:5},{Pattern:"flo",Color:13},{Pattern:"bo",Color:5},{Pattern:"bo",Color:13}]}}
+
+
 
 
 #### MAGIC MIRROR 
@@ -269,12 +245,12 @@ execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wi
 
 
 
+
+
+
 ###########################
 # ANTI LAG & BUG
 ###########################
-execute as @a[tag=wicked,limit=1] at @s run kill @e[tag=ball,distance=50..]
-execute as @e[tag=ball] at @s if block ~ ~ ~ water run kill @e[tag=ball]
-
 scoreboard players set @a[tag=wicked,scores={select=0},limit=1] broom 0
 scoreboard players set @a click 0
 scoreboard players set @a click3 0

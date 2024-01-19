@@ -12,11 +12,11 @@ scoreboard players set @a[tag=wicked,limit=1,predicate=!wicked:select_silver] eq
 #########################
 #{"text":"[Wicked]","color":"dark_green","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 3"}}
 
-execute as @a[tag=!ast_p,tag=!ghost,scores={equip=1,bro=1},predicate=wicked:is_sneaking,predicate=!wicked:select_broom] at @s run particle minecraft:totem_of_undying ~ ~1 ~ 0.2 0.3 0.2 0.1 5
+execute as @a[tag=!ast_p,tag=!ghost,scores={equip=1,bro=1},predicate=wicked:is_sneaking,predicate=!wicked:select_broom_2,predicate=!wicked:select_broom] at @s run particle minecraft:totem_of_undying ~ ~1 ~ 0.2 0.3 0.2 0.1 5
 
 
 
-execute as @a[tag=!ast_p,tag=!ghost,scores={equip=1,s=40..,bro=1},predicate=!wicked:select_broom] run tellraw @a ["",{"text":"Dimension : "},{"storage":"wicked.tellraw","nbt":"silver.overworld","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.house","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.nether","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.end","interpret":true}]
+execute as @a[tag=!ast_p,tag=!ghost,scores={equip=1,s=40..,bro=1},predicate=!wicked:select_broom,predicate=!wicked:select_broom_2] run tellraw @a ["",{"text":"Dimension : "},{"storage":"wicked.tellraw","nbt":"silver.overworld","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.house","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.nether","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.end","interpret":true}]
 
 
 

@@ -2,8 +2,8 @@
 # Version - 3.1.0 - TODO
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
-Verrouillage de mirror                                    FAIT
-Deverrouillage de mirror 
+Verrouillage de mirror                                     FAIT
+Deverrouillage de mirror                                   FAIT
   -> Amulet main hand
   -> glowstone seconde 
 
@@ -11,7 +11,10 @@ Deverrouillage de mirror
 Reworking du sort d'immobilization
     - Timing individuel ?
 
-Remove fireball ?
+
+Remove fireball                                            FAIT
+reworking Broom into scepter                               FAIT
+
 
 Storage pour Potion Book                                   FAIT
 Storage pour Enchantments                                  FAIT
@@ -19,69 +22,15 @@ Storage pour Enchantments                                  FAIT
 
 
 
-Récupérations d'objets via loot table
-loot give @s loot wicked:item/witch_pendant
-{
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "Returning Tides",
-                "color": "yellow",
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "translate": "consumes 1 level",
-                  "color": "gray",
-                  "italic": false
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{bp:{id:\"returning_tides\"},CustomModelData:888518,Enchantments:[{}]}"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+Récupérations d'objets via loot table                      FAIT
+
+
 
 
 
 Pocket Magic mirror
     -> teleporte au dernier mirroire utilisé/ placé 
 
-
-Custom Potion
-    -> detection via avancements 
-{
-    "criteria": {
-        "requirement": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "nbt": "{bp.potion:102b, bp:[{id:\"custom_potion\"},{astral:1b}]}"
-                }
-            }
-        }
-    },
-    "rewards": {
-        "function": "bracken:player/potion/astral_projection/1_astral"
-    }
-}
 
 
 
@@ -108,6 +57,24 @@ Custom Potion
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
 
+Custom Potion
+    -> detection via avancements 
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{bp.potion:102b, bp:[{id:\"custom_potion\"},{astral:1b}]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "bracken:player/potion/astral_projection/1_astral"
+    }
+}
+
 
 
 Chaudron Magique via Interaction 
@@ -115,21 +82,12 @@ Chaudron Magique via Interaction
     Affichage des ingredients au dessus du chaudron 
     possibilité de mix pour obtenir plein d'effet ?
 
-    Night vision => Vert claire
-    Invisibility => Gris
-    Jump boost => jaune
-    Fire resistance => orange
-    Speed => Cyan 
-    Slowness => Bleu gris 
-    Water breathing => aqua 
-    healing => rouge
-    damage => bordeaux 
-    poison => kaki
-    regeneration => rose
-    strength => jaune or 
-    weakness => noir 
-    luck => vert 
-    slow dfalling => creme
+    Potion custom : -> Projection Astral - Méditation
+                    -> Nether Potion 
+                    -> End Potion
+                    -> Overworld Potion
+                    -> Void Potion 
+                        => Téléporte la personne dans le void 
 
 
 Magic Beans 

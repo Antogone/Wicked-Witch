@@ -8,6 +8,7 @@ execute on target run tag @s add Interactor
 
 
 
+execute as @s[tag=locked] if entity @p[tag=Interactor,predicate=wicked:select_unlock,sort=nearest] run tag @s remove locked
 
 execute as @s[tag=locked] unless entity @p[tag=Interactor,predicate=wicked:select_pendant,sort=nearest] run function wicked:magic_mirror/locked
 

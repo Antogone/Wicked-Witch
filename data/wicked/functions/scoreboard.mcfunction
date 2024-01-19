@@ -1,6 +1,6 @@
 scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add click3 minecraft.used:minecraft.snowball
-scoreboard objectives add drop minecraft.dropped:minecraft.carrot_on_a_stick
+scoreboard objectives add drop minecraft.dropped:minecraft.feather
 
 team add Witch
 

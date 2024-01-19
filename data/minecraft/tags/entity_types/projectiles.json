@@ -3,6 +3,8 @@
     "values": [
     "minecraft:shulker_bullet",
     "minecraft:potion",
-    "minecraft:llama_spit"
+    "minecraft:llama_spit",
+    "#minecraft:impact_projectiles",
+    "minecraft:wind_charge"
 ]
     }
