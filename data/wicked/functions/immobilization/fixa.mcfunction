@@ -1,2 +1,3 @@
-schedule function wicked:immobilization/finfix 10s
+function wicked:immobilization/finfix
 tag @s remove fixa
+scoreboard players reset @s clock

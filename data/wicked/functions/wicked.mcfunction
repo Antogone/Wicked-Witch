@@ -106,9 +106,7 @@ scoreboard players set @a[tag=wicked,limit=1,scores={drop=1..}] drop 0
 ###########################
 
 ##### DEVIATION
-
 execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run kill @e[type=#projectiles,sort=nearest,distance=..3]
-
 execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run effect give @s resistance 2 255 true
 
 ###### PARTICLE 
@@ -121,11 +119,10 @@ execute at @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_s
 ###########################
 execute as @a[tag=wicked,tag=!fixa,limit=1,scores={magie=15..,click=1..},predicate=wicked:select_immo] at @s positioned ^ ^ ^6 run function wicked:immobilization/castfix
 
-execute as @a[tag=fixa] run function wicked:immobilization/fixa
+execute as @e[tag=fixa,scores={clock=250..}] run function wicked:immobilization/fixa
 execute as @e[tag=fix] at @s run function wicked:immobilization/fixeffect
 
-
-
+scoreboard players add @e[tag=fixa] clock 1
 
 ###########################
 # FLYING SPELL

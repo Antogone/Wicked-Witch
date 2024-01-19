@@ -8,7 +8,7 @@ Deverrouillage de mirror                                   FAIT
   -> glowstone seconde 
 
 
-Reworking du sort d'immobilization
+Reworking du sort d'immobilization                         FAIT
     - Timing individuel ?
 
 
@@ -20,7 +20,7 @@ Storage pour Potion Book                                   FAIT
 Storage pour Enchantments                                  FAIT
 
 
-Silver Slippers Utilisable par tout le monde
+Silver Slippers Utilisable par tout le monde               FAIT
 
 
 Récupérations d'objets via loot table                      FAIT

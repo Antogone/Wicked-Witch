@@ -49,6 +49,7 @@ scoreboard players set $net net_value 8
 
 
 
+scoreboard objectives add clock dummy
 
 scoreboard objectives add index dummy
 
