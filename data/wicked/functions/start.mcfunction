@@ -96,6 +96,8 @@ scoreboard objectives add equip dummy
 
 tag @s add no_house
 
+scoreboard objectives add trouve dummy
+
 
 attribute @p[tag=wicked] generic.max_health base set 40
 attribute @p[tag=wicked] generic.movement_speed base set 0.11

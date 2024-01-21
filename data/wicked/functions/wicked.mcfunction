@@ -120,9 +120,11 @@ execute at @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_s
 execute as @a[tag=wicked,tag=!fixa,limit=1,scores={magie=15..,click=1..},predicate=wicked:select_immo] at @s positioned ^ ^ ^6 run function wicked:immobilization/castfix
 
 execute as @e[tag=fixa,scores={clock=250..}] run function wicked:immobilization/fixa
-execute as @e[tag=fix] at @s run function wicked:immobilization/fixeffect
+execute as @e[tag=fixa] at @s run function wicked:immobilization/fixeffect
 
 scoreboard players add @e[tag=fixa] clock 1
+
+
 
 ###########################
 # FLYING SPELL

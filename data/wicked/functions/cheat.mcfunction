@@ -16,6 +16,9 @@ tag @s add l60
 tag @s add l70
 tag @s add l80
 
+tag @s add broom_fly
+
+
 scoreboard players set @s magie 500
 
 advancement grant @s from wicked:witch_pendant_adv
