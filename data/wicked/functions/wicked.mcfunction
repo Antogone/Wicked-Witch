@@ -19,8 +19,18 @@ effect give @e[tag=salem,limit=1] slow_falling infinite 0 true
 # AFFICHAGE MAGIE + RECHARGE
 ###########################
 # AFFICHAGE
-execute as @a[tag=wicked,limit=1] run title @s actionbar ["",{"text":"Energie Magique :","color":"dark_green"},{"text":" ","color":"#00CE00"},{"score":{"name":"@a[tag=wicked,limit=1]","objective":"magie"},"color":"#00CE00"}]
+# execute as @a[tag=wicked,limit=1] run title @s actionbar ["",{"text":"Energie Magique :","color":"dark_green"},{"text":" ","color":"#00CE00"},{"score":{"name":"@a[tag=wicked,limit=1]","objective":"magie"},"color":"#00CE00"}]
 
+
+execute if entity @p[tag=wicked,tag=light_purple] run title @a[tag=wicked,limit=1] actionbar ["",{"text":"Energie Magique :","color":"light_purple"},{"text":" ","color":"#00CE00"},{"score":{"name":"@a[tag=wicked,limit=1]","objective":"magie"},"color":"#00CE00"}]
+
+execute if entity @p[tag=wicked,tag=dark_purple] run title @a[tag=wicked,limit=1] actionbar ["",{"text":"Energie Magique :","color":"dark_purple"},{"text":" ","color":"#00CE00"},{"score":{"name":"@a[tag=wicked,limit=1]","objective":"magie"},"color":"#00CE00"}]
+
+execute if entity @p[tag=wicked,tag=dark_gray] run title @a[tag=wicked,limit=1] actionbar ["",{"text":"Energie Magique :","color":"dark_gray"},{"text":" ","color":"#00CE00"},{"score":{"name":"@a[tag=wicked,limit=1]","objective":"magie"},"color":"#00CE00"}]
+
+execute if entity @p[tag=wicked,tag=black] run title @a[tag=wicked,limit=1] actionbar ["",{"text":"Energie Magique :","color":"black"},{"text":" ","color":"#00CE00"},{"score":{"name":"@a[tag=wicked,limit=1]","objective":"magie"},"color":"#00CE00"}]
+
+execute if entity @p[tag=wicked,tag=dark_green] run title @a[tag=wicked,limit=1] actionbar ["",{"text":"Energie Magique :","color":"dark_green"},{"text":" ","color":"#00CE00"},{"score":{"name":"@a[tag=wicked,limit=1]","objective":"magie"},"color":"#00CE00"}]
 
 ########################
 # MODE MAGIE ACTIF
@@ -49,7 +59,7 @@ execute as @a[tag=wicked,limit=1,nbt=!{Inventory:[{Slot:-106b,tag:{pendant:1b}}]
 
 
 #SCEPTER
-item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.0 with carrot_on_a_stick{scepter:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Magic Blast\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
+item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=5..}] hotbar.0 with carrot_on_a_stick{scepter:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§2Magic Blast\"}",Lore:["{\"text\":\"§2Magic Cost : 5\"}"]},Enchantments:[{}]}
 
 #POOFING
 item replace entity @a[tag=l20,tag=wicked,limit=1,scores={select=1,magie=10..}] hotbar.1 with carrot_on_a_stick{poofing:1b,HideFlags:3,CustomModelData:10140001,Unbreakable:1,display:{Name:"{\"text\":\"§2Poofing\"}",Lore:["{\"text\":\"§2Magic Cost : 10\"}"]},Enchantments:[{}]}
@@ -77,7 +87,7 @@ execute as @a[tag=wicked,limit=1,scores={magie=10..,click=1..},predicate=wicked:
 ###########################
 # SCEPTER
 ###########################
-execute as @a[tag=wicked,limit=1,scores={magie=10..,click=1..},predicate=wicked:select_scepter] at @s run function wicked:wicked_ray/cast
+execute as @a[tag=wicked,limit=1,scores={magie=4..,click=1..},predicate=wicked:select_scepter] at @s run function wicked:wicked_ray/cast
 
 
 
@@ -98,6 +108,20 @@ execute as @a[tag=l40,tag=wicked,limit=1,scores={drop=1,select=1},predicate=wick
 scoreboard players set @a[tag=wicked,limit=1,scores={drop=1..}] drop 0
 
 
+
+###########################
+# Witch Leveling up
+###########################
+            #     - 1) Witch  (Light Purple)
+            #     - 2) Mystic Witch (dark purple)
+            #     - 3) Occult Witch (dark gray)
+            #     - 4) Dark Witch   (black)
+            #     - 5) Wicked Witch (Dark green)
+
+execute as @e[tag=wicked,scores={killwitch=10..},tag=light_purple,tag=!l50] run function wicked:witch_update/mystic
+execute as @e[tag=wicked,scores={killwitch=20..},tag=dark_purple,tag=!l60] run function wicked:witch_update/occult
+execute as @e[tag=wicked,scores={killwitch=30..},tag=dark_gray,tag=!l70] run function wicked:witch_update/dark
+execute as @e[tag=wicked,scores={killwitch=40..},tag=black,tag=!l80] run function wicked:witch_update/wicked
 
 
 
@@ -214,7 +238,7 @@ execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 run
 execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..14 run item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=0..14}] hotbar.2 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 #wicked ray
-execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..9 run item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=0..9}] hotbar.0 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
+execute if score @a[tag=wicked,limit=1,scores={select=1}] magie matches 0..4 run item replace entity @a[tag=wicked,limit=1,scores={select=1,magie=0..4}] hotbar.0 with red_dye{reloading:1b,HideFlags:3,CustomModelData:10140002,Unbreakable:1,display:{Name:"{\"text\":\"§cReloading\"}"},Enchantments:[{}]}
 
 
 

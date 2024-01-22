@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:potion",
+        "nbt": "{CustomPotionColor:13781718}"
+      },
+      "title": {
+        "text": "Witch !",
+        "color": "light_purple"
+    },
+      "description": {
+        "text": "You have become a witch",
+        "color": "light_purple"
+    },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "wicked:witch_pendant_adv",
+    "criteria": {
+        "Mystic Witch": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+  }

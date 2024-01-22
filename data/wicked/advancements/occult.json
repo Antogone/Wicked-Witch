@@ -1,0 +1,27 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:potion",
+        "nbt": "{CustomPotionColor:3881531}"
+      },
+
+      "title": {
+        "text": "Occult Witch !",
+        "color": "dark_gray"
+    },
+      "description": {
+        "text": "You've grown stronger and become a occult witc",
+        "color": "dark_gray"
+    },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "wicked:mystic",
+    "criteria": {
+        "occult Witch": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+  }

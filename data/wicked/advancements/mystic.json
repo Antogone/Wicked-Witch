@@ -1,0 +1,26 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:potion",
+        "nbt": "{CustomPotionColor:7278706}"
+      },
+      "title": {
+        "text": "Mystic Witch !",
+        "color": "dark_purple"
+    },
+      "description": {
+        "text": "You've grown stronger and become a mystic witch",
+        "color": "dark_purple"
+    },
+
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "wicked:witch",
+    "criteria": {
+        "Mystic Witch": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+  }

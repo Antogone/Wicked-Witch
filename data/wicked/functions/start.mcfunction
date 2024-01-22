@@ -9,8 +9,16 @@ scoreboard objectives add click3 minecraft.used:minecraft.snowball
 scoreboard objectives add drop minecraft.dropped:minecraft.feather
 
 tag @s add wicked
+
 team add Witch
 team join Witch
+team modify Witch nametagVisibility always
+team modify Witch color light_purple
+
+tag @s add light_purple
+
+
+
 
 scoreboard objectives add itm dummy
 
@@ -50,7 +58,6 @@ scoreboard players set $net net_value 8
 
 
 scoreboard objectives add clock dummy
-
 scoreboard objectives add index dummy
 
 scoreboard objectives add incre_one dummy
@@ -70,8 +77,8 @@ data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
 
 execute in minecraft:overworld run forceload add -30000000 1600
 
-team modify Witch nametagVisibility always
-team modify Witch color green
+
+
 
 #Potion Book 
 scoreboard objectives add potion_trigger trigger
@@ -97,6 +104,7 @@ scoreboard objectives add equip dummy
 tag @s add no_house
 
 scoreboard objectives add trouve dummy
+scoreboard objectives add killwitch minecraft.killed:minecraft.witch
 
 
 attribute @p[tag=wicked] generic.max_health base set 40
@@ -106,3 +114,5 @@ attribute @p[tag=wicked] generic.armor base set 4.0
 
 bossbar add timer {"text":"Temps restant","color":"red"}
 bossbar set timer color red 
+
+advancement grant @s only wicked:witch

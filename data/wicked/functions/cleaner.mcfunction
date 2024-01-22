@@ -1,6 +1,6 @@
 
 clear @a[tag=wicked,limit=1,scores={select=1,magie=..9}] carrot_on_a_stick{poofing:1b}
-clear @a[tag=wicked,limit=1,scores={select=1,magie=..1}] carrot_on_a_stick{scepter:1b}
+clear @a[tag=wicked,limit=1,scores={select=1,magie=..4}] carrot_on_a_stick{scepter:1b}
 clear @a[tag=wicked,limit=1,scores={select=1,magie=..9}] carrot_on_a_stick{poofing:1b}
 clear @a[tag=wicked,limit=1,scores={select=1,magie=..4}] snowball{fireball:1b}
 clear @a[tag=wicked,limit=1,scores={select=1,magie=..1}] feather{broom:1b}
