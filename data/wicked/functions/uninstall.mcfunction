@@ -4,7 +4,6 @@
  #
  # Created by Antogone
 ##
-#By Antogone
 
 scoreboard objectives remove click
 scoreboard objectives remove click3 
@@ -59,6 +58,9 @@ attribute @s generic.attack_damage base set 1.0
 attribute @s generic.armor base set 0.0
 
 tag @s remove wicked
+
+kill @e[tag=itm_disp]
+kill @e[tag=magic_mirror]
 
 kill @e[tag=wall]
 tag @s remove l10

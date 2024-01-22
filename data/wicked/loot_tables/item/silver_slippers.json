@@ -32,7 +32,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{silver:1b,Unbreakable:1,HideFlags:3,Enchantments:[{}]}"
+              "tag": "{silver:1b,Unbreakable:1,HideFlags:3,Enchantments:[{}],Trim:{\"material\":\"minecraft:iron\",\"pattern\":\"minecraft:silence\"}}"
             }
           ]
         }
@@ -40,3 +40,5 @@
     }
   ]
 }
+
+

@@ -69,9 +69,9 @@ item replace entity @a[tag=l30,tag=wicked,limit=1,scores={select=1,magie=15..}] 
 
 
 #FLYING SPELL
-item replace entity @a[tag=l15,tag=wicked,tag=broom_shield,limit=1,scores={select=1,magie=0..}] hotbar.3 with feather{broom:1b,HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+item replace entity @a[tag=l15,tag=wicked,tag=broom_shield,limit=1,scores={select=1,magie=0..}] hotbar.3 with feather{broom:1b,HideFlags:3,CustomModelData:10140015,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:8,Operation:0,UUID:[I;-303647736,-1005697286,-1963378026,950932052]}]}
 
-item replace entity @a[tag=l15,tag=wicked,tag=broom_fly,limit=1,scores={select=1,magie=0..}] hotbar.3 with feather{broom:2b,HideFlags:3,CustomModelData:10140016,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}]}
+item replace entity @a[tag=l15,tag=wicked,tag=broom_fly,limit=1,scores={select=1,magie=0..}] hotbar.3 with feather{broom:2b,HideFlags:3,CustomModelData:10140016,Unbreakable:1,display:{Name:"{\"text\":\"§2Witch's Broom\"}"},Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:8,Operation:0,UUID:[I;1827077973,-2028714966,-1775450188,-208705256]}]}
 
 
 
