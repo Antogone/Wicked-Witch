@@ -79,7 +79,7 @@ tag @s remove surv
 tag @s remove ghost
 tag @s remove ast_p
 
-forceload remove all
+forceload remove -30000000 1600
 data remove storage wicked.potion PotionId
 data remove storage wicked.tep DimHouse
 data remove storage wicked.tep Temp

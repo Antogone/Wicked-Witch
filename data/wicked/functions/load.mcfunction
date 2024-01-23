@@ -8,6 +8,8 @@ attribute @p[tag=wicked] generic.armor base set 4.0
 execute in minecraft:overworld run forceload add -30000000 1600
 
 schedule function wicked:cauldron/cauldron 4t
+schedule function wicked:cauldron/cauldron_particle 4t
+
 scoreboard players enable @p[tag=wicked] potion_trigger
 scoreboard players enable @p[tag=wicked] ench_trigger
 
