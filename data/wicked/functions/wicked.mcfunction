@@ -164,31 +164,35 @@ execute as @a[tag=wicked,limit=1,scores={broo=0},predicate=!wicked:select_broom_
 # SPELLS
 ##########################
 
-# Locator Spell
-execute as @a[tag=wicked,limit=1,scores={spell=2,magie=20..}] at @s run function wicked:grimmerie/locator/locat
+# Locator Spell 10
+execute as @a[tag=wicked,limit=1,scores={spell=2}] at @s run function wicked:grimmerie/locator/locat
 
-# Protection Spell
-execute as @a[tag=wicked,limit=1,scores={spell=1,magie=40..}] at @s run function wicked:grimmerie/protect
+# Aura-Explosion 15
+execute as @a[tag=wicked,scores={spell=20}] at @s run function wicked:grimmerie/aura
 
-# HealingSpell
-execute as @a[tag=wicked,limit=1,scores={spell=3,magie=30..}] at @s run function wicked:grimmerie/heal
 
-# Dispel
-execute as @a[tag=wicked,limit=1,scores={spell=68,magie=5..}] at @s run function wicked:grimmerie/potionclear
+# Dispel 5
+execute as @a[tag=wicked,limit=1,scores={spell=68}] at @s run function wicked:grimmerie/potionclear
 
-# Aura-Explosion
-execute as @a[tag=wicked,scores={spell=20,magie=15..},limit=1] at @s run function wicked:grimmerie/aura
+#Ghost walk 30
+execute as @a[tag=wicked,limit=1,scores={spell=600}] at @s run function wicked:grimmerie/ghost_walk/ghost_walk
 
-# Astral Projection Spell
-execute as @a[scores={spell=38,magie=30..},tag=wicked,limit=1] at @s run function wicked:grimmerie/astral_projection/astralp
+# Protection Spell 40
+execute as @a[tag=wicked,limit=1,scores={spell=1}] at @s run function wicked:grimmerie/protect
+
+# HealingSpell 30
+execute as @a[tag=wicked,limit=1,scores={spell=3}] at @s run function wicked:grimmerie/heal
+
+
+
+# Astral Projection Spell 30
+execute as @a[scores={spell=38},tag=wicked,limit=1] at @s run function wicked:grimmerie/astral_projection/astralp
 
 execute at @e[tag=PAJ] run function wicked:cauldron/particle/alchemymod_v_t
 execute at @e[tag=PAJ] run particle happy_villager ^ ^ ^ 0.5 1 0.5 0.001 10 force
 
 
 
-#Ghost walk
-execute as @a[tag=wicked,limit=1,scores={spell=600,magie=30..}] at @s run function wicked:grimmerie/ghost_walk/ghost_walk
 
 
 
@@ -277,5 +281,6 @@ execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wi
 scoreboard players set @a[tag=wicked,scores={select=0},limit=1] broom 0
 scoreboard players set @a click 0
 scoreboard players set @a click3 0
+scoreboard players set @a spell 0
 
 
