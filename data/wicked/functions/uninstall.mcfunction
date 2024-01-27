@@ -80,7 +80,6 @@ tag @s remove ghost
 tag @s remove ast_p
 
 forceload remove -30000000 1600
-data remove storage wicked.potion PotionId
 data remove storage wicked.tep DimHouse
 data remove storage wicked.tep Temp
 data remove storage wicked.tep PosHouse
@@ -136,3 +135,5 @@ scoreboard objectives remove potion_trigger
 scoreboard objectives remove trouve
 scoreboard objectives remove index
 scoreboard objectives remove ench_trigger
+scoreboard objectives remove effect_none
+scoreboard objectives remove ench_none

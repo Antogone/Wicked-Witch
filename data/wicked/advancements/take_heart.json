@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "nbt": "{take_heart:1b}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "wicked:heart_ripping/take_heart"
+    }
+  }
+  

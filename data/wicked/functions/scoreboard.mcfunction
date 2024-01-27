@@ -75,3 +75,5 @@ scoreboard objectives add killwitch minecraft.killed:minecraft.witch
 bossbar add timer {"text":"Temps restant","color":"red"}
 bossbar set timer color red 
 
+scoreboard objectives add effect_none dummy
+scoreboard objectives add ench_none dummy

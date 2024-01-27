@@ -1,0 +1,29 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{pages: ['{\"extra\":[{\"color\":\"#750AEC\",\"text\":\"Locator Spell\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"text\":\"This spell will reveal the position of all the nearby entity !\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 10\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n \"}],\"text\":\"\"}', '{\"extra\":[{\"color\":\"#750AEC\",\"text\":\"Dispel\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"text\":\"This spell will dispel any effect on any entity around\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 68\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 5\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n \"}],\"text\":\"\"}', '{\"extra\":[{\"color\":\"#750AEC\",\"text\":\"Protection Spell\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"text\":\"This spell will protect you from any damage !\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 40\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n \"}],\"text\":\"\"}', '{\"extra\":[{\"color\":\"#750AEC\",\"text\":\"Healing Spell\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"text\":\"This spell will heal all the people in a radius of 10 blocks !\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 30\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n\\\\n\\\\n \"}],\"text\":\"\"}', '{\"extra\":[{\"color\":\"#750AEC\",\"text\":\"Astral Projection Spell\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"text\":\"This spell will use the astral projection in you !\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 38\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 30\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n\\\\n\\\\n \"}],\"text\":\"\"}','{\"extra\":[{\"color\":\"#750AEC\",\"text\":\"Barrier Spell\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"text\":\"This spell will give you an item capable of creating a magic indestructible block !\\\\n\\\\n\"},{\"color\":\"#750AEC\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 15\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\\\n\"},{\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 5\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 5\"}},\"text\":\"✴ Undo the Spell✴\",\"bold\":true},{\"text\":\"\\\\n\\\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\\\n \"}],\"text\":\"\"}'], CustomModelData: 10140005, title: \"§5Mystic Witch's Spellbook\", author: \"Antogone\", resolved: 1b,spellbook:1b,mystic:1b}"
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "The Mystic witch's spellbook",
+                    "color": "dark_purple",
+                    "italic": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

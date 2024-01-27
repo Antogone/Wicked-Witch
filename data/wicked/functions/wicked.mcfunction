@@ -193,6 +193,11 @@ execute at @e[tag=PAJ] run particle happy_villager ^ ^ ^ 0.5 1 0.5 0.001 10 forc
 
 
 
+# Set recall point
+execute as @a[tag=wicked,limit=1,scores={spell=24}] at @s run function wicked:grimmerie/recall/set_recall
+
+# recall use
+execute as @a[tag=wicked,limit=1,scores={spell=25}] at @s run function wicked:grimmerie/recall/tel_recall
 
 
 
@@ -271,6 +276,13 @@ execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wi
 execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wicked:magic_mirror/click_magic_mirror
 
 
+
+
+
+execute as @e[type=item,nbt={Item:{tag:{heart:1b}}}] at @s run function wicked:heart_ripping/set_restore
+execute as @a[scores={click=1..},predicate=wicked:select_heartrip] at @s run function wicked:heart_ripping/take_heart
+
+# item replace entity @a[tag=wicked] hotbar.8 with carrot_on_a_stick{take_heart:1b}
 
 # execute at @e[tag=magic_mirror,tag=locked] positioned ~ ~-0.5 ~ run function wicked:cauldron/particle/alchemymod_shield
 

@@ -5,5 +5,5 @@
  # Created by Antogone.
 ##
 # Un-Tag the player who interacted with the chunk
-execute on target run tag @s remove Interactor
-
+tag @s remove Interactor
+tellraw @s {"text":"You have to place the exit mirror !","color":"dark_green"}

@@ -54,6 +54,7 @@ scoreboard players set $net net_value 8
 #declare storage wicked.potion 
 #declare storage wicked.tellraw
 #declare storage wicked.ench
+#declare storage wicked.recall
 
 
 
@@ -71,7 +72,6 @@ scoreboard players set $mirror_exit index 1
 
 data modify storage wicked.tellraw silver.overworld set value {"text":"[Overworld]","color":"blue","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 0"}}
 
-data modify storage wicked.potion PotionId set value ["minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:","minecraft:"]
 data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]
 
 
@@ -116,3 +116,14 @@ bossbar add timer {"text":"Temps restant","color":"red"}
 bossbar set timer color red 
 
 advancement grant @s only wicked:witch
+
+scoreboard objectives add effect_none dummy
+scoreboard objectives add ench_none dummy
+
+
+data modify storage wicked.potion Temp.id set value -14
+data modify storage wicked.potion Temp.duration set value 200
+data modify storage wicked.potion Temp.amplifier set value 4
+
+data modify storage wicked.ench Temp.id set value -14
+data modify storage wicked.ench Temp.lvl set value 0

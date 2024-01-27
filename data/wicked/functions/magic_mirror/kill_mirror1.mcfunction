@@ -16,3 +16,8 @@ $data remove storage magic_mirror info.z[$(index)]
 
 clear @s carrot_on_a_stick{mirror_2:1b} 1
 tag @s remove mirror_1
+
+execute at @s run kill @e[tag=store_dat,sort=nearest,distance=..1]
+execute at @s run kill @e[tag=itm_disp,sort=nearest,distance=..1]
+execute at @s run kill @e[tag=magic_mirror,sort=nearest,distance=..1]
+return 1

@@ -4,8 +4,8 @@ kill @e[type=marker,tag=telp]
 
 execute at @s run summon marker ~ ~ ~ {duration:1,Tags:[telp]}
 
-tp @e[tag=telp,limit=1,sort=nearest] @s
-tp @e[tag=telp,limit=1,sort=nearest] ~ ~1.5 ~
+execute anchored eyes rotated as @s run tp @e[tag=telp,limit=1,sort=nearest] ^ ^ ^ ~ ~
+
 execute as @e[tag=telp,limit=1,sort=nearest] at @s run function wicked:poofing/loop 
 
 
