@@ -1,0 +1,37 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:slime_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "Destroy Magic Wall",
+                "color": "dark_green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Will allow you to destroy the magic wall",
+                  "color": "green",
+                  "italic": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{Size:0,wasOnGround:1b,Tags:[\"dwall2\"]},Enchantments:[{}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

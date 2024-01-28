@@ -231,7 +231,7 @@ execute as @a[tag=wicked,limit=1,scores={spell=49}] at @s run function wicked:gr
 
 
 #Heart Ripping
-execute as @a[tag=wicked,limit=1,scores={spell=50}] at @s run say WIP
+execute as @a[tag=wicked,limit=1,scores={spell=50}] at @s run function wicked:heart_ripping/give_hr
 
 
 
@@ -313,13 +313,11 @@ execute as @e[type=minecraft:interaction,tag=magic_mirror] at @s run function wi
 
 
 
-
+#### HEART RIPPING
 execute as @e[type=item,nbt={Item:{tag:{heart:1b}}}] at @s run function wicked:heart_ripping/set_restore
 execute as @a[scores={click=1..},predicate=wicked:select_heartrip] at @s run function wicked:heart_ripping/take_heart
 
-# item replace entity @a[tag=wicked] hotbar.8 with carrot_on_a_stick{take_heart:1b}
-
-# execute at @e[tag=magic_mirror,tag=locked] positioned ~ ~-0.5 ~ run function wicked:cauldron/particle/alchemymod_shield
+execute as @a[nbt={Inventory:[{Slot:8b,tag:{heart:1b}}]}] at @s run function wicked:heart_ripping/set_immo
 
 
 ###########################

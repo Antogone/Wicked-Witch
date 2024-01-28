@@ -28,7 +28,7 @@ effect give @s nausea 2 255 true
 effect give @s weakness 2 255 true
 effect give @s slowness 2 255 true
 effect give @s jump_boost 2 190 true
-effect give @s levitation 1 255 true
+# effect give @s levitation 1 255 true
 effect give @s blindness 2 255 true
 
 effect give @s darkness 15 255 true

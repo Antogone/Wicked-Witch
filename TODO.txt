@@ -50,16 +50,12 @@ Recall spell                                                FAIT
     -> Teleportation a ce point    [15 magie]
 
 
-Prendre un coeur                                            [WIP]
-    gestion via position dans l'inventaire
-    -> Immobilisation                                       [WIP]
-    -> Le tuer                                              FAIT
+Prendre un coeur                                            FAIT
+    -> Immobilisation   SlOT8                               
+    -> Le tuer                                              
 
    
         
-
-
-
 Different SpellBook en fonction du niveau                   FAIT
 
     Witch  (Light Purple) #daa7fa #976bb3       witch:1b
@@ -116,7 +112,6 @@ Récupérations d'objets via loot table                      FAIT
 
 Default configuration Enchantement book et potion          FAIT
 
-LootTable -> Wall
 
 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
