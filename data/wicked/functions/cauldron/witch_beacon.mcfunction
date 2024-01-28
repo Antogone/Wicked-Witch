@@ -9,15 +9,43 @@ function wicked:cauldron/particle/alchemymod_fly
 function wicked:cauldron/particle/alchemymod_fly
 function wicked:cauldron/particle/alchemymod_fly
 
-summon witch ~ ~1 ~ {Tags:["wi_beacon"]}
-spreadplayers ~ ~ 5 5 false @e[type=witch]
+particle witch ^ ^ ^ 3 1 3 50 1000 force
+particle witch ^ ^ ^ 3 1 3 50 1000 force
+
+
+
+
+
+
 
 summon witch ~ ~1 ~ {Tags:["wi_beacon"]}
-
-spreadplayers ~ ~ 5 5 false @e[type=witch]
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
 
 summon witch ~ ~1 ~ {Tags:["wi_beacon"]}
-spreadplayers ~ ~ 5 5 false @e[type=witch]
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
+
+
+execute if predicate wicked:20_percent run summon evoker ~ ~1 ~ {Tags:["wi_beacon"]}
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
+
+execute if predicate wicked:20_percent run summon evoker ~ ~1 ~ {Tags:["wi_beacon"]}
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
+
+
+execute if predicate wicked:20_percent run summon illusioner ~ ~1 ~ {Tags:["wi_beacon"]}
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
+
+execute if predicate wicked:20_percent run summon illusioner ~ ~1 ~ {Tags:["wi_beacon"]}
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
+
+execute if predicate wicked:20_percent run summon witch ~ ~1 ~ {Tags:["wi_beacon"]}
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
+
+execute if predicate wicked:20_percent run summon witch ~ ~1 ~ {Tags:["wi_beacon"]}
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
+
+execute if predicate wicked:20_percent run summon witch ~ ~1 ~ {Tags:["wi_beacon"]}
+spreadplayers ~ ~ 5 5 false @e[type=witch,tag=wi_beacon]
 
 
 

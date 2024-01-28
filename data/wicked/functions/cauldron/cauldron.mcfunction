@@ -258,6 +258,8 @@ execute unless entity @e[tag=salem,limit=1] run execute at @e[type=item,nbt={Ite
 execute at @e[type=item,nbt={Item:{id:"minecraft:golden_apple",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{spellbook:1b}}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/enchanted_golden_apple
 
 
+
+
 ######## NETHER UPGRADE SILVER SLIPPERS
 execute at @e[type=item,nbt={Item:{id:"minecraft:chainmail_boots",Count:1b,tag:{silver:1b}}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:nether_wart",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:netherrack",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/upgrade_nether
 

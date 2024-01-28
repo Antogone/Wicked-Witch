@@ -4,9 +4,9 @@
  #
  # Created by Antogone.
 ##
-execute as @a[scores={magie=..9},tag=wicked] run return 4
+# execute as @a[scores={magie=..9},tag=wicked] run return 4
 
-scoreboard players remove @e[tag=wicked,scores={magie=10..}] magie 10
+# scoreboard players remove @e[tag=wicked,scores={magie=10..}] magie 10
 
 
 
