@@ -22,16 +22,16 @@ Evolution d'une sorcière                                   FAIT
     1) Witch  (Light Purple)
 
     2) Mystic Witch (dark purple)
-        -10 Witch 
+        - 4 Witch 
 
     3) Occult Witch (dark gray)
-        -20 Witch
+        - 10 Witch
 
     4) Dark Witch   (black)
-        -30 Witch
+        - 15 Witch
 
     5) Wicked Witch (Dark green)
-        -40 Witch
+        - 20 Witch
 
 
     => Advancement
@@ -54,8 +54,7 @@ Prendre un coeur                                            FAIT
     -> Immobilisation   SlOT8                               
     -> Le tuer                                              
 
-   
-        
+     
 Different SpellBook en fonction du niveau                   FAIT
 
     Witch  (Light Purple) #daa7fa #976bb3       witch:1b
@@ -94,7 +93,8 @@ Different SpellBook en fonction du niveau                   FAIT
         -> lift curse  
 
 
-
+Cauldron spell
+    -> Witch Beacon
 
 
 
@@ -155,8 +155,7 @@ Cauldron spell
     - Spawn Illusioner 
     -> New Loot 
         -> Inactive magic beans ??
-    - Storm spell
-    -> Summon weather thunder
+
 
 
 
@@ -197,6 +196,8 @@ Custom Potion
 
 
 Chaudron Magique via Interaction 
+    Nouveaux Ingredients 
+    
     Crée au maximum 5 potion (5 fois la même potion), couleur du chaudron dependant du type de potion 
     Affichage des ingredients au dessus du chaudron 
     possibilité de mix pour obtenir plein d'effet ?

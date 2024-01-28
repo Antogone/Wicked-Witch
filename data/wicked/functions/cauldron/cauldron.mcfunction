@@ -266,10 +266,15 @@ execute at @e[type=item,nbt={Item:{id:"minecraft:chainmail_boots",Count:1b,tag:{
 execute at @e[type=item,nbt={Item:{id:"minecraft:chainmail_boots",Count:1b,tag:{silver:1b}}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:end_stone",Count:4b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/upgrade_end
 
 
+#Magic mirror verrouillage
+execute at @e[type=item,nbt={Item:{tag:{pendant:1b}}}] if entity @e[type=minecraft:interaction,tag=magic_mirror,distance=..2,sort=nearest] run tag @e[type=minecraft:interaction,tag=magic_mirror,distance=..2,sort=nearest] add locked
+
+
+######## Witch Beacon
+execute at @e[type=item,nbt={Item:{id:"minecraft:sugar",Count:15b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:redstone",Count:15b}}] if block ~ ~ ~ minecraft:water_cauldron run execute at @e[type=item,nbt={Item:{id:"minecraft:glowstone_dust",Count:15b}}] if block ~ ~ ~ minecraft:water_cauldron run function wicked:cauldron/witch_beacon
+
 
 schedule function wicked:cauldron/cauldron 10t
 
 
 
-#Magic mirror verrouillage
-execute at @e[type=item,nbt={Item:{tag:{pendant:1b}}}] if entity @e[type=minecraft:interaction,tag=magic_mirror,distance=..2,sort=nearest] run tag @e[type=minecraft:interaction,tag=magic_mirror,distance=..2,sort=nearest] add locked
