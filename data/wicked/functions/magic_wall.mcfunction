@@ -47,7 +47,7 @@ execute as @e[tag=rmvitm] at @s run kill @e[tag=rmvitm,distance=..2]
 
 
 # CROSSING
-execute at @e[tag=wall] if entity @e[distance=..2,tag=wicked,predicate=wicked:select_grimmerie] run fill ~ ~ ~ ~ ~ ~ air replace lime_stained_glass
+execute at @e[tag=wall] if entity @e[distance=..2,tag=wicked,predicate=wicked:select_spellbook] run fill ~ ~ ~ ~ ~ ~ air replace lime_stained_glass
 
 execute at @e[tag=wall] if entity @e[distance=..2,tag=wicked,predicate=wicked:select_pendant] run fill ~ ~ ~ ~ ~ ~ air replace lime_stained_glass
 

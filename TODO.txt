@@ -1,6 +1,9 @@
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
-# Version - 3.1.0 - TODO
+# Version - 4.0.0 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+Enchant book                                               FAIT
+-> Enchanted book
 
 Verrouillage de mirror                                     FAIT
 Deverrouillage de mirror                                   FAIT
@@ -8,40 +11,174 @@ Deverrouillage de mirror                                   FAIT
   -> glowstone seconde 
 
 
-Reworking du sort d'immobilization                         FAIT
-    - Timing individuel ?
-
-
 Remove fireball                                            FAIT
 reworking Broom into scepter                               FAIT
 
-
-Storage pour Potion Book                                   FAIT
-Storage pour Enchantments                                  FAIT
-
-
 Silver Slippers Utilisable par tout le monde               FAIT
 
-
-Récupérations d'objets via loot table                      FAIT
-
-
 Death teleportation to House                               FAIT
+
+Evolution d'une sorcière                                   FAIT
+    1) Witch  (Light Purple)
+
+    2) Mystic Witch (dark purple)
+        -10 Witch 
+
+    3) Occult Witch (dark gray)
+        -20 Witch
+
+    4) Dark Witch   (black)
+        -30 Witch
+
+    5) Wicked Witch (Dark green)
+        -40 Witch
+
+
+    => Advancement
+    => Changement couleur magie en fonction du niveau  
+    => Changement de livre de sors
+
+
+Trim For the silver Slippers                                FAIT
+balai 8 degat                                               FAIT
+
+Augmentation du rayon chaudron                              FAIT
+14 -> 27 block
+
+Recall spell                                                FAIT
+-> Definition d'un point de recall [15 magie]
+    -> Teleportation a ce point    [15 magie]
+
+
+Prendre un coeur                                            [WIP]
+    gestion via position dans l'inventaire
+    -> Immobilisation                                       [WIP]
+    -> Le tuer                                              FAIT
+
+   
+        
+
+
+
+Different SpellBook en fonction du niveau                   FAIT
+
+    Witch  (Light Purple) #daa7fa #976bb3       witch:1b
+
+        -> Locator Spell 
+        -> Dispel 
+        -> Barrier Spell
+
+    Mystic Witch (dark purple)  #6B1389  #750aec       mystic:1b 
+
+        -> Protection Spell
+        -> Healing Spell
+        -> Astral Projection
+
+    Occult Witch (dark gray) #555555 #808080       occult:1b
+
+        -> Recall Spell
+        -> Ghost Walk
+        -> Size Spell         30 Magie
+            Shrinking 
+            Gigant 
+            Normal 
+
+    Dark Witch   (black)     #222222  #000000        dark:1b
+
+        -> Aura Explosion
+        -> Enchantments
+        -> Potion 
+
+
+
+    Wicked Witch (Dark Green)    #51b330 #7ad950       grimmerie:1b
+        -> Heart Ripping 
+        -> Reduction Curse 
+        -> Expension Curse 
+        -> lift curse  
+
+
+
+
+
 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 #  Améliorations
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
+Storage pour Potion Book                                   FAIT
+Storage pour Enchantments                                  FAIT
+
+Reworking du sort d'immobilization                         FAIT
+    - Timing individuel 
+
+Récupérations d'objets via loot table                      FAIT
+
+Default configuration Enchantement book et potion          FAIT
+
+LootTable -> Wall
 
 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 # Fixation Bug 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
+Spells qui s'annulent pas                                   FAIT      
+-> quand inferieur a 20 ça annule pas le sors
+
+Typo dans grimmerie et Enchanting book                      FAIT
+
+Mirroir Supprimé qd on supprime un mirroir deja existant    FAIT
+
+
+
+
+
+
+
+
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
-# Idée - 4.0.0
+# Idée - 5.0.0
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+Heart Ripping 
+ -> Partager les effets de potion ?                      [WIP]
+
+        -> Dans chaudron mettre le coeur + La potion        
+        -> Certaines place de l'inventaire pour partager 
+        les effects actuel
+        active_effects: [
+            {duration: -1, show_icon: 1b, amplifier: 0b, ambient: 0b, id: "minecraft:saturation", show_particles: 0b}, 
+            {duration: -1, show_icon: 1b, amplifier: 1b, ambient: 0b, id: "minecraft:jump_boost", show_particles: 0b}
+            ]
+
+
+
+Cauldron spell
+    - Spawn Illusioner 
+    -> New Loot 
+        -> Inactive magic beans ??
+    - Storm spell
+    -> Summon weather thunder
+
+
+
+Advancement
+    -> Cauldron spell
+        - Summon Familiar 
+        - Craft Banner
+        - Enchanted Golden Apple
+        - Malediction
+        - Protection
+        - Anihilation
+
+    -> Kill Illusioner x1
+    -> Kill Evoquer x10
+    -> Kill Witch x10
+
+
 
 
 Custom Potion
@@ -73,8 +210,10 @@ Chaudron Magique via Interaction
                     -> Nether Potion 
                     -> End Potion
                     -> Overworld Potion
-                    -> Void Potion 
-                        => Téléporte la personne dans le void 
+                    -> Shrinking Potion
+                    -> Gigantic Potion
+
+
 
 
 Magic Beans 
@@ -107,14 +246,6 @@ Cauldron spell book
 execute in minecraft:overworld run forceload add -30000000 1600
 
 
-
-
-
-
-
-
-
-
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Optimization
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
@@ -138,3 +269,4 @@ https://sketchfab.com/3d-models/crystal-ball-6018233cc2434f8eba72f474657b65c1
 https://sketchfab.com/3d-models/stylized-wizard-hat-f59021d602334367987bcd7657cec722
 
 
+/execute in minecraft:overworld run tp @s -1093.59 96.53 555.53 62.70 34.87

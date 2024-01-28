@@ -8,9 +8,31 @@ execute at @s run particle item lime_stained_glass ^ ^ ^ 10 -1 10 10 100 force
 execute at @s run particle item lime_stained_glass ^ ^ ^ 10 -1 10 10 100 force
 execute at @s run particle happy_villager ^ ^ ^ 10 -1 10 1 1000 force
 
-execute at @s run function wicked:cauldron/particle/alchemymod_v_t
-execute at @s run function wicked:cauldron/particle/alchemymod_v_t
-execute at @s run function wicked:cauldron/particle/alchemymod_v_t
+execute if entity @s[tag=wicked,tag=light_purple] at @s run function wicked:cauldron/particle/couleur/light_purple
+execute if entity @s[tag=wicked,tag=light_purple] at @s run function wicked:cauldron/particle/couleur/light_purple
+execute if entity @s[tag=wicked,tag=light_purple] at @s run function wicked:cauldron/particle/couleur/light_purple
+
+
+execute if entity @s[tag=wicked,tag=dark_purple] at @s run function wicked:cauldron/particle/couleur/dark_purple
+execute if entity @s[tag=wicked,tag=dark_purple] at @s run function wicked:cauldron/particle/couleur/dark_purple
+execute if entity @s[tag=wicked,tag=dark_purple] at @s run function wicked:cauldron/particle/couleur/dark_purple
+
+
+
+execute if entity @s[tag=wicked,tag=dark_gray] at @s run function wicked:cauldron/particle/couleur/dark_gray
+execute if entity @s[tag=wicked,tag=dark_gray] at @s run function wicked:cauldron/particle/couleur/dark_gray
+execute if entity @s[tag=wicked,tag=dark_gray] at @s run function wicked:cauldron/particle/couleur/dark_gray
+
+
+
+execute if entity @s[tag=wicked,tag=black] at @s run function wicked:cauldron/particle/couleur/black
+execute if entity @s[tag=wicked,tag=black] at @s run function wicked:cauldron/particle/couleur/black
+execute if entity @s[tag=wicked,tag=black] at @s run function wicked:cauldron/particle/couleur/black
+
+
+execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
+execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
+execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
 
 effect give @s glowing 5 1 true
 

@@ -124,6 +124,12 @@ execute as @e[tag=wicked,scores={killwitch=30..},tag=dark_gray,tag=!l70] run fun
 execute as @e[tag=wicked,scores={killwitch=40..},tag=black,tag=!l80] run function wicked:witch_update/wicked
 
 
+execute as @e[tag=wicked,tag=dark_purple,predicate=wicked:select_witch] run function wicked:spellbook/witch_to_mystic
+execute as @e[tag=wicked,tag=dark_gray,predicate=wicked:select_mystic] run function wicked:spellbook/mystic_to_occult
+execute as @e[tag=wicked,tag=black,predicate=wicked:select_occult] run function wicked:spellbook/occult_to_dark
+execute as @e[tag=wicked,tag=dark_green,predicate=wicked:select_dark] run function wicked:spellbook/dark_to_wicked
+
+
 
 ###########################
 # SCEPTER SHIELD
@@ -198,6 +204,35 @@ execute as @a[tag=wicked,limit=1,scores={spell=24}] at @s run function wicked:gr
 
 # recall use
 execute as @a[tag=wicked,limit=1,scores={spell=25}] at @s run function wicked:grimmerie/recall/tel_recall
+
+
+
+
+
+# Size Spell - Normal
+execute as @a[tag=wicked,limit=1,scores={spell=44}] at @s run function wicked:grimmerie/size_spell/normal
+
+# Size Spell - Shrink
+execute as @a[tag=wicked,limit=1,scores={spell=46}] at @s run function wicked:grimmerie/size_spell/shrink
+
+# Size Spell - giant
+execute as @a[tag=wicked,limit=1,scores={spell=45}] at @s run function wicked:grimmerie/size_spell/giant
+
+
+
+# Size curse - Normal
+execute as @a[tag=wicked,limit=1,scores={spell=48}] at @s run function wicked:grimmerie/size_curse/normal
+
+# Size curse - Shrink
+execute as @a[tag=wicked,limit=1,scores={spell=47}] at @s run function wicked:grimmerie/size_curse/shrink
+
+# Size curse- giant
+execute as @a[tag=wicked,limit=1,scores={spell=49}] at @s run function wicked:grimmerie/size_curse/giant
+
+
+#Heart Ripping
+execute as @a[tag=wicked,limit=1,scores={spell=50}] at @s run say WIP
+
 
 
 
