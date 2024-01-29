@@ -2,99 +2,6 @@
 # Version - 4.0.0 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
-Enchant book                                               FAIT
--> Enchanted book
-
-Verrouillage de mirror                                     FAIT
-Deverrouillage de mirror                                   FAIT
-  -> Amulet main hand
-  -> glowstone seconde 
-
-
-Remove fireball                                            FAIT
-reworking Broom into scepter                               FAIT
-
-Silver Slippers Utilisable par tout le monde               FAIT
-
-Death teleportation to House                               FAIT
-
-Evolution d'une sorcière                                   FAIT
-    1) Witch  (Light Purple)
-
-    2) Mystic Witch (dark purple)
-        - 10 Witch 
-
-    3) Occult Witch (dark gray)
-        - 20 Witch
-
-    4) Dark Witch   (black)
-        - 30 Witch
-
-    5) Wicked Witch (Dark green)
-        - 40 Witch
-
-
-    => Advancement
-    => Changement couleur magie en fonction du niveau  
-    => Changement de livre de sors
-
-
-Trim For the silver Slippers                                FAIT
-balai 8 degat                                               FAIT
-
-Augmentation du rayon chaudron                              FAIT
-14 -> 27 block
-
-Recall spell                                                FAIT
--> Definition d'un point de recall [15 magie]
-    -> Teleportation a ce point    [15 magie]
-
-
-Prendre un coeur                                            FAIT
-    -> Immobilisation   SlOT8                               
-    -> Le tuer                                              
-
-     
-Different SpellBook en fonction du niveau                   FAIT
-
-    Witch  (Light Purple) #daa7fa #976bb3       witch:1b
-
-        -> Locator Spell 
-        -> Dispel 
-        -> Barrier Spell
-
-    Mystic Witch (dark purple)  #6B1389  #750aec       mystic:1b 
-
-        -> Protection Spell
-        -> Healing Spell
-        -> Astral Projection
-
-    Occult Witch (dark gray) #555555 #808080       occult:1b
-
-        -> Recall Spell
-        -> Ghost Walk
-        -> Size Spell         30 Magie
-            Shrinking 
-            Gigant 
-            Normal 
-
-    Dark Witch   (black)     #222222  #000000        dark:1b
-
-        -> Aura Explosion
-        -> Enchantments
-        -> Potion 
-
-
-
-    Wicked Witch (Dark Green)    #51b330 #7ad950       grimmerie:1b
-        -> Heart Ripping 
-        -> Reduction Curse 
-        -> Expension Curse 
-        -> lift curse  
-
-
-Cauldron spell
-    -> Witch Beacon                                        FAIT
 
 
 
@@ -102,30 +9,10 @@ Cauldron spell
 #  Améliorations
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
-Storage pour Potion Book                                   FAIT
-Storage pour Enchantments                                  FAIT
-
-Reworking du sort d'immobilization                         FAIT
-    - Timing individuel 
-
-Récupérations d'objets via loot table                      FAIT
-
-Default configuration Enchantement book et potion          FAIT
-
-
 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 # Fixation Bug 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-
-Spells qui s'annulent pas                                   FAIT      
--> quand inferieur a 20 ça annule pas le sors
-
-Typo dans grimmerie et Enchanting book                      FAIT
-
-Mirroir Supprimé qd on supprime un mirroir deja existant    FAIT
-
-
 
 
 

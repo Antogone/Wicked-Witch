@@ -37,7 +37,7 @@ execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldr
 
 
 execute at @s run execute as @e[type=!#dontharm,sort=nearest,distance=..3,tag=!wicked] run attribute @s generic.scale base set 1
-execute at @s run execute as @e[type=!#dontharm,sort=nearest,distance=..3,tag=!wicked] run attribute @s generic.step_height base set 0
+execute at @s run execute as @e[type=!#dontharm,sort=nearest,distance=..3,tag=!wicked] run attribute @s generic.step_height base set 0.5
 
 
 scoreboard players remove @s magie 60

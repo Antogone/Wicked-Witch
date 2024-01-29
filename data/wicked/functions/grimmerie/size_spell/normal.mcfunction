@@ -36,7 +36,7 @@ execute if entity @s[tag=wicked,tag=dark_green] at @s run particle minecraft:dus
 execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
 
 attribute @s generic.scale base set 1
-attribute @s generic.step_height base set 0
+attribute @s generic.step_height base set 0.5
 
 
 scoreboard players remove @s magie 30

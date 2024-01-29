@@ -116,6 +116,8 @@ bossbar add timer {"text":"Temps restant","color":"red"}
 bossbar set timer color red 
 
 advancement grant @s only wicked:witch
+advancement grant @s only wicked:witch_pendant_adv
+advancement grant @s only wicked:fireball
 
 scoreboard objectives add effect_none dummy
 scoreboard objectives add ench_none dummy
