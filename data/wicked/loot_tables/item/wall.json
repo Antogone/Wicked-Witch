@@ -28,6 +28,10 @@
             {
               "function": "minecraft:set_nbt",
               "tag": "{EntityTag:{Size:0,wasOnGround:1b,Tags:[\"wall2\"]},Enchantments:[{}]}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 10
             }
           ]
         }

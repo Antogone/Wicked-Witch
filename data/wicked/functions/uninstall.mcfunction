@@ -126,6 +126,7 @@ clear @s snowball{fireball:1b}
 clear @s feather{broom:1b}
 clear @s feather{broom:2b}
 clear @s carrot_on_a_stick{immo:1b}
+clear @s written_book{spellbook:1b}
 
 clear @s command_block{CustomModelData:14120001}
 clear @s red_dye{reloading:1b}

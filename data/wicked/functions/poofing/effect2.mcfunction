@@ -10,8 +10,8 @@ execute as @e[tag=telp,limit=1,sort=nearest] at @s run teleport @e[tag=mtp,limit
 
 execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] if entity @p[tag=wicked,tag=light_purple] run particle minecraft:dust 0.729 0.518 0.973 1 ^ ^ ^ 0.5 1 0.5 0.001 300 force
 execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] if entity @p[tag=wicked,tag=light_purple] run particle minecraft:dust 0.729 0.518 0.973 1 ^ ^ ^ 0.5 1 0.5 0.001 300 force
-execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] if entity @p[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.431 0.071 0.839 1 ^ ^ ^ 0.5 1 0.5 0.001 300 force
-execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] if entity @p[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.431 0.071 0.839 1 ^ ^ ^ 0.5 1 0.5 0.001 300 force
+execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] if entity @p[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.565 0.184 1 1 ^ ^ ^ 0.5 1 0.5 0.001 300 force
+execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] if entity @p[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.565 0.184 1 1 ^ ^ ^ 0.5 1 0.5 0.001 300 force
 
 execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] if entity @p[tag=wicked,tag=dark_gray] run particle minecraft:dust 0.533 0.533 0.533 1 ^ ^ ^ 0.5 1 0.5 0.001 300 force
 execute as @e[tag=mtp,limit=5] at @e[tag=mtp,limit=5] if entity @p[tag=wicked,tag=dark_gray] run particle minecraft:dust 0.533 0.533 0.533 1 ^ ^ ^ 0.5 1 0.5 0.001 300 force

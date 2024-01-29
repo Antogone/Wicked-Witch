@@ -19,7 +19,7 @@ execute if entity @s[tag=wicked,tag=light_purple] run particle minecraft:dust 0.
 execute if entity @s[tag=wicked,tag=light_purple] at @s run function wicked:cauldron/particle/couleur/light_purple
 
 
-execute if entity @s[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.431 0.071 0.839 1 ^ ^ ^ 1 -1 1 10 1000 force
+execute if entity @s[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.565 0.184 1 1 ^ ^ ^ 1 -1 1 10 1000 force
 execute if entity @s[tag=wicked,tag=dark_purple] at @s run function wicked:cauldron/particle/couleur/dark_purple
 
 

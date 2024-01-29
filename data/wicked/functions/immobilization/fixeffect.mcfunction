@@ -42,7 +42,7 @@ execute as @e[tag=fixa] at @s run execute as @e[distance=..1,type=!#dontharm,tag
 
 execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=light_purple] run particle minecraft:dust 0.729 0.518 0.973 1 ^ ^ ^ 0.3 1 0.3 50 3 force
 
-execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.431 0.071 0.839 1 ^ ^ ^ 0.3 1 0.3 50 3 force
+execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.565 0.184 1 1 ^ ^ ^ 0.3 1 0.3 50 3 force
 
 execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=dark_gray] run particle minecraft:dust 0.533 0.533 0.533 1 ^ ^ ^ 0.3 1 0.3 50 3 force
 
