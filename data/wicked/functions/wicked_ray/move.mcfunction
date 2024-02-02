@@ -37,7 +37,7 @@ execute as @e[tag=ray,limit=1] if entity @p[tag=wicked,tag=light_purple] run exe
 
 execute as @e[tag=ray,limit=1] run execute as @e[tag=!ray,tag=!wicked,type=!#minecraft:dontharm,distance=..2,sort=nearest] run effect give @s weakness 10 0 true
 
-
+execute as @e[tag=ray,limit=1] run execute as @e[tag=!ray,tag=!wicked,type=end_crystal,distance=..2,sort=nearest] run kill @s
 
 # Check for collisions with blocks
 execute unless block ~ ~ ~ #minecraft:ray_permeable run tag @s add hitBlock

@@ -129,3 +129,8 @@ data modify storage wicked.potion Temp.amplifier set value 4
 
 data modify storage wicked.ench Temp.id set value -14
 data modify storage wicked.ench Temp.lvl set value 0
+
+
+scoreboard objectives add wicked_created trigger
+scoreboard players enable @s wicked_created
+execute store result score $wicked_created wicked_created run trigger wicked_created

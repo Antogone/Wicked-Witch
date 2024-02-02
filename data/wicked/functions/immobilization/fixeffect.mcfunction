@@ -23,16 +23,16 @@ execute if entity @p[tag=wicked,tag=dark_green] run team modify fix color green
 
 execute as @s run team join fix
 
-effect give @s mining_fatigue 2 255 true
-effect give @s nausea 2 255 true
-effect give @s weakness 2 255 true
-effect give @s slowness 2 255 true
-effect give @s jump_boost 2 190 true
-# effect give @s levitation 1 255 true
-effect give @s blindness 2 255 true
+effect give @s mining_fatigue 2 127 true
+effect give @s nausea 2 127 true
+effect give @s weakness 2 127 true
+effect give @s slowness 2 127 true
+# effect give @s jump_boost 2 190 true
+# effect give @s levitation 1 127 true
+effect give @s blindness 2 127 true
 
-effect give @s darkness 15 255 true
-effect give @s glowing 2 255 true
+effect give @s darkness 15 127 true
+effect give @s glowing 2 127 true
 
 execute as @e[tag=fixa] at @s run execute as @e[distance=..1,type=!#dontharm,tag=!fix,team=fix,type=!player] run data merge entity @s {NoGravity:1b,Silent:1b,NoAI:1b,Motion:[0.0,0.0,0.0],Fuse:2000}
 

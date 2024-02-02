@@ -1,0 +1,32 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "The wicked witch's spellbook",
+                    "color": "#51b330",
+                    "italic": true
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{pages: [], CustomModelData: 10140005, title: \"§2SpellBook\", author: \"Antogone\", resolved: 1b,empty:1b}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
+  
+  

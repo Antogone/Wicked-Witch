@@ -36,8 +36,8 @@ execute if entity @s[tag=wicked,tag=dark_green] at @s run particle minecraft:dus
 execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
 
 
-execute at @s run execute as @e[type=!#dontharm,sort=nearest,distance=..3,tag=!wicked] run attribute @s generic.scale base set 1
-execute at @s run execute as @e[type=!#dontharm,sort=nearest,distance=..3,tag=!wicked] run attribute @s generic.step_height base set 0.5
+execute at @s run execute as @e[type=!#dontharm,sort=nearest,distance=..10,tag=!wicked] run attribute @s generic.scale base set 1
+execute at @s run execute as @e[type=!#dontharm,sort=nearest,distance=..10,tag=!wicked] run attribute @s generic.step_height base set 0.5
 
 
 scoreboard players remove @s magie 60

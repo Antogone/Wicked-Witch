@@ -18,6 +18,8 @@ tag @s add l80
 
 tag @s add broom_fly
 
+tag @s remove light_purple
+tag @s add dark_green
 
 scoreboard players set @s magie 500
 

@@ -4,8 +4,8 @@
  #
  # Created by Antogone.
 ##
-effect give @s resistance 15 255 true
-effect give @s instant_health 1 255 true
+effect give @s resistance 15 127 true
+effect give @s instant_health 1 127 true
 effect give @s absorption 15 5 true
 
 schedule function wicked:clear_tot 5t

@@ -118,16 +118,16 @@ scoreboard players set @a[tag=wicked,limit=1,scores={drop=1..}] drop 0
             #     - 4) Dark Witch   (black)
             #     - 5) Wicked Witch (Dark green)
 
-execute as @e[tag=wicked,scores={killwitch=10..},tag=light_purple,tag=!l50] run function wicked:witch_update/mystic
-execute as @e[tag=wicked,scores={killwitch=20..},tag=dark_purple,tag=!l60] run function wicked:witch_update/occult
-execute as @e[tag=wicked,scores={killwitch=30..},tag=dark_gray,tag=!l70] run function wicked:witch_update/dark
-execute as @e[tag=wicked,scores={killwitch=40..},tag=black,tag=!l80] run function wicked:witch_update/wicked
+execute as @a[tag=wicked,scores={killwitch=10..},tag=light_purple,tag=!l50] run function wicked:witch_update/mystic
+execute as @a[tag=wicked,scores={killwitch=20..},tag=dark_purple,tag=!l60] run function wicked:witch_update/occult
+execute as @a[tag=wicked,scores={killwitch=30..},tag=dark_gray,tag=!l70] run function wicked:witch_update/dark
+execute as @a[tag=wicked,scores={killwitch=40..},tag=black,tag=!l80] run function wicked:witch_update/wicked
 
 
-execute as @e[tag=wicked,tag=dark_purple,predicate=wicked:select_witch] run function wicked:spellbook/witch_to_mystic
-execute as @e[tag=wicked,tag=dark_gray,predicate=wicked:select_mystic] run function wicked:spellbook/mystic_to_occult
-execute as @e[tag=wicked,tag=black,predicate=wicked:select_occult] run function wicked:spellbook/occult_to_dark
-execute as @e[tag=wicked,tag=dark_green,predicate=wicked:select_dark] run function wicked:spellbook/dark_to_wicked
+execute as @a[tag=wicked,tag=dark_purple,predicate=wicked:select_witch] run function wicked:spellbook/witch_to_mystic
+execute as @a[tag=wicked,tag=dark_gray,predicate=wicked:select_mystic] run function wicked:spellbook/mystic_to_occult
+execute as @a[tag=wicked,tag=black,predicate=wicked:select_occult] run function wicked:spellbook/occult_to_dark
+execute as @a[tag=wicked,tag=dark_green,predicate=wicked:select_dark] run function wicked:spellbook/dark_to_wicked
 
 
 
@@ -137,7 +137,7 @@ execute as @e[tag=wicked,tag=dark_green,predicate=wicked:select_dark] run functi
 
 ##### DEVIATION
 execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run kill @e[type=#projectiles,sort=nearest,distance=..3]
-execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run effect give @s resistance 2 255 true
+execute as @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] at @s run effect give @s resistance 2 127 true
 
 ###### PARTICLE 
 execute at @a[tag=l40,tag=wicked,limit=1,scores={select=1},predicate=wicked:is_sneaking,predicate=wicked:select_broom] positioned ~ ~0.1 ~ run function wicked:cauldron/particle/alchemymod_shield
@@ -239,7 +239,7 @@ execute as @a[tag=wicked,limit=1,scores={spell=50}] at @s run function wicked:he
 ###########################
 # SPELLBOOK
 ###########################
-execute as @e[tag=wicked,predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1b}}}
+execute as @a[tag=wicked,predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1b}}}
 
 
 
@@ -329,3 +329,6 @@ scoreboard players set @a click3 0
 scoreboard players set @a spell 0
 
 
+
+## Magic Cauldron [WIP]
+# execute as @e[type=minecraft:interaction,tag=chunklock] at @s run function wicked:magic_cauldron/tick_chunk_interactions

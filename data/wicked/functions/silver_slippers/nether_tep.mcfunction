@@ -5,7 +5,7 @@
  # Created by .
 ##
 # Blind Animaitons
-effect give @s blindness 2 255 true
+effect give @s blindness 2 127 true
 
 # get data 
 data modify storage wicked.tep Temp.Pos set value [0d,0d,0d]

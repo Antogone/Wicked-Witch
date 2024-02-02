@@ -77,3 +77,5 @@ bossbar set timer color red
 
 scoreboard objectives add effect_none dummy
 scoreboard objectives add ench_none dummy
+
+scoreboard objectives add wicked_created trigger
