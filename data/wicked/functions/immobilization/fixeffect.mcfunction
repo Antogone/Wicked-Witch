@@ -31,7 +31,7 @@ effect give @s slowness 2 127 true
 # effect give @s levitation 1 127 true
 effect give @s blindness 2 127 true
 
-effect give @s darkness 15 127 true
+effect give @s darkness 2 127 true
 effect give @s glowing 2 127 true
 
 execute as @e[tag=fixa] at @s run execute as @e[distance=..1,type=!#dontharm,tag=!fix,team=fix,type=!player] run data merge entity @s {NoGravity:1b,Silent:1b,NoAI:1b,Motion:[0.0,0.0,0.0],Fuse:2000}
@@ -40,14 +40,5 @@ execute as @e[tag=fixa] at @s run execute as @e[distance=..1,type=!#dontharm,tag
 
 
 
-execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=light_purple] run particle minecraft:dust 0.729 0.518 0.973 1 ^ ^ ^ 0.3 1 0.3 50 3 force
-
-execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.565 0.184 1 1 ^ ^ ^ 0.3 1 0.3 50 3 force
-
-execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=dark_gray] run particle minecraft:dust 0.533 0.533 0.533 1 ^ ^ ^ 0.3 1 0.3 50 3 force
-
-execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=black] run particle minecraft:dust 0.051 0.008 0.102 1 ^ ^ ^ 0.3 1 0.3 50 3 force
-
-execute as @e[type=!#dontharm,team=fix] if entity @p[tag=wicked,tag=dark_green] run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.3 1 0.3 50 3 force
-
+execute as @e[type=!#dontharm,team=fix] run function wicked:immobilization/particle
 

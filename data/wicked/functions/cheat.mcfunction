@@ -11,10 +11,6 @@ tag @s add l10
 tag @s add l30
 tag @s add l40
 
-tag @s add l50
-tag @s add l60
-tag @s add l70
-tag @s add l80
 
 tag @s add broom_fly
 
@@ -22,6 +18,8 @@ tag @s remove light_purple
 tag @s add dark_green
 
 scoreboard players set @s magie 500
+scoreboard players set #limit magie 500
+
 
 advancement grant @s from wicked:witch_pendant_adv
 

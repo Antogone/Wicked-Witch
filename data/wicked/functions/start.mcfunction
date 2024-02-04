@@ -33,6 +33,7 @@ scoreboard objectives add itm2 dummy
 scoreboard objectives add magie dummy
 
 scoreboard players set @s magie 100
+scoreboard players set #limit magie 100
 
 
 scoreboard objectives add select dummy

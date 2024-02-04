@@ -4,12 +4,6 @@
  #
  # Created by Antogone.
 ##
-##
- # dark_gray.mcfunction
- # 
- #
- # Created by Antogone.
-##
 ### Particle Image Function
 ### Version: 1.0.4
 ### Width: 128

@@ -18,4 +18,4 @@ execute as @e[tag=c_spell,tag=large] at @s anchored eyes run function wicked:cau
 execute as @e[tag=c_spell,tag=!large] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:dragon_breath",Count:1b}},distance=..1] run function wicked:cauldron/extension
 
 
-schedule function wicked:cauldron/cauldron_particle 10t
+schedule function wicked:cauldron/cauldron_particle 20t

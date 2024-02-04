@@ -8,4 +8,3 @@ execute as @p[tag=Interactor,predicate=!wicked:select_pendant,sort=nearest] at @
 tellraw @p[tag=Interactor,predicate=!wicked:select_pendant,sort=nearest] {"text":"Mirror Locked ! You can't use it","color":"dark_red"}
 execute on target run tag @s remove Interactor
 particle minecraft:dust 0.773 0.043 0.043 2 ^ ^ ^ 0.5 1 0.5 5 200 force
-# particle minecraft:dust 0.467 0 1 1 ^ ^ ^ 0.5 1 0.5 10 100 force
