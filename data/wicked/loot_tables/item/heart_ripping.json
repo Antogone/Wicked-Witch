@@ -23,11 +23,16 @@
                     "color": "green",
                     "italic": true
                   }
-                ]
+                ],
+                "mode": "insert"
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{CustomModelData:10140006,HideFlags:3,take_heart:1b}"
+                "function": "minecraft:set_custom_model_data",
+                "value": 10140006
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{take_heart:1b}"
               }
             ]
           }

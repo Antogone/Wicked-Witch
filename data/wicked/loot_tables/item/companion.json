@@ -23,11 +23,18 @@
                   "color": "green",
                   "italic": true
                 }
-              ]
+              ],
+              "mode": "insert"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{telp:1b,Enchantments:[{}]}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{telp:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true
+              }
             }
           ]
         }

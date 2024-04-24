@@ -15,11 +15,23 @@
                     "color": "#51b330",
                     "italic": true
                   }
-                ]
+                ],
+                "mode": "insert"
               },
               {
-                "function": "minecraft:set_nbt",
-                "tag": "{pages: [], CustomModelData: 10140005, title: \"§2SpellBook\", author: \"Antogone\", resolved: 1b,empty:1b}"
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_model_data": 10140005,
+                  "minecraft:written_book_content": {
+                    "pages": [],
+                    "title": "§2SpellBook",
+                    "author": "Antogone",
+                    "resolved": true
+                  },
+                  "minecraft:custom_data": {
+                    "empty": 1
+                  }
+                }
               }
             ]
           }
