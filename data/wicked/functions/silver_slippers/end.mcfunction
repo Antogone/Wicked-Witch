@@ -6,7 +6,7 @@ execute as @s at @s run execute as @e[predicate=wicked:accompagnant,distance=..3
 execute as @s in the_end run tp 5 65 5
 
 
-effect give @s blindness 4 127 true
+effect give @s blindness 4 255 true
 
 execute as @s at @s anchored eyes run particle cloud ^ ^ ^ 0.5 -1 0.5 0.1 150
 scoreboard players set @s choose -1

@@ -28,9 +28,9 @@ execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldr
 execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
 execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
 
-execute at @s run execute as @e[distance=..3,type=!#dontharm] run effect give @s resistance 60 127 true
-execute at @s run execute as @e[distance=..3,type=!#dontharm] run effect give @s fire_resistance 60 127 true
-execute at @s run execute as @e[distance=..3,type=!#dontharm] run effect give @s slow_falling 60 127 true
+execute at @s run execute as @e[distance=..3,type=!#dontharm] run effect give @s resistance 60 255 true
+execute at @s run execute as @e[distance=..3,type=!#dontharm] run effect give @s fire_resistance 60 255 true
+execute at @s run execute as @e[distance=..3,type=!#dontharm] run effect give @s slow_falling 60 255 true
 
 scoreboard players remove @s magie 40
 scoreboard players set @s spell 0

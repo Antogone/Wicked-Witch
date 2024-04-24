@@ -1,4 +1,4 @@
-tellraw @a [{"text": "Loaded ","color": "yellow"},{"text": "Wicked Witch ","color": "dark_green","bold": true},{"text": "(V.4.0.0 24w04a)","color": "dark_green"},{"text": " successfully"}]
+tellraw @a [{"text": "Loaded ","color": "yellow"},{"text": "Wicked Witch ","color": "dark_green","bold": true},{"text": "(V.4.5.0 1.20.5)","color": "dark_green"},{"text": " successfully"}]
 
 attribute @p[tag=wicked] generic.max_health base set 40
 attribute @p[tag=wicked] generic.movement_speed base set 0.11

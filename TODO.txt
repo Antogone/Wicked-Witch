@@ -1,6 +1,10 @@
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
-# Version - 4.0.0 
+# Version - 5.0.0 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+Effets de potion 
+Refonte Ecriture des objets + des Loot tables
+
+les fonctions présente dans tick marche crrectement mtn 
 
 
 
@@ -8,11 +12,33 @@
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 #  Améliorations
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+trigger craft de la sorcière 
+Global optimisation of selector
+-> Rechargement optimisé
+
+
 
 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 # Fixation Bug 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+Step height 0.5
+Cauldron spell by a witch
+effect 255 to 127
+
+trouvé comment remplace le potion effect 190 du jump boost par 127
+
+
+Base gravity attribute 0.08
+gravité 0 => Flotte
+gravité -1 tu voles
+
+
+
+
+
+
+
 
 
 
@@ -23,6 +49,40 @@
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Idée - 5.0.0
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+
+Cauldron spell Recipe 
+    -> Livre contenant les sors pouvant être lancé depuis un chaudron
+
+
+A new Spellbook usable by everyone ? 
+    -> Consomme de l'exp 
+    -> Sort de siphonage -> transforme la magie en xp 
+    
+
+Spatial hex -> Swap position 
+
+Thieft Spell -> Vole l'armure et l'arme main hand
+Disarm Spell 
+Locator Spell
+Lightning Strike Spell
+Bouncing Elemental Spell
+
+
+
+Scroll pour spellbook -> Avec trigger                                       [WIP]
+    -> Utilisé un scoll l'ajoute dans son spellbook                         [DONE]
+    -> Scroll dans une main spellbook dans l'autre 
+    -> Possibilité de répliqué un spellbook ? 
+        -> Amélioration des sorts (like KH)
+SpellBook != de Grimmerie 
+Impossible d'ajouter des sors au grimmerie 
+Loottable d'entity pouvant drop des spells ou ingredient pour crée un spell
+
+
+
+
+Custom Icon ?
 
 
 Heart Ripping 
@@ -37,13 +97,9 @@ Heart Ripping
             ]
 
 
-
 Cauldron spell
     - Spawn Illusioner 
-    -> New Loot 
-        -> Inactive magic beans ??
-
-
+    -> New Loot ?
 
 
 Advancement
@@ -60,6 +116,25 @@ Advancement
     -> Kill Witch x10
 
 
+
+Armes Magique -> 
+Inspi : https://www.planetminecraft.com/data-pack/blades-of-majestica-46-custom-weapons-datapack/
+
+
+
+Chaudron Magique via Interaction                                                                [WIP]
+    Nouveaux Ingredients 
+
+    Crée au maximum 5 potion (5 fois la même potion), couleur du chaudron dependant du type de potion 
+    Affichage des ingredients au dessus du chaudron 
+    possibilité de mix pour obtenir plein d'effet ?
+
+    Potion custom : -> Projection Astral - Méditation
+                    -> Nether Potion 
+                    -> End Potion
+                    -> Overworld Potion
+                    -> Shrinking Potion
+                    -> Gigantic Potion
 
 
 Custom Potion
@@ -81,24 +156,6 @@ Custom Potion
 }
 
 
-
-Chaudron Magique via Interaction 
-    Nouveaux Ingredients 
-
-    Crée au maximum 5 potion (5 fois la même potion), couleur du chaudron dependant du type de potion 
-    Affichage des ingredients au dessus du chaudron 
-    possibilité de mix pour obtenir plein d'effet ?
-
-    Potion custom : -> Projection Astral - Méditation
-                    -> Nether Potion 
-                    -> End Potion
-                    -> Overworld Potion
-                    -> Shrinking Potion
-                    -> Gigantic Potion
-
-
-
-
 Magic Beans 
     - Portal to Nether
     - Portal to End 
@@ -108,11 +165,6 @@ Magic Beans
     Portail a crée dans la dimension ou l'on souhaite se teleporter a nouveau ?
     plateforme de teleportation 
     animations au sol ? 
-
-
-
-Cauldron spell book 
-    -> Livre contenant les sors pouvant être lancé depuis un chaudron
 
 
 
@@ -140,16 +192,28 @@ https://www.youtube.com/watch?v=lvMCaPOF-mU
 https://github.com/Neylz/opti-mcfunction/blob/main/docs/lang/fr-fr/basics.md
 
 
-# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
-# 3D
-# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-https://www.reddit.com/r/Minecraft/comments/qii0by/the_witch_hut_a_spooky_halloween_render/
-https://sketchfab.com/3d-models/witch-items-a2422b8ed63a4902847fc7e35ef00e0a
-https://www.reddit.com/r/Minecraft/comments/jluyd1/a_witch_brewing_a_sinister_potion_render_by_me/
+when you want to do some stuff with all entities
+you should most likely do execute as @e run function XYZ in the loop or somewhere
+and insude that function you can do your filters and reference other functions like this:
+execute if entity @s[tag=wicked,MORE_STUFF_HERE] run function xxx
+
+# or like this
+execute as @s[tag=wicked,MORE_STUFF_HERE] run function xxx
+
+# and you can put more stuff here
+this way  you can put most off your stuff in this function
 
 
-https://sketchfab.com/3d-models/crystal-ball-6018233cc2434f8eba72f474657b65c1
-https://sketchfab.com/3d-models/stylized-wizard-hat-f59021d602334367987bcd7657cec722
+this way  you can put most off your stuff in this function
+and i'll only do one @e selector
+since @s targets the entity executing the comand, it already has that entity stored in the memory and doesn't need to make that list of all
 
 
-/execute in minecraft:overworld run tp @s -1093.59 96.53 555.53 62.70 34.87
+
+also one of the worst optimised things you could do would be using nbt={} in selectors 
+you shouldn't worry about that just now
+
+
+https://github.com/RafalBerezin/Arcane_Sorcery/tree/mc1.20/Arcane_Sorcery_DAT/data/arcane_sorcery/functions/utils/damage/effect/fire
+https://github.com/Neylz/opti-mcfunction/blob/main/docs/advanced.md
+https://github.com/Neylz/opti-mcfunction/blob/main/docs/lang/fr-fr/basics.md#21-s%C3%A9lecteurs

@@ -14,9 +14,11 @@ execute as @e[tag=fixa] at @s run function wicked:immobilization/fixeffect
 
 scoreboard players add @e[tag=fixa] clock 1
 
+
+
 ## Projection astral particle
 execute at @e[tag=PAJ] run function wicked:cauldron/particle/alchemymod_v_t
-execute at @e[tag=PAJ] run particle happy_villager ^ ^ ^ 0.5 1 0.5 0.001 10 force
+# execute at @e[tag=PAJ] run particle happy_villager ^ ^ ^ 0.5 1 0.5 0.001 10 force
 
 
 
