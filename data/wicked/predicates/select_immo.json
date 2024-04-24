@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "nbt": "{immo:1b}"
+        "components": {
+          "minecraft:custom_data": {
+            "immo": 1
+          }
+        }
       }
     }
   }

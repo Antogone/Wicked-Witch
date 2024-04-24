@@ -4,7 +4,11 @@
     "predicate": {
       "equipment": {
         "mainhand": {
-          "nbt": "{telp:1b}"
+          "components": {
+            "minecraft:custom_data": {
+              "telp": 1
+            }
+          }
         }
       }
     }

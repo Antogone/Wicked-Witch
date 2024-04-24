@@ -1,11 +1,15 @@
-{
+  {
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
       "type": "minecraft:player",
       "equipment": {
         "offhand": {
-          "nbt": "{pendant:1b}"
+          "components": {
+            "minecraft:custom_data": {
+              "pendant": 1
+            }
+          }
         }
       }
     }

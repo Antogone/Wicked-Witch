@@ -23,11 +23,22 @@
                   "color": "green",
                   "italic": true
                 }
-              ]
+              ],
+              "mode": "insert"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{EntityTag:{Size:0,wasOnGround:1b,Tags:[\"wall2\"]},Enchantments:[{}]}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:entity_data": {
+                  "id": "minecraft:slime",
+                  "Size": 0,
+                  "wasOnGround": 1,
+                  "Tags": [
+                    "wall2"
+                  ]
+                }
+              }
             },
             {
               "function": "minecraft:set_count",

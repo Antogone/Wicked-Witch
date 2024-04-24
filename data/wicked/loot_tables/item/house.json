@@ -28,11 +28,22 @@
                   "color": "green",
                   "italic": true
                 }
-              ]
+              ],
+              "mode": "insert"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData: 10140004,house:1b,Enchantments:[{}]}"
+              "function": "minecraft:set_custom_model_data",
+              "value": 10140004
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{house:1b}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": true
+              }
             }
           ]
         }

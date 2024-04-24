@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "nbt": "{broom:2b}"
+        "components": {
+          "minecraft:custom_data": {
+            "broom": 2
+          }
+        }
       }
     }
   }

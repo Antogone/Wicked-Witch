@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "nbt": "{occult:1b}"
+        "components": {
+          "minecraft:custom_data": {
+            "occult": 1
+          }
+        }
       }
     }
   }

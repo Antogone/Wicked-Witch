@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "nbt": "{pendant:1b}"
+        "components": {
+          "minecraft:custom_data": {
+            "pendant": 1
+          }
+        }
       },
       "offhand": {
         "items": [

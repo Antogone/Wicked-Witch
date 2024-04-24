@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "nbt": "{mystic:1b}"
+        "components": {
+          "minecraft:custom_data": {
+            "mystic": 1
+          }
+        }
       }
     }
   }

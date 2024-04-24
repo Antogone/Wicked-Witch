@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "nbt": "{witch:1b}"
+        "components": {
+          "minecraft:custom_data": {
+            "witch": 1
+          }
+        }
       }
     }
   }
