@@ -2,7 +2,8 @@
 # Version - 4.5.0 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 Effets de potion 
-Refonte Ecriture des objets + des Loot tables
+partricle changement
+
 
 les fonctions présente dans tick marche crrectement mtn 
 

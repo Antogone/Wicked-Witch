@@ -240,7 +240,7 @@ execute as @s[scores={spell=50}] at @s run function wicked:heart_ripping/give_hr
 ###########################
 # SPELLBOOK
 ###########################
-execute as @s[predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{tag:{Unbreakable:1b}}}
+execute as @s[predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at @s run data merge entity @e[type=item,limit=1,sort=nearest,distance=..5] {Item:{components:{"minecraft:unbreakable":true}}}
 
 
 

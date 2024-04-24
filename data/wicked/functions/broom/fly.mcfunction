@@ -30,8 +30,13 @@ execute unless block ~ ~-1 ~ #minecraft:airs run effect give @s slow_falling 8 0
 execute unless block ~ ~-1 ~ #minecraft:airs run effect give @s jump_boost 1 1 true
 
 
-execute anchored feet run particle dust 0.498 1 0.345 1 ^ ^ ^-0.5 0.2 0 0.2 1 10
-execute anchored feet run particle dust 0.584 0.122 0.855 1 ^ ^ ^-0.5 0.2 0 0.2 1 10
+#VERT 
+execute anchored feet run particle dust{color: [0.498f,1f,0.345f], scale:1f} ^ ^ ^-0.5 0.2 0 0.2 1 10 
+
+#VIOLET
+execute anchored feet run particle dust{color: [0.584f,0.122f,0.855f], scale:1f} ^ ^ ^-0.5 0.2 0 0.2 1 10
+
+# execute anchored feet run particle dust_color_transition{from_color: [0.584f,0.122f,0.855f], scale: 1f, to_color: [0.498f,1f,0.345f]} ^ ^ ^-0.5 0.2 0 0.2 1 10
 
 effect give @s jump_boost 1 1 true
 effect give @s slow_falling 1 1 true
