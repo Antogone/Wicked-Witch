@@ -6,10 +6,7 @@
       "slots": {
         "hotbar.8": {
           "components": {
-            "minecraft:custom_data": {
-                "heart": 1,
-                "uuid": []
-            }
+            "minecraft:custom_model_data": 10140006
           }
         }
       }

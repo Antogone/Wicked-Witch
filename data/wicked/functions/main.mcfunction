@@ -47,10 +47,6 @@ execute at @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{pendant:
 
 
 
-## heart ripping 
-
-#Restoration
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{heart:1b}}}}] at @s run function wicked:heart_ripping/set_restore
 
 
 

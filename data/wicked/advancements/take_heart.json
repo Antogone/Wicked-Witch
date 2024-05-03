@@ -6,7 +6,11 @@
           "player": {
             "equipment": {
               "mainhand": {
-                "nbt": "{take_heart:1b}"
+                "components": {
+                  "minecraft:custom_data": {
+                    "take_heart": 1
+                  }
+                }
               }
             }
           }

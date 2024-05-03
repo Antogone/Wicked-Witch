@@ -317,8 +317,13 @@ execute as @a[scores={click=1..},predicate=wicked:select_mirror_2] at @s run fun
 
 #### HEART RIPPING
 ############################# WIP
+
+#Restoration
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{heart:1b}}}}] at @s run function wicked:heart_ripping/set_restore
+
 execute as @a[scores={click=1..},predicate=wicked:select_heartrip] at @s run function wicked:heart_ripping/take_heart
-execute as @a[predicate=wicked:heart_inv] at @s run function wicked:heart_ripping/set_immo
+# execute as @a[predicate=wicked:heart_inv] at @s run function wicked:heart_ripping/set_immo
+
 
 
 ###########################
