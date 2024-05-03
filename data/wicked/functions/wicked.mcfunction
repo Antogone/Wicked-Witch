@@ -84,6 +84,8 @@ item replace entity @s[tag=l15,tag=broom_fly,scores={select=1,magie=0..}] hotbar
 
 
 
+
+
 ###########################
 # POOFING
 ###########################
@@ -104,7 +106,7 @@ execute as @s[scores={magie=4..,click=1..},predicate=wicked:select_scepter] at @
 ###########################
 # Clear Scepter
 ########################### 
-execute as @s at @s run kill @e[distance=..10,nbt={Item:{tag:{scepter:1b}}}]
+execute as @s at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_data":{scepter:1b}}}}]
 execute as @s[scores={select=0}] run clear @s carrot_on_a_stick[custom_data={scepter:1b}]
 
 
@@ -252,15 +254,18 @@ execute as @s[predicate=wicked:is_sneaking,predicate=wicked:select_grimmerie] at
 ###########################
 # CLEAR FLOOR
 ###########################
-execute at @s run kill @e[distance=..10,nbt={Item:{tag:{broom:1b}}}]
-execute at @s run kill @e[distance=..10,nbt={Item:{tag:{broom:2b}}}]
+execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_data":{broom:1b}}}}]
+execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_data":{broom:2b}}}}]
 
-execute at @s run kill @e[distance=..10,nbt={Item:{tag:{poofing:1b}}}]
+execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_data":{poofing:1b}}}}]
+execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_data":{immo:1b}}}}]
+execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_data":{scepter:1b}}}}]
+execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_data":{reloading:1b}}}}]
+
+
 execute at @s run kill @e[distance=..10,nbt={Item:{tag:{fireball:1b,OnGround:1b}}}]
-execute at @s run kill @e[distance=..10,nbt={Item:{tag:{immo:1b}}}]
-execute at @s run kill @e[distance=..10,nbt={Item:{tag:{scepter:1b}}}]
-execute at @s run kill @e[distance=..10,nbt={Item:{tag:{CustomModelData:14120001}}}]
-execute at @s run kill @e[distance=..10,nbt={Item:{tag:{reloading:1b}}}]
+
+execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_model_data":14120001}}}]
 
 
 
@@ -302,10 +307,18 @@ item replace entity @s[tag=!l15,scores={select=1}] hotbar.3 with red_dye[unbreak
 
 
 
+###########################
+# MAGIC MIRROR 
+###########################
+
+execute as @a[scores={click=1..},predicate=wicked:select_mirror_1] at @s run function wicked:magic_mirror/set_mirror_first
+execute as @a[scores={click=1..},predicate=wicked:select_mirror_2] at @s run function wicked:magic_mirror/set_mirror_second
 
 
-
-
+#### HEART RIPPING
+############################# WIP
+execute as @a[scores={click=1..},predicate=wicked:select_heartrip] at @s run function wicked:heart_ripping/take_heart
+execute as @a[predicate=wicked:heart_inv] at @s run function wicked:heart_ripping/set_immo
 
 
 ###########################

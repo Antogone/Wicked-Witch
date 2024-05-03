@@ -6,7 +6,7 @@
 ##
 
 
-execute as @s[predicate=wicked:is_sneaking] at @s run particle item lime_stained_glass ~ ~1 ~ 0.2 0.3 0.2 0.01 5
+execute as @s[predicate=wicked:is_sneaking] at @s run particle item{item: "minecraft:lime_stained_glass"} ~ ~1 ~ 0.2 0.3 0.2 0.01 5
 
 
 ## Affichage 

@@ -16,24 +16,26 @@ execute if entity @s[scores={magie=..59}] run return 0
 
 
 
-execute if entity @s[tag=wicked,tag=light_purple] run particle minecraft:dust 0.729 0.518 0.973 1 ^ ^ ^ 1 -1 1 10 1000 force
+
+execute if entity @s[tag=wicked,tag=light_purple] run particle minecraft:dust{color: [0.729f,0.518f,0.973f], scale:1f} ^ ^ ^ 1 -1 1 10 1000 force
 execute if entity @s[tag=wicked,tag=light_purple] at @s run function wicked:cauldron/particle/couleur/light_purple
 
 
-execute if entity @s[tag=wicked,tag=dark_purple] run particle minecraft:dust 0.565 0.184 1 1 ^ ^ ^ 1 -1 1 10 1000 force
+execute if entity @s[tag=wicked,tag=dark_purple] run particle minecraft:dust{color: [0.565f,0.184f,1f], scale:1f} ^ ^ ^ 1 -1 1 10 1000 force
 execute if entity @s[tag=wicked,tag=dark_purple] at @s run function wicked:cauldron/particle/couleur/dark_purple
 
 
-execute if entity @s[tag=wicked,tag=dark_gray] run particle minecraft:dust 0.533 0.533 0.533 1 ^ ^ ^ 1 -1 1 10 1000 force
+execute if entity @s[tag=wicked,tag=dark_gray] run particle minecraft:dust{color: [0.533f,0.533f,0.533f], scale:1f} ^ ^ ^ 1 -1 1 10 1000 force
 execute if entity @s[tag=wicked,tag=dark_gray] at @s run function wicked:cauldron/particle/couleur/dark_gray
 
 
-execute if entity @s[tag=wicked,tag=black] run particle minecraft:dust 0.051 0.008 0.102 1 ^ ^ ^ 1 -1 1 10 1000 force
+execute if entity @s[tag=wicked,tag=black] run particle minecraft:dust{color: [0.051f,0.008f,0.102f], scale:1f} ^ ^ ^ 1 -1 1 10 1000 force
 execute if entity @s[tag=wicked,tag=black] at @s run function wicked:cauldron/particle/couleur/black
 
 
-execute if entity @s[tag=wicked,tag=dark_green] at @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 1 -1 1 10 1000 force
+execute if entity @s[tag=wicked,tag=dark_green] at @s run particle minecraft:dust{color: [0.498f,1f,0.345f], scale:1f} ^ ^ ^ 1 -1 1 10 1000 force
 execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
+
 
 
 execute at @s run execute as @e[type=!#dontharm,sort=nearest,distance=..10,tag=!wicked] run attribute @s generic.scale base set 1

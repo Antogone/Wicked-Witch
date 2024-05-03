@@ -1,15 +1,21 @@
 {
     "criteria": {
-        "requirement": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "nbt": "{heart:1b}"
-                }
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_data": {
+                "heart": 1,
+                "uuid": []
+              }
             }
+          }
         }
+      }
     },
     "rewards": {
-        "function": "wicked:heart_ripping/set_kill"
+      "function": "wicked:heart_ripping/set_kill"
     }
-}
+  }
+  

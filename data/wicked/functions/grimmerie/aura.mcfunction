@@ -2,10 +2,10 @@ execute as @a[scores={magie=..14},tag=wicked] run tellraw @s {"text":"You don't 
 execute if entity @s[scores={magie=..14}] run return 0
 
 
-execute at @s run particle falling_dust green_concrete ^ ^ ^ 10 -1 10 10 1000 force
-execute at @s run particle falling_dust lime_concrete ^ ^ ^ 10 -1 10 10 1000 force
-execute at @s run particle item lime_stained_glass ^ ^ ^ 10 -1 10 10 100 force
-execute at @s run particle item lime_stained_glass ^ ^ ^ 10 -1 10 10 100 force
+execute at @s run particle falling_dust{block_state: "minecraft:green_concrete"} ^ ^ ^ 10 -1 10 10 1000 force
+execute at @s run particle falling_dust{block_state: "minecraft:lime_concrete"} ^ ^ ^ 10 -1 10 10 1000 force
+execute at @s run particle item{item: "minecraft:lime_stained_glass"} ^ ^ ^ 10 -1 10 10 100 force
+execute at @s run particle item{item: "minecraft:lime_stained_glass"} ^ ^ ^ 10 -1 10 10 100 force
 execute at @s run particle happy_villager ^ ^ ^ 10 -1 10 1 1000 force
 
 execute if entity @s[tag=wicked,tag=light_purple] at @s run function wicked:cauldron/particle/couleur/light_purple

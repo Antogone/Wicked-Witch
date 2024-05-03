@@ -15,3 +15,4 @@ scoreboard players enable @p[tag=wicked] potion_trigger
 scoreboard players enable @p[tag=wicked] ench_trigger
 
 function wicked:scoreboard
+

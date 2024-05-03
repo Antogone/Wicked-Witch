@@ -9,7 +9,7 @@ execute as @s[scores={magie=..49},tag=wicked] run tellraw @s {"text":"You don't 
 execute if entity @s[scores={magie=..49}] run return 0
 
 
-execute if entity @s[tag=wicked,tag=dark_green] at @s run particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 1 -1 1 10 1000 force
+execute if entity @s[tag=wicked,tag=dark_green] at @s run particle minecraft:dust{color: [0.498f,1f,0.345f], scale:1f} ^ ^ ^ 1 -1 1 10 1000 force
 
 
 

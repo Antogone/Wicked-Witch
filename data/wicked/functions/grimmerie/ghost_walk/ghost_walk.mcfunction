@@ -21,10 +21,10 @@ bossbar set minecraft:timer value 0
 
 
 
-execute at @s run particle falling_dust green_concrete ^ ^ ^ 1 -1 1 10 1000 force
+execute at @s run particle falling_dust{block_state: "minecraft:green_concrete"} ^ ^ ^ 1 -1 1 10 1000 force
 execute at @s run particle glow ^ ^ ^ 1 -1 1 0.001 100 force
-execute at @s run particle falling_dust lime_concrete ^ ^ ^ 1 -1 1 10 1000 force
-execute at @s run particle item lime_stained_glass ^ ^ ^ 1 -1 1 10 100 force
+execute at @s run particle falling_dust{block_state: "minecraft:lime_concrete"} ^ ^ ^ 1 -1 1 10 1000 force
+execute at @s run particle item{item: "minecraft:lime_stained_glass"} ^ ^ ^ 1 -1 1 10 100 force
 
 
 gamemode spectator @s

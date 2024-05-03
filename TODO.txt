@@ -2,11 +2,12 @@
 # Version - 4.5.0 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 Effets de potion 
-partricle changement
+effets enchantements 
 
+avancements ?
 
-les fonctions présente dans tick marche crrectement mtn 
-
+particle minecraft:ominous_spawning ~ ~1 ~ 0.2 0.3 0.2 2 5000
+particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 0.2 0.3 0.2 0.5 5000
 
 
 
