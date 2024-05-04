@@ -2,9 +2,22 @@
 # Version - 4.5.0 
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 Effets de potion 
+
+
+Wind Charged
+Weaving
+Oozing
+Infested
+
+
+
 effets enchantements 
 
 advancements ?
+
+
+
+
 
 particle minecraft:ominous_spawning ~ ~1 ~ 0.2 0.3 0.2 2 5000
 particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 0.2 0.3 0.2 0.5 5000
@@ -28,7 +41,6 @@ Step height 0.5
 Cauldron spell by a witch
 effect 255 to 127
 
-trouvé comment remplace le potion effect 190 du jump boost par 127
 
 
 Base gravity attribute 0.08
@@ -81,6 +93,12 @@ SpellBook != de Grimmerie
 Impossible d'ajouter des sors au grimmerie 
 Loottable d'entity pouvant drop des spells ou ingredient pour crée un spell
 
+
+
+
+Wicked Witch Enchantements
+    - 
+    - 
 
 
 
@@ -156,18 +174,6 @@ Custom Potion
         "function": "bracken:player/potion/astral_projection/1_astral"
     }
 }
-
-
-Magic Beans 
-    - Portal to Nether
-    - Portal to End 
-    - Portal to Overworld
-    - Portal to Other Dimension ??
-
-    Portail a crée dans la dimension ou l'on souhaite se teleporter a nouveau ?
-    plateforme de teleportation 
-    animations au sol ? 
-
 
 
 

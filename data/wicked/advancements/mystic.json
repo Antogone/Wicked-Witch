@@ -2,7 +2,11 @@
     "display": {
       "icon": {
         "item": "minecraft:potion",
-        "nbt": "{CustomPotionColor:7278706}"
+        "components": {
+          "minecraft:potion_contents": {
+            "custom_color": 7278706
+          }
+        }
       },
       "title": {
         "text": "Mystic Witch !",

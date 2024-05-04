@@ -2,7 +2,9 @@
     "display": {
       "icon": {
         "item": "minecraft:written_book",
-        "nbt": "{CustomModelData:10140005}"
+        "components": {
+          "minecraft:custom_model_data": 10140005
+        }
 
       },
       "title": {

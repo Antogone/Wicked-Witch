@@ -2,7 +2,9 @@
     "display": {
       "icon": {
         "item": "minecraft:snowball",
-        "nbt": "{CustomModelData:10140002}"
+        "components": {
+          "minecraft:custom_model_data": 10140002
+        }
 
       },
       "title": {

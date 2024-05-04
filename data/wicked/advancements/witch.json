@@ -2,7 +2,11 @@
     "display": {
       "icon": {
         "item": "minecraft:potion",
-        "nbt": "{CustomPotionColor:13781718}"
+        "components": {
+          "minecraft:potion_contents": {
+            "custom_color": 13781718
+          }
+        }
       },
       "title": {
         "text": "Witch !",

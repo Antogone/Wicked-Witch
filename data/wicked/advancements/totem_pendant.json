@@ -4,7 +4,11 @@
         "trigger": "minecraft:used_totem",
         "conditions": {
           "item": {
-            "nbt": "{pendant:1b}"
+            "components": {
+              "minecraft:custom_data": {
+                "pendant":1
+              }
+            }
           }
         }
       }

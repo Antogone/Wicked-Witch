@@ -2,7 +2,9 @@
     "display": {
       "icon": {
         "item": "minecraft:carrot_on_a_stick",
-        "nbt": "{ CustomModelData:10140001}"
+        "components": {
+          "minecraft:custom_model_data": 10140001
+        }
       },
       "title": {
         "text": "No more move !",

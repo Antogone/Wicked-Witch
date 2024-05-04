@@ -2,7 +2,11 @@
     "display": {
       "icon": {
         "item": "minecraft:potion",
-        "nbt": "{CustomPotionColor:0}"
+        "components": {
+          "minecraft:potion_contents": {
+            "custom_color": 0
+          }
+        }
       },
 
       "title": {
