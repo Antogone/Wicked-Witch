@@ -5,7 +5,11 @@
       "type": "minecraft:player",
       "equipment": {
         "mainhand": {
-          "nbt": "{mirror_1:1b}"
+          "components": {
+            "minecraft:custom_data": {
+              "mirror_1": 1
+            }
+          }
         }
       }
     }

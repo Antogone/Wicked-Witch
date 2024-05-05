@@ -1,15 +1,23 @@
 # Move forward according to step size
 tp @s ^ ^ ^0.5
 
-particle minecraft:dust 0.498 1 0.345 1 ^ ^ ^ 0.2 0.2 0.2 10 10 force
-particle minecraft:dust 0.431 0.071 0.839 1 ^ ^ ^ 0.05 0.05 0.05 10 1 force
-
-execute as @e[tag=ray,limit=1] run execute as @e[tag=!ray,tag=!wicked,type=!#minecraft:dontharm,distance=..2,sort=nearest] run damage @s 14 minecraft:magic by @p[tag=wicked]
-execute as @e[tag=ray,limit=1] run execute as @e[tag=!ray,tag=!wicked,type=!#minecraft:dontharm,distance=..2,sort=nearest] run effect give @s weakness 10 0 true
-
-
-# Check for collisions with Creepers
+# Check for collisions
 execute if entity @e[tag=!ray,tag=!wicked,type=!#minecraft:dontharm,distance=..1.5] run tag @s add hit
+
+## Color Setting 
+execute if entity @p[tag=wicked,tag=light_purple] run particle minecraft:dust{color: [0.729f,0.518f,0.973f], scale:1f} ^ ^ ^ 0.2 0.2 0.2 10 10 force
+execute if entity @p[tag=wicked,tag=dark_purple] run particle minecraft:dust{color: [0.565f,0.184f,1f], scale:1f} ^ ^ ^ 0.2 0.2 0.2 10 10 force
+execute if entity @p[tag=wicked,tag=dark_gray] run particle minecraft:dust{color: [0.533f,0.533f,0.533f], scale:1f} ^ ^ ^ 0.2 0.2 0.2 10 10 force
+execute if entity @p[tag=wicked,tag=black] run particle minecraft:dust{color: [0.051f,0.008f,0.102f], scale:1f} ^ ^ ^ 0.2 0.2 0.2 10 10 force
+
+execute if entity @p[tag=wicked,tag=dark_green] run particle minecraft:dust{color: [0.565f,0.184f,1f], scale:1f} ^ ^ ^ 0.05 0.05 0.05 10 1 force
+execute if entity @p[tag=wicked,tag=dark_green] run particle minecraft:dust{color: [0.498f,1f,0.345f], scale:1f} ^ ^ ^ 0.2 0.2 0.2 10 10 force
+execute if entity @p[tag=wicked,tag=dark_green] run particle minecraft:dust{color: [0.498f,1f,0.345f], scale:1f} ^ ^ ^ 0.2 0.2 0.2 10 10 force
+
+
+execute as @e[tag=ray,limit=1] run function wicked:wicked_ray/effect_selector
+
+
 
 # Check for collisions with blocks
 execute unless block ~ ~ ~ #minecraft:ray_permeable run tag @s add hitBlock

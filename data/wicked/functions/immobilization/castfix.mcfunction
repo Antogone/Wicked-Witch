@@ -1,10 +1,9 @@
 
 tag @s remove fixa
-function wicked:immobilization/finfix
+# function wicked:immobilization/finfix
 
-
-execute at @e[distance=..10,limit=10,sort=nearest,tag=!wicked,type=!#minecraft:dontharm,team=!fix] run summon marker ~ ~ ~ {NoGravity:1b,duration:500,Tags:[fix]}
-execute if entity @e[tag=fix] run scoreboard players remove @e[tag=wicked,scores={magie=10..}] magie 10
 
 scoreboard players set @s click 0
-tag @s add fixa
+
+execute store success score $s trouve run tag @e[distance=..10,sort=nearest,tag=!wicked,type=!#minecraft:dontharm,team=!fix,tag=!fixa,tag=!wall,tag=!top1,tag=!salem] add fixa
+execute if score $s trouve matches 1 run scoreboard players remove @e[tag=wicked,scores={magie=15..}] magie 15

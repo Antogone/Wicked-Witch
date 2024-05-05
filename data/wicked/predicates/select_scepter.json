@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "nbt": "{scepter:1b}"
+        "components": {
+          "minecraft:custom_data": {
+            "scepter": 1
+          }
+        }
       }
     }
   }

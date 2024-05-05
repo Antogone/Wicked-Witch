@@ -1,8 +1,10 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:written_book",
-        "nbt": "{CustomModelData:10140005}"
+        "id": "minecraft:written_book",
+        "components": {
+          "minecraft:custom_model_data": 10140005
+        }
 
       },
       "title": {

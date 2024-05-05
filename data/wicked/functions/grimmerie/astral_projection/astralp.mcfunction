@@ -1,3 +1,7 @@
+execute as @a[scores={magie=..29},tag=wicked] run tellraw @s {"text":"You don't have enough magic to cast the spell !","color":"dark_green"}
+execute if entity @s[scores={magie=..29}] run return 0
+
+
 execute as @a[tag=wicked,nbt={playerGameType:1}] run tag @s add crea
 execute as @a[tag=wicked,nbt={playerGameType:0}] run tag @s add surv
 execute as @a[tag=wicked,nbt={playerGameType:2}] run tag @s add adv
@@ -12,13 +16,11 @@ bossbar set minecraft:timer value 0
 
 # execute at @s run particle falling_dust green_concrete ^ ^ ^ 1 -1 1 10 1000 force
 execute at @s run particle glow ^ ^ ^ 1 -1 1 0.001 100 force
-# execute at @s run particle falling_dust lime_concrete ^ ^ ^ 1 -1 1 10 1000 force
-execute at @s run particle item lime_stained_glass ^ ^ ^ 1 -1 1 0.5 1000 force
+execute at @s run particle item{item: "minecraft:lime_stained_glass"} ^ ^ ^ 1 -1 1 0.5 1000 force
 
 
 gamemode spectator @s
 execute at @s run summon marker ~ ~ ~ {NoGravity:1b,Small:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["PAJ"]}
-execute as @a[scores={spell=38,magie=..29},tag=wicked,limit=1] run tellraw @s {"text":"You don't have enough magic to cast the spell !","color":"dark_green"}
 
 scoreboard players remove @s magie 30
 scoreboard players set @s spell 0

@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "mainhand": {
+        "components": {
+          "minecraft:custom_data": {
+            "pendant": 1
+          }
+        }
+      },
+      "offhand": {
+        "items": [
+          "minecraft:glowstone_dust"
+        ]
+      }
+    }
+  }
+}

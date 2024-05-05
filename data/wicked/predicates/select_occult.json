@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:player",
+    "equipment": {
+      "mainhand": {
+        "components": {
+          "minecraft:custom_data": {
+            "occult": 1,
+            "spellbook": 1
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "slots": {
+        "hotbar.8": {
+          "components": {
+            "minecraft:custom_model_data": 10140006
+          }
+        }
+      }
+    }
+  }
+  

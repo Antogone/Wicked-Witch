@@ -1,15 +1,15 @@
 {
     "display": {
         "title": {
-            "text": "Wicked Witch",
+            "text": "Wicked Witch Pendant",
             "color": "dark_green"
         },
         "description": {
-            "text": "Becoming the Wicked Witch of the West",
+            "text": "Finding the pendant of the Wicked Witch of the West",
             "color": "dark_green"
         },
         "icon": {
-            "item": "minecraft:emerald"
+            "id": "minecraft:emerald"
         },
         "frame": "challenge",
         "show_toast": true,

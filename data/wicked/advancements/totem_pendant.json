@@ -1,0 +1,20 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:used_totem",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_data": {
+                "pendant":1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "wicked:totem_pendant"
+    }
+  }
+  

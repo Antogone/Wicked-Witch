@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "feet": {
-        "nbt": "{silver:1b}"
+        "components": {
+          "minecraft:custom_data": {
+            "silver": 1
+          }
+        }
       }
     }
   }

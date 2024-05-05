@@ -14,9 +14,8 @@ data modify storage magic_mirror info.z append from entity @s Pos[2]
 
 
 
-
-execute at @s run summon interaction ~ ~0.6 ~ {width:1f, height: 1f, response: 1b, Tags: [magic_mirror],Passengers:[{id:"minecraft:marker",Tags:["store_dat","entry"]}]}
-execute at @s run execute at @e[tag=magic_mirror] run summon item_display ~ ~0.5 ~ {Tags:["itm_disp"],billboard:"vertical",item_display:"fixed",item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:10140005}}}
+execute at @s run summon interaction ~ ~0.5 ~ {width:1f, height: 1.2f, response: 1b, Tags: [magic_mirror],Passengers:[{id:"minecraft:marker",Tags:["store_dat","entry"]}]}
+execute at @s run execute at @e[tag=magic_mirror] run summon item_display ~ ~0.5 ~ {Tags:["itm_disp"],billboard:"vertical",item_display:"fixed",item:{id:"minecraft:carrot_on_a_stick",Count:1b,components:{"minecraft:custom_model_data":10140005}}}
 
 
 
@@ -31,8 +30,10 @@ execute store result storage magic_mirror temp.index int 1 run scoreboard player
 
 
 
-give @s carrot_on_a_stick{CustomModelData:10140005,HideFlags:3,mirror_2:1b,display:{Name:"{\"text\":\"§2Magic Mirror : Exit\"}"}}
-clear @s carrot_on_a_stick{mirror_1:1b} 1
+
+give @s carrot_on_a_stick[custom_name='{"text":"§2Magic Mirror : Exit"}',custom_model_data=10140005,custom_data={mirror_2:1b}]
+clear @s carrot_on_a_stick[custom_data={mirror_1:1b}] 1
+scoreboard players set @s click 0
 
 # data modify storage magic_mirror magic_id set value $(index)
 tag @s add mirror_1

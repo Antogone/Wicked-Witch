@@ -10,14 +10,12 @@ item replace entity @e[tag=hold] weapon.mainhand from entity @s hotbar.1
 item replace entity @e[tag=hold] weapon.offhand from entity @s hotbar.2
 
 item replace entity @e[tag=hold2] armor.head from entity @s hotbar.3
-item replace entity @e[tag=hold2] weapon.mainhand from entity @s hotbar.4
 item replace entity @e[tag=hold2] weapon.offhand from entity @s armor.head
 
 item replace entity @a[tag=wicked] hotbar.0 with air
 item replace entity @a[tag=wicked] hotbar.1 with air
 item replace entity @a[tag=wicked] hotbar.2 with air
 item replace entity @a[tag=wicked] hotbar.3 with air
-item replace entity @a[tag=wicked] hotbar.4 with air
 item replace entity @a[tag=wicked] armor.head with air
 
 

@@ -5,7 +5,11 @@
     "type": "minecraft:player",
     "equipment": {
       "mainhand": {
-        "nbt": "{fireball:1b}"
+        "components": {
+          "minecraft:custom_data": {
+            "fireball": 1
+          }
+        }
       }
     }
   }

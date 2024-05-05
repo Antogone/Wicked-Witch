@@ -1,0 +1,18 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:custom_model_data": 10140006
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "wicked:heart_ripping/set_kill"
+    }
+  }
+  

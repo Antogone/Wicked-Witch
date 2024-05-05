@@ -1,8 +1,10 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:carrot_on_a_stick",
-        "nbt": "{CustomModelData:10140005}"
+        "id": "minecraft:carrot_on_a_stick",
+        "components": {
+          "minecraft:custom_model_data": 10140005
+        }
 
       },
       "title": {
