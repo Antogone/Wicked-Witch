@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:carrot_on_a_stick",
+        "id": "minecraft:carrot_on_a_stick",
         "components": {
           "minecraft:custom_model_data": 10140001
         }

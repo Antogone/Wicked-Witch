@@ -9,7 +9,7 @@
             "color": "dark_green"
         },
         "icon": {
-            "item": "minecraft:emerald"
+            "id": "minecraft:emerald"
         },
         "frame": "challenge",
         "show_toast": true,

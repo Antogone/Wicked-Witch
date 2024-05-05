@@ -5,7 +5,9 @@
  # Created by Antogone.
 ##
 
-$data modify storage wicked.ench EnchEnd.ancien insert $(index) from storage wicked.ench Temp.part
+# $execute if score @p[tag=wicked] ench_trigger matches 0.. run data modify storage wicked.ench EnchEnd.ancien set value {$(part),"$(id)": $(lvl)}
+data modify storage wicked.ench EnchEnd.ancien merge from storage wicked.ench Temp.part
+
 
 trigger ench_trigger
 scoreboard players enable @p[tag=wicked] ench_trigger

@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:player_head"
+        "id": "minecraft:player_head"
       },
       "title": {
         "text": "Let's go together",
