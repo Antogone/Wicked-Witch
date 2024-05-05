@@ -7,7 +7,9 @@
       "mainhand": {
         "components": {
           "minecraft:custom_data": {
-            "mystic": 1
+            "mystic": 1,
+            "spellbook": 1
+
           }
         }
       }

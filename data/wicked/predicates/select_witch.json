@@ -7,7 +7,8 @@
       "mainhand": {
         "components": {
           "minecraft:custom_data": {
-            "witch": 1
+            "witch": 1,
+            "spellbook": 1
           }
         }
       }
