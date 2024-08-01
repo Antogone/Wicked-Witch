@@ -54,8 +54,9 @@ tag @s remove wicked
 
 kill @e[tag=itm_disp]
 kill @e[tag=magic_mirror]
-
 kill @e[tag=wall]
+
+
 tag @s remove l10
 tag @s remove l15
 tag @s remove l20
@@ -114,7 +115,7 @@ clear @s minecraft:snowball[minecraft:custom_data={fireball:1b}]
 clear @s minecraft:feather[minecraft:custom_data={broom:1b}]
 clear @s minecraft:feather[minecraft:custom_data={broom:2b}]
 clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={immo:1b}]
-clear @s minecraft:written_book[minecraft:written_book_content={title:{raw:""}},minecraft:custom_data={spellbook:1b}]
+clear @s minecraft:written_book[minecraft:custom_data={spellbook:1b}]
 
 clear @s minecraft:command_block[minecraft:custom_model_data=14120001]
 clear @s minecraft:red_dye[minecraft:custom_data={reloading:1b}]
