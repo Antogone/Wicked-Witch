@@ -37,9 +37,9 @@ execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldr
 
 
 
-attribute @s generic.scale base set 0
-# attribute @s generic.movement_speed base set 0.13
-attribute @s generic.step_height base set 0
+attribute @s scale base set 0
+# attribute @s movement_speed base set 0.13
+attribute @s step_height base set 0
 
 
 scoreboard players remove @s magie 30

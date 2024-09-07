@@ -108,10 +108,10 @@ scoreboard objectives add trouve dummy
 scoreboard objectives add killwitch minecraft.killed:minecraft.witch
 
 
-attribute @p[tag=wicked] generic.max_health base set 40
-attribute @p[tag=wicked] generic.movement_speed base set 0.11
-attribute @p[tag=wicked] generic.attack_damage base set 6.0
-attribute @p[tag=wicked] generic.armor base set 4.0
+attribute @p[tag=wicked] max_health base set 40
+attribute @p[tag=wicked] movement_speed base set 0.11
+attribute @p[tag=wicked] attack_damage base set 6.0
+attribute @p[tag=wicked] armor base set 4.0
 
 bossbar add timer {"text":"Temps restant","color":"red"}
 bossbar set timer color red 

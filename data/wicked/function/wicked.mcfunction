@@ -70,11 +70,11 @@ item replace entity @s[tag=l30,scores={select=1,magie=15..}] hotbar.2 with carro
 
 
 # #FLYING SPELL
-item replace entity @s[tag=l15,tag=broom_shield,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name='{"color":"dark_green","text":"Witch\'s broom"}',custom_model_data=10140015,custom_data={broom:1b},attribute_modifiers={modifiers:[{type:"generic.attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false}]
+item replace entity @s[tag=l15,tag=broom_shield,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name='{"color":"dark_green","text":"Witch\'s broom"}',custom_model_data=10140015,custom_data={broom:1b},attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false}]
 
 
 
-item replace entity @s[tag=l15,tag=broom_fly,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name='{"color":"dark_green","text":"Witch\'s broom"}',attribute_modifiers={modifiers:[{type:"generic.attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false},custom_model_data=10140016,custom_data={broom:2b}]
+item replace entity @s[tag=l15,tag=broom_fly,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name='{"color":"dark_green","text":"Witch\'s broom"}',attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false},custom_model_data=10140016,custom_data={broom:2b}]
 
 
 

@@ -6,15 +6,9 @@
         " E "
     ],
     "key": {
-        "e": {
-            "item": "minecraft:enchanted_book"
-        },
-        "E": {
-            "item": "minecraft:emerald"
-        },
-        "t": {
-            "item": "minecraft:totem_of_undying"
-        }
+        "e": "minecraft:enchanted_book",
+        "E": "minecraft:emerald",
+        "t": "minecraft:totem_of_undying"
     },
     "result": {
         "id": "minecraft:knowledge_book"

@@ -45,10 +45,10 @@ team remove fix
 team remove loc
 team remove Witch
 
-attribute @s generic.max_health base set 20
-attribute @s generic.movement_speed base set 0.10
-attribute @s generic.attack_damage base set 1.0
-attribute @s generic.armor base set 0.0
+attribute @s max_health base set 20
+attribute @s movement_speed base set 0.10
+attribute @s attack_damage base set 1.0
+attribute @s armor base set 0.0
 
 tag @s remove wicked
 

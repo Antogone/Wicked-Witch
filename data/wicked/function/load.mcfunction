@@ -1,9 +1,9 @@
-tellraw @a [{"text": "Loaded ","color": "yellow"},{"text": "Wicked Witch ","color": "dark_green","bold": true},{"text": "(V.4.5.0 1.20.5)","color": "dark_green"},{"text": " successfully"}]
+tellraw @a [{"text": "Loaded ","color": "yellow"},{"text": "Wicked Witch ","color": "dark_green","bold": true},{"text": "(V.4.5.5 24w36a)","color": "dark_green"},{"text": " successfully"}]
 
-attribute @p[tag=wicked] generic.max_health base set 40
-attribute @p[tag=wicked] generic.movement_speed base set 0.11
-attribute @p[tag=wicked] generic.attack_damage base set 6.0
-attribute @p[tag=wicked] generic.armor base set 4.0
+attribute @p[tag=wicked] max_health base set 40
+attribute @p[tag=wicked] movement_speed base set 0.11
+attribute @p[tag=wicked] attack_damage base set 6.0
+attribute @p[tag=wicked] armor base set 4.0
 
 execute in minecraft:overworld run forceload add -30000000 1600
 

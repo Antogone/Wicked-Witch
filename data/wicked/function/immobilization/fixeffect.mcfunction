@@ -29,7 +29,7 @@ effect give @s weakness 2 255 true
 effect give @s slowness 2 255 true
 # effect give @s jump_boost 2 190 true
 # effect give @s levitation 1 255 true
-attribute @s[type=player] generic.gravity base set 10000
+attribute @s[type=player] gravity base set 10000
 
 effect give @s blindness 2 255 true
 
