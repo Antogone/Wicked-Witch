@@ -6,18 +6,10 @@
         " E "
     ],
     "key": {
-        "0": {
-            "item": "minecraft:amethyst_shard"
-        },
-        "e": {
-            "item": "minecraft:enchanted_book"
-        },
-        "E": {
-            "item": "minecraft:emerald"
-        },
-        "i": {
-            "item": "minecraft:iron_ingot"
-        }
+        "0": "minecraft:amethyst_shard",
+        "e": "minecraft:enchanted_book",
+        "E": "minecraft:emerald",
+        "i": "minecraft:iron_ingot"
     },
     "result":{
         "id":"minecraft:knowledge_book"

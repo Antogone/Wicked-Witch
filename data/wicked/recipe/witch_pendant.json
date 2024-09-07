@@ -6,15 +6,9 @@
         " n "
     ],
     "key": {
-        "e": {
-            "item": "minecraft:emerald"
-        },
-        "n": {
-            "item": "minecraft:nether_star"
-        },
-        "i": {
-            "item": "minecraft:iron_ingot"
-        }
+        "e":"minecraft:emerald",
+        "n": "minecraft:nether_star",
+        "i": "minecraft:iron_ingot"
     },
     "result": {
         "id": "minecraft:knowledge_book"

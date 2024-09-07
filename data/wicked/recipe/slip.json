@@ -6,15 +6,9 @@
         "EeE"
     ],
     "key": {
-        "i": {
-            "item": "minecraft:iron_boots"
-        },
-        "e": {
-            "item": "minecraft:enchanted_book"
-        },
-        "E": {
-            "item": "minecraft:emerald"
-        }
+        "i": "minecraft:iron_boots",
+        "e":"minecraft:enchanted_book",
+        "E": "minecraft:emerald"
     },
     "result": {
         "id": "minecraft:knowledge_book"

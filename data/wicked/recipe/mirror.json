@@ -6,18 +6,10 @@
         "EeE"
     ],
     "key": {
-        "i": {
-            "item": "minecraft:ender_pearl"
-        },
-        "e": {
-            "item": "minecraft:enchanted_book"
-        },
-        "a": {
-            "item": "minecraft:soul_lantern"
-        },
-        "E": {
-            "item": "minecraft:gold_ingot"
-        }
+        "i": "minecraft:ender_pearl",
+        "e": "minecraft:enchanted_book",
+        "a": "minecraft:soul_lantern",
+        "E": "minecraft:gold_ingot"
     },
     "result": {
         "id": "minecraft:knowledge_book"
