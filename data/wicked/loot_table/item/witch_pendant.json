@@ -36,12 +36,18 @@
             },
             {
               "function": "minecraft:set_custom_model_data",
-              "value": 141200
+              "floats": {
+                "values": [
+                  141200
+                ],
+                "mode": "replace_all"
+              }
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:enchantment_glint_override": false
+                "minecraft:enchantment_glint_override": false,
+                 "minecraft:item_model": "minecraft:witch_pendant"
               }
             }
           ]

@@ -35,8 +35,8 @@ execute if entity @s[tag=wicked,tag=black] at @s run function wicked:cauldron/pa
 execute if entity @s[tag=wicked,tag=dark_green] at @s run particle minecraft:dust{color: [0.498f,1f,0.345f], scale:1f} ^ ^ ^ 1 -1 1 10 1000 force
 execute if entity @s[tag=wicked,tag=dark_green] at @s run function wicked:cauldron/particle/alchemymod_v_t
 
-attribute @s scale base set 1
-attribute @s step_height base set 0.5
+attribute @s scale base reset
+attribute @s step_height base reset
 
 
 scoreboard players remove @s magie 30

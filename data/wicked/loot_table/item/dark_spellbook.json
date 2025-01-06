@@ -10,7 +10,6 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:custom_model_data": 10140005,
                   "minecraft:written_book_content": {
                     "pages": [
                       "{\"extra\":[{\"color\":\"#222222\",\"text\":\"Locator Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#000000\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#222222\",\"text\":\"This spell will reveal the position of all the nearby entity !\\n\\n\"},{\"color\":\"#222222\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 10\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#000000\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}",
@@ -33,8 +32,11 @@
                   "minecraft:custom_data": {
                     "spellbook": 1,
                     "dark": 1
-                  }
-                }            },
+                  },
+                  "minecraft:item_model": "minecraft:spellbook"
+
+                }           
+               },
             {
                 "function": "minecraft:set_lore",
                 "lore": [
@@ -45,7 +47,11 @@
                   }
                 ],
                 "mode": "insert"
-              }
+              },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 10140005
+            }
             ]
           }
         ]

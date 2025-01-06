@@ -1,18 +1,22 @@
 {
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:consume_item",
-        "conditions": {
-          "item": {
-            "components": {
-              "minecraft:custom_model_data": 10140006
-            }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_model_data": {
+              "floats": [
+                10140006
+              ]
+            },
+            "minecraft:item_model": "minecraft:heart"
           }
         }
       }
-    },
-    "rewards": {
-      "function": "wicked:heart_ripping/set_kill"
     }
+  },
+  "rewards": {
+    "function": "wicked:heart_ripping/set_kill"
   }
-  
+}

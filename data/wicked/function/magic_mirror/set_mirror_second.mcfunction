@@ -15,7 +15,7 @@ data modify storage magic_mirror info.z append from entity @s Pos[2]
 
 execute at @s run summon interaction ~ ~0.5 ~ {width:1f, height: 1.2f, response: 1b, Tags: [magic_mirror],Passengers:[{id:"minecraft:marker",Tags:["store_dat","exit"]}]}
 
-execute at @s run execute at @e[tag=magic_mirror,sort=nearest,limit=1] run summon item_display ~ ~0.5 ~ {Tags:["itm_disp"],billboard:"vertical",item_display:"fixed",item:{id:"minecraft:carrot_on_a_stick",Count:1b,components:{"minecraft:custom_model_data":10140005}}}
+execute at @s run execute at @e[tag=magic_mirror,sort=nearest,limit=1] run summon item_display ~ ~0.5 ~ {Tags:["itm_disp"],billboard:"vertical",item_display:"fixed",item:{id:"minecraft:carrot_on_a_stick",Count:1b,components:{"minecraft:custom_model_data":{floats:[10140005]},"minecraft:item_model":"mirror"}}}
 
 
 

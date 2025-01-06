@@ -1,33 +1,36 @@
 {
-    "display": {
-      "icon": {
-        "id": "minecraft:written_book",
-        "components": {
-          "minecraft:custom_model_data": 10140005
-        }
-
-      },
-      "title": {
-        "text": "The Grimmerie",
-        "color": "dark_green"
+  "display": {
+    "icon": {
+      "id": "minecraft:written_book",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            10140005
+          ]
+        },
+        "minecraft:item_model": "minecraft:spellbook"
+      }
+    },
+    "title": {
+      "text": "The Grimmerie",
+      "color": "dark_green"
     },
     "description": {
-        "text": "You found the The Grimmerie",
-        "color": "dark_green"
+      "text": "You found the The Grimmerie",
+      "color": "dark_green"
     },
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
-    },
-    "parent": "wicked:witch_pendant_adv",
-    "criteria": {
-        "The Grimmerie": {
-            "trigger": "minecraft:recipe_unlocked",
-            "conditions": {
-                "recipe": "wicked:the_grimmerie"
-            }
-        }
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "wicked:witch_pendant_adv",
+  "criteria": {
+    "The Grimmerie": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "wicked:the_grimmerie"
+      }
     }
   }
-  
+}

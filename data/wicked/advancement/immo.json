@@ -1,49 +1,53 @@
 {
-    "display": {
-      "icon": {
-        "id": "minecraft:carrot_on_a_stick",
-        "components": {
-          "minecraft:custom_model_data": 10140001
-        }
-      },
-      "title": {
-        "text": "No more move !",
-        "color": "dark_green"
+  "display": {
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            10140001
+          ]
+        },
+        "minecraft:item_model": "minecraft:magic"
+      }
+    },
+    "title": {
+      "text": "No more move !",
+      "color": "dark_green"
     },
     "description": {
-        "text": "You have learn the immobilization spell",
-        "color": "dark_green"
+      "text": "You have learn the immobilization spell",
+      "color": "dark_green"
     },
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
-    },
-    "parent": "wicked:poof_spell",
-    "criteria": {
-      "Defying gravity": {
-        "trigger": "minecraft:tick",
-        "conditions": {
-          "player": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "level": {
-                    "min": 30,
-                    "max": 1000
-                  }
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "wicked:poof_spell",
+  "criteria": {
+    "Defying gravity": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "level": {
+                  "min": 30,
+                  "max": 1000
                 }
               }
             }
-          ]
-        }
+          }
+        ]
       }
-    },
-    "rewards": {
-      "function": "wicked:craft/levels"
     }
+  },
+  "rewards": {
+    "function": "wicked:craft/levels"
   }
-  
+}

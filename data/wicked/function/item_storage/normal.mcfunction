@@ -7,7 +7,7 @@ clear @s snowball[custom_data={fireball:1b}]
 clear @s feather[custom_data={broom:1b}]
 clear @s feather[custom_data={broom:2b}]
 
-clear @s command_block[custom_model_data=14120001]
+clear @s command_block[custom_model_data={floats:[14120001]}]
 clear @s red_dye[custom_data={reloading:1b}]
 clear @s totem_of_undying[custom_data={pendant:1b}]
 

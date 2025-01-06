@@ -19,9 +19,12 @@
                 "mode": "insert"
               },
               {
+                "function": "minecraft:set_custom_model_data",
+                "value": 10140005
+              },
+              {
                 "function": "minecraft:set_components",
                 "components": {
-                  "minecraft:custom_model_data": 10140005,
                   "minecraft:written_book_content": {
                     "pages": [],
                     "title": "§2SpellBook",
@@ -30,7 +33,9 @@
                   },
                   "minecraft:custom_data": {
                     "empty": 1
-                  }
+                  },
+                  "minecraft:item_model": "minecraft:spellbook"
+
                 }
               }
             ]

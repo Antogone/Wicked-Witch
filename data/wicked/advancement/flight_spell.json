@@ -1,49 +1,54 @@
 {
-    "display": {
-      "icon": {
-        "id": "minecraft:feather",
-        "components": {
-          "minecraft:custom_model_data": 10140015
-        }        
-      },
-      "title": {
-        "text": "Defying Gravity",
-        "color": "dark_green"
+  "display": {
+    "icon": {
+      "id": "minecraft:feather",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            10140015
+          ]
+        },
+                "minecraft:item_model": "minecraft:broom_s"
+
+      }
+    },
+    "title": {
+      "text": "Defying Gravity",
+      "color": "dark_green"
     },
     "description": {
-        "text": "You have learn the flight spell",
-        "color": "dark_green"
+      "text": "You have learn the flight spell",
+      "color": "dark_green"
     },
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
-    },
-    "parent": "wicked:fireball",
-    "criteria": {
-      "Defying gravity": {
-        "trigger": "minecraft:tick",
-        "conditions": {
-          "player": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific": {
-                  "type": "player",
-                  "level": {
-                    "min": 15,
-                    "max": 1000
-                  }
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "wicked:fireball",
+  "criteria": {
+    "Defying gravity": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "player",
+                "level": {
+                  "min": 15,
+                  "max": 1000
                 }
               }
             }
-          ]
-        }
+          }
+        ]
       }
-    },
-    "rewards": {
-      "function": "wicked:craft/levels"
     }
+  },
+  "rewards": {
+    "function": "wicked:craft/levels"
   }
-  
+}

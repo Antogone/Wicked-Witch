@@ -1,33 +1,36 @@
 {
-    "display": {
-      "icon": {
-        "id": "minecraft:snowball",
-        "components": {
-          "minecraft:custom_model_data": 10140002
-        }
-
-      },
-      "title": {
-        "text": "How about a little fire, Scarecrow ?",
-        "color": "dark_green"
+  "display": {
+    "icon": {
+      "id": "minecraft:snowball",
+      "components": {
+        "minecraft:custom_model_data": {
+          "floats": [
+            10140002
+          ]
+        },
+        "minecraft:item_model": "minecraft:scepter"
+      }
+    },
+    "title": {
+      "text": "How about a little fire, Scarecrow ?",
+      "color": "dark_green"
     },
     "description": {
-        "text": "You learn how to throw magic beam",
-        "color": "dark_green"
+      "text": "You learn how to throw magic beam",
+      "color": "dark_green"
     },
-      "frame": "task",
-      "show_toast": true,
-      "announce_to_chat": true,
-      "hidden": false
-    },
-    "parent": "wicked:witch_pendant_adv",
-    "criteria": {
-      "Defying gravity": {
-        "trigger": "minecraft:recipe_unlocked",
-            "conditions": {
-                "recipe": "wicked:witch_pendant"
-            }
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "wicked:witch_pendant_adv",
+  "criteria": {
+    "Defying gravity": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "wicked:witch_pendant"
       }
     }
+  }
 }
-  

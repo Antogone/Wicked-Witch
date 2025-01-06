@@ -117,7 +117,7 @@ clear @s minecraft:feather[minecraft:custom_data={broom:2b}]
 clear @s minecraft:carrot_on_a_stick[minecraft:custom_data={immo:1b}]
 clear @s minecraft:written_book[minecraft:custom_data={spellbook:1b}]
 
-clear @s minecraft:command_block[minecraft:custom_model_data=14120001]
+clear @s minecraft:command_block[minecraft:custom_model_data={floats:[14120001]}]
 clear @s minecraft:red_dye[minecraft:custom_data={reloading:1b}]
 clear @s minecraft:totem_of_undying[minecraft:custom_data={pendant:1b}]
 
