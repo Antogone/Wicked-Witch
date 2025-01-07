@@ -49,7 +49,6 @@ execute as @s[predicate=!wicked:pendant_offhand] run scoreboard players set @s s
 # RECUPERATUON DES SORTS
 ###########################
 
-#0. SCEPTER
 #1. FIREBALL
 #2. POOFING 
 #3. IMMOBILIZATION 
@@ -58,9 +57,9 @@ execute as @s[predicate=!wicked:pendant_offhand] run scoreboard players set @s s
 
 
 
-#SCEPTER
-
+#FIREBALL
 item replace entity @s[scores={select=1,magie=5..}] hotbar.0 with carrot_on_a_stick[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§2Magic Blast"}',lore=['{"text":"§2Magic Cost : 5"}'],custom_model_data={floats:[10140002]},item_model="minecraft:scepter",custom_data={scepter:1b}]
+
 # #POOFING
 item replace entity @s[tag=l20,scores={select=1,magie=10..}] hotbar.1 with carrot_on_a_stick[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§2Poofing"}',lore=['{"text":"§2Magic Cost : 10"}'],custom_model_data={floats:[10140001]},item_model="minecraft:magic",custom_data={poofing:1b}]
 
@@ -70,8 +69,6 @@ item replace entity @s[tag=l30,scores={select=1,magie=15..}] hotbar.2 with carro
 
 # #FLYING SPELL
 item replace entity @s[tag=l15,tag=broom_shield,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name='{"color":"dark_green","text":"Witch\'s broom"}',custom_model_data={floats:[10140015]},item_model="minecraft:broom_s",custom_data={broom:1b},attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false}]
-
-
 
 item replace entity @s[tag=l15,tag=broom_fly,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name='{"color":"dark_green","text":"Witch\'s broom"}',attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false},custom_model_data={floats:[10140016]},item_model="minecraft:broom_f",custom_data={broom:2b}]
 
