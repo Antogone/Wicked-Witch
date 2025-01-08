@@ -254,9 +254,9 @@ execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom
 execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_data":{reloading:1b}}}}]
 
 
-execute at @s run kill @e[distance=..10,nbt={Item:{tag:{fireball:1b,OnGround:1b}}}]
+# execute at @s run kill @e[distance=..10,nbt={Item:{tag:{fireball:1b,OnGround:1b}}}]
 
-execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_model_data":14120001}}}]
+# execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom_model_data":14120001}}}]
 
 
 

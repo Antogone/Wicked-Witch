@@ -1,0 +1,19 @@
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:player",
+      "equipment": {
+        "offhand": {
+          "components": {
+            "minecraft:custom_model_data": {
+              "floats": [
+                121415
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+  
