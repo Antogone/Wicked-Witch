@@ -20,15 +20,16 @@ effect give @e[tag=salem,limit=1] slow_falling infinite 0 true
 ###########################
 
 
-execute if entity @s[tag=light_purple] run title @s actionbar ["",{"text":"Energie Magique :","color":"light_purple"},{"text":" ","color":"#00CE00"},{"score":{"name":"@s","objective":"magie"},"color":"#00CE00"}]
+execute if entity @s[tag=light_purple] run title @s actionbar [{text:'Energie Magique :', color:'light_purple'}, {text:' ', color:'#00CE00'}, {score:{name:'@s', objective:'magie'}, color:'#00CE00'}]
 
-execute if entity @s[tag=dark_purple] run title @s actionbar ["",{"text":"Energie Magique :","color":"dark_purple"},{"text":" ","color":"#00CE00"},{"score":{"name":"@s","objective":"magie"},"color":"#00CE00"}]
 
-execute if entity @s[tag=dark_gray] run title @s actionbar ["",{"text":"Energie Magique :","color":"dark_gray"},{"text":" ","color":"#00CE00"},{"score":{"name":"@s","objective":"magie"},"color":"#00CE00"}]
+execute if entity @s[tag=dark_purple] run title @s actionbar [{text:'Energie Magique :', color:'dark_purple'}, {text:' ', color:'#00CE00'}, {score:{name:'@s', objective:'magie'}, color:'#00CE00'}]
 
-execute if entity @s[tag=black] run title @s actionbar ["",{"text":"Energie Magique :","color":"black"},{"text":" ","color":"#00CE00"},{"score":{"name":"@s","objective":"magie"},"color":"#00CE00"}]
+execute if entity @s[tag=dark_gray] run title @s actionbar [{text:'Energie Magique :', color:'dark_gray'}, {text:' ', color:'#00CE00'}, {score:{name:'@s', objective:'magie'}, color:'#00CE00'}]
 
-execute if entity @s[tag=dark_green] run title @s actionbar ["",{"text":"Energie Magique :","color":"dark_green"},{"text":" ","color":"#00CE00"},{"score":{"name":"@s","objective":"magie"},"color":"#00CE00"}]
+execute if entity @s[tag=black] run title @s actionbar [{text:'Energie Magique :', color:'black'}, {text:' ', color:'#00CE00'}, {score:{name:'@s', objective:'magie'}, color:'#00CE00'}]
+
+execute if entity @s[tag=dark_green] run title @s actionbar [{text:'Energie Magique :', color:'dark_green'}, {text:' ', color:'#00CE00'}, {score:{name:'@s', objective:'magie'}, color:'#00CE00'}]
 
 ########################
 # MODE MAGIE ACTIF
@@ -57,20 +58,21 @@ execute as @s[predicate=!wicked:pendant_offhand] run scoreboard players set @s s
 
 
 
-#FIREBALL
-item replace entity @s[scores={select=1,magie=5..}] hotbar.0 with carrot_on_a_stick[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§2Magic Blast"}',lore=['{"text":"§2Magic Cost : 5"}'],custom_model_data={floats:[10140002]},item_model="minecraft:scepter",custom_data={scepter:1b}]
 
-# #POOFING
-item replace entity @s[tag=l20,scores={select=1,magie=10..}] hotbar.1 with carrot_on_a_stick[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§2Poofing"}',lore=['{"text":"§2Magic Cost : 10"}'],custom_model_data={floats:[10140001]},item_model="minecraft:magic",custom_data={poofing:1b}]
+# FIREBALL
+item replace entity @s[scores={select=1,magie=5..}] hotbar.0 with carrot_on_a_stick[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§2Magic Blast'},lore=[{text:'§2Magic Cost : 5'}],custom_model_data={floats:[10140002]},item_model="minecraft:scepter",custom_data={scepter:1b}]
 
-# #IMMOBILIZATION
-item replace entity @s[tag=l30,scores={select=1,magie=15..}] hotbar.2 with carrot_on_a_stick[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§2Immobilization"}',lore=['{"text":"§2Magic Cost : 15"}'],custom_model_data={floats:[10140001]},item_model="minecraft:magic",custom_data={immo:1b}]
+# POOFING
+item replace entity @s[tag=l20,scores={select=1,magie=10..}] hotbar.1 with carrot_on_a_stick[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§2Poofing'},lore=[{text:'§2Magic Cost : 10'}],custom_model_data={floats:[10140001]},item_model="minecraft:magic",custom_data={poofing:1b}]
+
+# IMMOBILIZATION
+item replace entity @s[tag=l30,scores={select=1,magie=15..}] hotbar.2 with carrot_on_a_stick[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§2Immobilization'},lore=[{text:'§2Magic Cost : 15'}],custom_model_data={floats:[10140001]},item_model="minecraft:magic",custom_data={immo:1b}]
 
 
-# #FLYING SPELL
-item replace entity @s[tag=l15,tag=broom_shield,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name='{"color":"dark_green","text":"Witch\'s broom"}',custom_model_data={floats:[10140015]},item_model="minecraft:broom_s",custom_data={broom:1b},attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false}]
+# FLYING SPELL
+item replace entity @s[tag=l15,tag=broom_shield,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name={color:'dark_green',text:'Witch\'s broom'},custom_model_data={floats:[10140015]},item_model="minecraft:broom_s",custom_data={broom:1b},attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false}]
 
-item replace entity @s[tag=l15,tag=broom_fly,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name='{"color":"dark_green","text":"Witch\'s broom"}',attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false},custom_model_data={floats:[10140016]},item_model="minecraft:broom_f",custom_data={broom:2b}]
+item replace entity @s[tag=l15,tag=broom_fly,scores={select=1,magie=0..}] hotbar.3 with feather[unbreakable={},enchantment_glint_override=1b,item_name={color:'dark_green',text:'Witch\'s broom'},attribute_modifiers={modifiers:[{type:"attack_damage",id:"attack_damage",amount:8,operation:"add_value"}],show_in_tooltip:false},custom_model_data={floats:[10140016]},item_model="minecraft:broom_f",custom_data={broom:2b}]
 
 
 
@@ -263,28 +265,28 @@ execute at @s run kill @e[distance=..10,nbt={Item:{components:{"minecraft:custom
 #### REALOADING 
 clear @s red_dye[custom_model_data={floats:[10140002]}]
 
-# #POOFING
-execute if score @s[scores={select=1}] magie matches 0..9 run item replace entity @s[tag=l20,scores={select=1,magie=0..9}] hotbar.1 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§cReloading"}',custom_model_data={floats:[10140002]},custom_data={reloading:1b}]
+#POOFING
+execute if score @s[scores={select=1}] magie matches 0..9 run item replace entity @s[tag=l20,scores={select=1,magie=0..9}] hotbar.1 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§cReloading'},custom_model_data={floats:[10140002]},custom_data={reloading:1b}]
 
-# #IMMOBILIZATION
-execute if score @s[scores={select=1}] magie matches 0..14 run item replace entity @s[tag=l30,scores={select=1,magie=0..14}] hotbar.2 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§cReloading"}',custom_model_data={floats:[10140002]},custom_data={reloading:1b}]
-
-
-# #wicked ray
-execute if score @s[scores={select=1}] magie matches 0..4 run item replace entity @s[scores={select=1,magie=0..4}] hotbar.0 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§cReloading"}',custom_model_data={floats:[10140002]},custom_data={reloading:1b}]
+#IMMOBILIZATION
+execute if score @s[scores={select=1}] magie matches 0..14 run item replace entity @s[tag=l30,scores={select=1,magie=0..14}] hotbar.2 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§cReloading'},custom_model_data={floats:[10140002]},custom_data={reloading:1b}]
 
 
+#wicked ray
+execute if score @s[scores={select=1}] magie matches 0..4 run item replace entity @s[scores={select=1,magie=0..4}] hotbar.0 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§cReloading'},custom_model_data={floats:[10140002]},custom_data={reloading:1b}]
 
-# #### Verrouillage des slots
 
-# #POOFING
-item replace entity @s[tag=!l20,scores={select=1}] hotbar.1 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§cReloading"}',custom_model_data={floats:[10140001]},custom_data={reloading:1b}]
 
-# #IMMOBILIZATION
-item replace entity @s[tag=!l30,scores={select=1}] hotbar.2 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§cReloading"}',custom_model_data={floats:[10140001]},custom_data={reloading:1b}]
+# # #### Verrouillage des slots
 
-# #BROOM
-item replace entity @s[tag=!l15,scores={select=1}] hotbar.3 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name='{"text":"§cReloading"}',custom_model_data={floats:[10140001]},custom_data={reloading:1b}]
+# # #POOFING
+item replace entity @s[tag=!l20,scores={select=1}] hotbar.1 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§cReloading'},custom_model_data={floats:[10140001]},custom_data={reloading:1b}]
+
+# # #IMMOBILIZATION
+item replace entity @s[tag=!l30,scores={select=1}] hotbar.2 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§cReloading'},custom_model_data={floats:[10140001]},custom_data={reloading:1b}]
+
+# # #BROOM
+item replace entity @s[tag=!l15,scores={select=1}] hotbar.3 with red_dye[unbreakable={},enchantment_glint_override=1b,custom_name={text:'§cReloading'},custom_model_data={floats:[10140001]},custom_data={reloading:1b}]
 
 
 

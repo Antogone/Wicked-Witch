@@ -16,4 +16,4 @@ clear @p[tag=wicked] carrot_on_a_stick[custom_data={house:1b}] 1
 scoreboard players set @p[tag=wicked] click 0
 
 
-tellraw @s ["",{"text":"House correctly saved","color":"green"},{"text":" "}]
+tellraw @s [{"text":"House correctly saved","color":"green"},{"text":" "}]

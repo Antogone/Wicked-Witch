@@ -1,43 +1,41 @@
 
-RECIPE
-{
-    "type": "minecraft:crafting_shaped",
-     
-"pattern": [
-        "i  ",
-        "LiS",
-        " WP"
-    ],
-    "key": {
-        "i": "minecraft:iron_ingot",
-        "S": "minecraft:stone_button",
-        "L": "minecraft:lever",
-        "P": "minecraft:piston",
-        "W": "#minecraft:planks"
-    },
-    "result": {
-        "id": "minecraft:carrot_on_a_stick",
-        "components": {
-          "minecraft:item_model": "minecraft:guns/revolver",
-          "minecraft:custom_data": {"gz_data":{"capacity":6, "bullets":0, "reload_time":3, "id":0,"debuff":-0.5},"HideFlags":32},
-          "minecraft:item_name": "{\"translate\": \"thepa.item.name.gun_0\",\"color\": \"yellow\",\"italic\": false}",
-          "minecraft:lore": [
-            "{\"translate\": \"thepa.item.desc.line1\",\"color\": \"gray\",\"italic\": false}",
-            "{\"text\": \"Reload Time: 3s\",\"color\": \"blue\",\"italic\": false}",
-            "{\"text\":\"Uses Bullets\"}"
-          ]
-        }
-    }
-}
-
-
-
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Version - 5.0
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
+- Wind Burst Enchantement
+- Spellbook 
+A new Spellbook usable by everyone ? 
+    -> Consomme de l'exp ???
+    -> Sort de siphonage -> transforme la magie en xp 
+    
 
 
+Witch’s Grimoire
+Spell Unlocks: Unlock new spells by collecting pages hidden in the world.
+Lore Entries: Discover the history of past witches and their secrets.
+
+
+
+Spatial hex -> Swap position 
+
+Thieft Spell -> Vole l'armure et l'arme main hand
+Disarm Spell 
+Locator Spell
+Lightning Strike Spell
+Bouncing Elemental Spell
+
+
+
+Scroll pour spellbook                                                       [DONE]
+    -> Utilisé un scoll l'ajoute dans son spellbook                         [DONE]
+    -> Scroll dans une main spellbook dans l'autre 
+        -> Amélioration des sorts (like KH)
+
+
+SpellBook != de Grimmerie 
+Impossible d'ajouter des sors au grimmerie 
+Loottable d'entity pouvant drop des spells ou ingredient pour crée un spell
 
 
 
@@ -47,8 +45,7 @@ RECIPE
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 #  Améliorations
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-
-
+Recipes Without Advancement ?
 
 
 
@@ -58,6 +55,29 @@ RECIPE
 
 
 
+// {
+//   "criteria": {
+//     "requirement": {
+//       "trigger": "minecraft:using_item",
+//       "conditions": {
+//         "player": {
+//           "equipment": {
+//             "mainhand": {
+//               "components": {
+//                 "minecraft:custom_data": {
+//                   "scroll": 1
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   },
+//   "rewards": {
+//     "function": "wicked:magic_scroll/set_ajout"
+//   }
+// }
 
 
 
@@ -70,44 +90,13 @@ RECIPE
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 
 Portail de teleportation => Pour aller au Nether, End, overworld, 
-=> Corruption de magic mirror ??? 
+            => Corruption de magic mirror 
+            
+Amulette augmentant la magie ??
+    -> A placé dans certain slot 
 
+Altar pour 
 
-Cauldron spell Recipe 
-    -> Livre contenant les sors pouvant être lancé depuis un chaudron
-
-
-A new Spellbook usable by everyone ? 
-    -> Consomme de l'exp ???
-    -> Sort de siphonage -> transforme la magie en xp 
-    
-
-Spatial hex -> Swap position 
-
-Thieft Spell -> Vole l'armure et l'arme main hand
-Disarm Spell 
-Locator Spell
-Lightning Strike Spell
-Bouncing Elemental Spell
-
-
-
-Scroll pour spellbook -> Avec trigger                                       [WIP]
-    -> Utilisé un scoll l'ajoute dans son spellbook                         [DONE]
-    -> Scroll dans une main spellbook dans l'autre 
-    -> Possibilité de répliqué un spellbook ? 
-        -> Amélioration des sorts (like KH)
-SpellBook != de Grimmerie 
-Impossible d'ajouter des sors au grimmerie 
-Loottable d'entity pouvant drop des spells ou ingredient pour crée un spell
-
-
-
-
-Wicked Witch specific Enchantements or curse ????? 
-
-
-Witch's road
 
 Advancement
     -> Cauldron spell
@@ -124,8 +113,113 @@ Advancement
 
 
 
+Advanced Progression System
+- Expand progression with meaningful paths and rewards:
+
+Specialization Paths
+
+Destructive Magic:
+Inferno Mastery: Unlock firestorms, lava walls, and magma golems.
+Shadow Fury: Learn dark energy beams and black hole traps.
+
+
+Supportive Magic:
+Nature’s Embrace: Cast area heals, summon protective treants.
+Soul Bonding: Share health and buffs with allies or familiars.
+
+Trickery Magic:
+Illusionist: Create clones, confuse enemies, or vanish in smoke.
+Hex Master: Amplify curses, extend duration, and add effects like blindness.
+
+
+
+Witch Titles
+
+Gain titles with passive perks based on achievements:
+
+Swamp Mistress: Increased movement in swamps and poison resistance.
+Mistress of Shadows: Permanent invisibility in the dark.
+Grand Arcanist: Reduced cooldowns on spells and better mana regeneration.
+
+
+
+
+
+
+
+Cauldron spell Recipe 
+    -> Livre contenant les sors pouvant être lancé depuis un chaudron
+
+
+
+Ajout de malédictions 
+    ???
+
+
+Magical Shrines
+
+Wicked Witch specific Enchantements or curse ????? 
+Witch's road Dimension ??
+
+
+
 Armes Magique -> 
 Inspi : https://www.planetminecraft.com/data-pack/blades-of-majestica-46-custom-weapons-datapack/
+
+
+
+
+
+Hexes and Curses
+
+Targeted Hexes: Allow the Witch to hex individual mobs with unique effects:
+
+Stone Hex: Turns enemies into immobile stone statues temporarily.
+Greed Hex: Makes mobs drop extra loot but attack each other in a frenzy.
+Decay Curse: Reduces enemy health gradually over time.
+Curse Zones: Create areas where mobs are weakened or slowed.
+
+
+
+
+Nature Manipulation
+
+Thorn Barriers: Summon a wall of thorny vines to block attacks.
+Overgrowth: Cause plants to grow rapidly, entangling enemies or creating natural structures.
+Fungal Spreads: Infest the area with mushrooms that emit poisonous spores.
+
+
+
+Astral Magic
+
+Moon Cycle Magic:
+Full Moon: Spells are more powerful, and certain mobs (like wolves) become allies.
+New Moon: Access shadow-based abilities, like teleportation or invisibility.
+Starfall: Call down shooting stars to damage enemies or heal allies.
+Time Manipulation: Temporarily speed up or slow down mobs.
+
+
+
+2. Witch’s Lair Customization
+Transform the Witch’s Lair into a magical fortress and workshop:
+
+
+Lair Themes
+
+Allow players to choose themes for their lair (e.g., forested hideout, swamp coven, or fiery volcano) with unique bonuses:
+Swamp Coven: Increased potion effects and nature magic.
+Volcanic Lair: Stronger fire spells and resistance to explosions.
+Arctic Refuge: Slows enemies entering the lair and boosts frost magic.
+Resource Automation
+
+Enchanted tools in the lair can automatically:
+Harvest plants for potions.
+Mine special ores for crafting.
+Collect mob drops from a trap room.
+
+
+
+
 
 
 
@@ -164,6 +258,39 @@ Custom Potion
 
 
 
+
+
+
+RECIPE
+{
+    "type": "minecraft:crafting_shaped",
+     
+"pattern": [
+        "i  ",
+        "LiS",
+        " WP"
+    ],
+    "key": {
+        "i": "minecraft:iron_ingot",
+        "S": "minecraft:stone_button",
+        "L": "minecraft:lever",
+        "P": "minecraft:piston",
+        "W": "#minecraft:planks"
+    },
+    "result": {
+        "id": "minecraft:carrot_on_a_stick",
+        "components": {
+          "minecraft:item_model": "minecraft:guns/revolver",
+          "minecraft:custom_data": {"gz_data":{"capacity":6, "bullets":0, "reload_time":3, "id":0,"debuff":-0.5},"HideFlags":32},
+          "minecraft:item_name": "{\"translate\": \"thepa.item.name.gun_0\",\"color\": \"yellow\",\"italic\": false}",
+          "minecraft:lore": [
+            "{\"translate\": \"thepa.item.desc.line1\",\"color\": \"gray\",\"italic\": false}",
+            "{\"text\": \"Reload Time: 3s\",\"color\": \"blue\",\"italic\": false}",
+            "{\"text\":\"Uses Bullets\"}"
+          ]
+        }
+    }
+}
 
 
 

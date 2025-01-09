@@ -12,8 +12,8 @@ execute as @s[predicate=wicked:is_sneaking] at @s run particle item{item: "minec
 ## Affichage 
 #1. Everyone
 #2.Wicked witch
-execute as @s[tag=!wicked,scores={s=40..}] run tellraw @s ["",{"text":"Dimension : "},{"storage":"wicked.tellraw","nbt":"silver.overworld","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.nether","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.end","interpret":true}]
-execute as @s[tag=wicked,scores={s=40..}] run tellraw @s ["",{"text":"Dimension : "},{"storage":"wicked.tellraw","nbt":"silver.overworld","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.house","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.nether","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.end","interpret":true}]
+execute as @s[tag=!wicked,scores={s=40..}] run tellraw @s [{"text":"Dimension : "},{"storage":"wicked.tellraw","nbt":"silver.overworld","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.nether","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.end","interpret":true}]
+execute as @s[tag=wicked,scores={s=40..}] run tellraw @s [{"text":"Dimension : "},{"storage":"wicked.tellraw","nbt":"silver.overworld","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.house","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.nether","interpret":true},{"text":" "},{"storage":"wicked.tellraw","nbt":"silver.end","interpret":true}]
 
 
 

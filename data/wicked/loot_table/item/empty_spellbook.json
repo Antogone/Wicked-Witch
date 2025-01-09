@@ -32,7 +32,20 @@
                 "components": {
                   "minecraft:written_book_content": {
                     "pages": [
-                      "{\"extra\":[{\"color\":\"#750AEC\",\"text\":\"Locator Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#750AEC\",\"text\":\"This spell will reveal the position of all the nearby entity !\\n\\n\"},{\"color\":\"#750AEC\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 10\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}"
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#51b330", "text": "Locator Spell", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#7ad950", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#51b330", "text": "This spell will reveal the position of all the nearby entities!\n\n"},
+                          {"color": "#51b330", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 2"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 10"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#7ad950", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n "}
+                        ]
+                      }                    
                     ],
                     "title": "§2SpellBook",
                     "author": "Antogone",
@@ -41,7 +54,7 @@
                   "minecraft:custom_data": {
                     "spellbook":1,
                     "pages":[
-                       "{\"extra\":[{\"color\":\"#750AEC\",\"text\":\"Locator Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#750AEC\",\"text\":\"This spell will reveal the position of all the nearby entity !\\n\\n\"},{\"color\":\"#750AEC\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 10\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#6B1389\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}"
+                      {"text":"","extra":[{"color":"#51b330","text":"Locator Spell","bold":true},{"text":"\n\n"},{"color":"#7ad950","text":"▇▇▇▇▇▇▇▇▇▇▇▇"},{"text":"\n\n"},{"color":"#51b330","text":"This spell will reveal the position of all the nearby entities!\n\n"},{"color":"#51b330","click_event":{"action":"run_command","command":"/scoreboard players set @s spell 2"},"hover_event":{"action":"show_text","text":{"text":"Magic Required : 10"}},"text":"✴ Cast the Spell ✴","bold":true},{"text":"\n\n"},{"color":"#7ad950","text":"▇▇▇▇▇▇▇▇▇▇▇▇"},{"text":"\n "}]}
                     ]
                   },
                   "minecraft:item_model": "minecraft:spellbook"

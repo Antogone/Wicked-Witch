@@ -12,15 +12,140 @@
                 "components": {
                   "minecraft:written_book_content": {
                     "pages": [
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Locator Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will reveal the position of all the nearby entity !\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 2\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 10\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}",
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Dispel\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will dispel any effect on any entity around\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 68\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 5\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}",
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Ghost Walk\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will allow you to phase throught the univers for 5seconds !\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 600\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 30\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}",
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Protection Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will protect you from any damage !\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 40\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}",
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Healing Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will heal all the people in a radius of 10 blocks !\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 30\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\\n \"}],\"text\":\"\"}",
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Astral Projection Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will use the astral projection in you !\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 38\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 30\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\\n \"}],\"text\":\"\"}",
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Size Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will allow you to modify your size !\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 46\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 30\"}},\"text\":\"✴ Shrink Spell ✴\",\"bold\":true},{\"text\":\"\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 44\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 30\"}},\"text\":\"✴ Normal Spell ✴\",\"bold\":true},{\"text\":\"\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 45\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 30\"}},\"text\":\"✴ Giant Spell ✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}",
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Recall Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will create a recall point where you can teleport to easly\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 24\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 15\"}},\"text\":\"✴ Set the Recall ✴\"},{\"text\":\"\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 25\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 15\"}},\"text\":\"✴ Cast the Spell✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}",
-                      "{\"extra\":[{\"color\":\"#808080\",\"text\":\"Barrier Spell\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n\\n\"},{\"color\":\"#808080\",\"text\":\"This spell will give you an item capable of creating a magic indestructible block !\\n\\n\"},{\"color\":\"#808080\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 15\"}},\"text\":\"✴ Cast the Spell ✴\",\"bold\":true},{\"text\":\"\\n\"},{\"color\":\"dark_red\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/scoreboard players set @s spell 5\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Magic Requiered : 5\"}},\"text\":\"✴ Undo the Spell✴\",\"bold\":true},{\"text\":\"\\n\\n\"},{\"color\":\"#555555\",\"text\":\"▇▇▇▇▇▇▇▇▇▇▇\"},{\"text\":\"\\n \"}],\"text\":\"\"}"
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Locator Spell", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will reveal the position of all the nearby entities!\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 2"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 10"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n "}
+                        ]
+                      },
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Dispel", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will dispel any effect on any entity around.\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 68"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 5"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n "}
+                        ]
+                      },
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Ghost Walk", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will allow you to phase through the universe for 5 seconds!\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 600"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 30"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n "}
+                        ]
+                      },
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Protection Spell", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will protect you from any damage!\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 1"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 40"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n "}
+                        ]
+                      },
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Healing Spell", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will heal all the people in a radius of 10 blocks!\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 3"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 30"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n\n "}
+                        ]
+                      },
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Astral Projection Spell", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will use the astral projection in you!\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 38"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 30"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n\n "}
+                        ]
+                      },
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Size Spell", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will allow you to modify your size!\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 46"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 30"}}, "text": "✴ Shrink Spell ✴", "bold": true},
+                          {"text": "\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 44"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 30"}}, "text": "✴ Normal Spell ✴", "bold": true},
+                          {"text": "\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 45"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 30"}}, "text": "✴ Giant Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n "}
+                        ]
+                      },
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Recall Spell", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will create a recall point where you can teleport easily.\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 24"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 15"}}, "text": "✴ Set the Recall ✴"},
+                          {"text": "\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 25"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 15"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n "}
+                        ]
+                      },
+                      {
+                        "text": "",
+                        "extra": [
+                          {"color": "#808080", "text": "Barrier Spell", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n\n"},
+                          {"color": "#808080", "text": "This spell will give you an item capable of creating a magic indestructible block!\n\n"},
+                          {"color": "#808080", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 4"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 15"}}, "text": "✴ Cast the Spell ✴", "bold": true},
+                          {"text": "\n"},
+                          {"color": "dark_red", "click_event": {"action": "run_command", "command": "/scoreboard players set @s spell 5"}, "hover_event": {"action": "show_text", "text": {"text": "Magic Required : 5"}}, "text": "✴ Undo the Spell ✴", "bold": true},
+                          {"text": "\n\n"},
+                          {"color": "#555555", "text": "▇▇▇▇▇▇▇▇▇▇▇"},
+                          {"text": "\n "}
+                        ]
+                      }
                     ],
                     "title": "§7Occult Witch's Spellbook",
                     "author": "Antogone",
