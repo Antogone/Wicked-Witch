@@ -22,8 +22,7 @@ execute as @a[tag=wicked,limit=1,scores={click=1..},predicate=wicked:select_seth
 
 
 
-# data modify storage wicked.tellraw silver.end set value {"text":"[The End]","color":"gray","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 2"}}
-# data modify storage wicked.tellraw silver.overworld set value {"text":"[Overworld]","color":"blue","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 0"}}
-# data modify storage wicked.tellraw silver.nether set value {"text":"[The Nether]","color":"dark_red","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 1"}}
-# data modify storage wicked.tellraw silver.house set value {"text":"[House]","color":"green","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 4"}}
-
+# data modify storage wicked.tellraw silver.end set value {"text":"[The End]","color":"gray","click_event": {"action": "run_command", "command": "/scoreboard players set @s choose 2"}}
+# data modify storage wicked.tellraw silver.overworld set value {"text":"[Overworld]","color":"blue","click_event": {"action": "run_command", "command": "/scoreboard players set @s choose 0"}}
+# data modify storage wicked.tellraw silver.nether set value {"text":"[The Nether]","color":"dark_red","click_event": {"action": "run_command", "command": "/scoreboard players set @s choose 1"}}
+# data modify storage wicked.tellraw silver.house set value {"text":"[House]","color":"green","click_event": {"action": "run_command", "command": "/scoreboard players set @s choose 4"}}

@@ -8,9 +8,15 @@ execute as @a[scores={magie=..9},tag=wicked] run tellraw @s {"text":"You don't s
 execute as @a[scores={magie=..9},tag=wicked] run return 0
 
 
+data modify storage minecraft:wicked.ench Temp.itm set from entity @e[type=item,limit=1,sort=nearest,nbt=!{Item:{id:"minecraft:book",count:1b}}] Item.components.minecraft:enchantments.levels
 $data modify entity @e[type=item,limit=1,sort=nearest,nbt=!{Item:{id:"minecraft:book",count:1b}}] Item.components.minecraft:enchantments.levels set value $(ancien)
 
+
+
+data modify storage minecraft:wicked.ench Temp.itm set from entity @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:book",count:1b}}] Item.components.minecraft:stored_enchantments.levels
 $data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:book",count:1b}}] Item.components.minecraft:stored_enchantments.levels set value $(ancien)
+
+
 data modify entity @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:book",count:1b}}] Item.id set value "minecraft:enchanted_book"
 
 

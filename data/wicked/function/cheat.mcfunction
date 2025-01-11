@@ -32,6 +32,5 @@ execute as @s run function wicked:craft/craft_mirror
 
 execute as @s run function wicked:witch_update/wicked
 
-data modify storage wicked.tellraw silver.end set value {"text":"[The End]","color":"gray","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 2"}}
-data modify storage wicked.tellraw silver.nether set value {"text":"[The Nether]","color":"dark_red","clickEvent":{"action":"run_command","value":"/scoreboard players set @s choose 1"}}
-
+data modify storage wicked.tellraw silver.end set value {"text":"[The End]","color":"gray","click_event": {"action": "run_command", "command": "/scoreboard players set @s choose 2"}}
+data modify storage wicked.tellraw silver.nether set value {"text":"[The Nether]","color":"dark_red","click_event": {"action": "run_command", "command": "/scoreboard players set @s choose 1"}}

@@ -7,7 +7,7 @@
 execute as @a[scores={magie=..99},tag=wicked] run return 4
 scoreboard players remove @e[tag=wicked,scores={magie=100..}] magie 100
 
-summon armor_stand ~ ~ ~ {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["malefice","c_spell"],CustomName:'{"text":"Maleficia Maxima","color":"dark_green","bold":true,"italic":true}'}
+summon armor_stand ~ ~ ~ {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Small:1b,Invisible:1b,NoBasePlate:1b,PersistenceRequired:1b,Tags:["malefice","c_spell"],CustomName:{"text":"Maleficia Maxima","color":"dark_green","bold":true,"italic":true}}
 summon marker ~ ~14 ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["c_spell14"]}
 
  execute as @e[tag=c_spell] at @s run teleport @s ~ ~ ~ ~45 ~

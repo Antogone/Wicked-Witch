@@ -31,7 +31,7 @@ execute store result storage magic_mirror temp.index int 1 run scoreboard player
 
 
 
-give @s carrot_on_a_stick[custom_name='{"text":"§2Magic Mirror : Exit"}',custom_model_data={floats:[10140005]},item_model="minecraft:mirror",custom_data={mirror_2:1b}]
+give @s carrot_on_a_stick[custom_name={"text":"§2Magic Mirror : Exit"},custom_model_data={floats:[10140005]},item_model="minecraft:mirror",custom_data={mirror_2:1b}]
 clear @s carrot_on_a_stick[custom_data={mirror_1:1b}] 1
 scoreboard players set @s click 0
 
